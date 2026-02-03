@@ -25,9 +25,8 @@
                     Avenue, Jakarta
                 </p>
                 <div class="mt-7">
-                    <button
-                        class="text-white hover:cursor-pointer border bg-[#b9608d] hover:border-[#b9608d] focus:ring-4 focus:outline-none focus:ring-[#b9608d] font-medium rounded-lg text-sm px-5 md:px-10 py-3 text-center  dark:border-[#b9608d] dark:text-[#b9608d] dark:hover:text-white dark:hover:bg-white dark:focus:ring-white">Read
-                        More <i class="fa-solid fa-angles-right text-xs"></i></button>
+                    <a href="{{asset('assets/download/Announcement_INASHUM_INAPOS_IDOS_2026.pdf')}}" target="_blank"
+                        class="text-white hover:cursor-pointer border bg-[#b9608d] hover:border-[#b9608d] focus:ring-4 focus:outline-none focus:ring-[#b9608d] font-medium rounded-lg text-sm px-5 md:px-10 py-3 text-center  dark:border-[#b9608d] dark:text-[#b9608d] dark:hover:text-white dark:hover:bg-white dark:focus:ring-white"><i class="fa-solid fa-file-download mr-1 text-xs"></i>Download Announcement </a>
                     <a href="/registration" wire:navigate
                         class="hover:text-white border border-[#302b88] hover:bg-[#302b88] hover:border-[#302b88] focus:ring-4 focus:outline-none focus:ring-[#302b88] font-medium rounded-lg text-sm px-5 md:px-10 py-3 text-center  dark:border-[#302b88] dark:text-[#302b88] dark:hover:text-white dark:hover:bg-white dark:focus:ring-white"><i
                             class="fa-solid fa-pen-to-square"></i> Regiter Now </a>
