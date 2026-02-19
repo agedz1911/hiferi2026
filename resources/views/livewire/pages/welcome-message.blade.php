@@ -7,12 +7,12 @@
     </section>
 
     <section class="bg-gradient-to-b from-[#302b88]/80 to-[#b9608d]/10 relative z-0 py-28">
-        <div class="mb-6 px-4">
+        <div class="mb-6 px-4 md:px-24">
             @foreach ($messages as $welcomeMessage)
             @if ($loop->even)
             <div class="card shadow-sm bg-transparent border border-[#b9608d] border-opacity-25 w-full mb-5">
                 <div class="card-body">
-                    <div class="grid grid-cols-1 lg:grid-cols-2 justify-items-stretch">
+                    <div class="flex flex-col">
                         <div class="order-2 lg:order-1 p-2">
                             <div
                                 class="w-full justify-center lg:flex-row flex flex-col items-center lg:items-end gap-2">
@@ -47,7 +47,7 @@
             @else
             <div class="card shadow-sm bg-transparent border border-[#b9608d] border-opacity-25 w-full mb-5">
                 <div class="card-body">
-                    <div class="grid grid-cols-1 lg:grid-cols-2 justify-items-stretch">
+                    <div class="flex flex-col">
                         <div class="order-2 lg:order-2 p-2">
                             <div
                                 class="w-full justify-center lg:flex-row flex flex-col items-center lg:items-end gap-2">
