@@ -8,6 +8,7 @@
 
 
     <section class="px-5 md:px-10 pt-0 pb-10 md:py-20 bg-competition">
+
         <div class="flex items-center justify-center">
             <div x-data="{ openTab: 5 }" class="lg:w-11/12 w-full mx-auto">
                 <div class="">
@@ -27,7 +28,7 @@
                         <button x-on:click="openTab = 4" :class="{ 'bg-[#b9608d] text-white': openTab === 4 }"
                             class="flex-1 py-2 px-4 rounded-md focus:outline-none focus:shadow-outline-blue transition-all duration-300">1
                             August</button>
-                        
+
                     </div>
 
                     <div x-show="openTab === 1"
@@ -741,11 +742,17 @@
                     <div x-show="openTab === 5"
                         class="transition-all duration-300 bg-white p-4 rounded-lg shadow-md border-x-4 border-[#302b88]">
 
-                    <p>tgl 28</p>
+                        <p>tgl 28</p>
                     </div>
                 </div>
             </div>
 
+        </div>
+        <div class="px-4 md:px-10 mt-10">
+            <p class="text-sm text-error italic">
+                Note: <br>
+                The scientific schedule is provisional and may be adjusted as required.
+            </p>
         </div>
     </section>
 </div>

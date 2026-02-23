@@ -164,6 +164,12 @@
                 @endforeach
             </div>
         </div>
+        <div class=" mt-10">
+            <p class="text-sm text-error italic">
+                Note: <br>
+                The scientific schedule is provisional and may be adjusted as required.
+            </p>
+        </div>
     </section>
 
     {{-- <section class="faq-general-ques pb-10">
@@ -195,71 +201,71 @@
                             @foreach ($uniqDates as $date)
                             <div class="section-title py-2 text-center text-lg-start">
                                 <h4 class="mb-1">{{\Carbon\Carbon::parse($date)->format('l, d F')}}</h4>
-                            </div>
-                            @foreach ($uniqCategories as $item)
-                            @if (
-                            !($date == '2025-09-25' && ($item == 'Workshop' ))
-                            )
-                            <p class="mb-0 mt-5">{{$item}}</p>
+</div>
+@foreach ($uniqCategories as $item)
+@if (
+!($date == '2025-09-25' && ($item == 'Workshop' ))
+)
+<p class="mb-0 mt-5">{{$item}}</p>
 
-                            <div class="faq-accordion p-4 bg-lightgrey rounded border-2 border-light-subtle ">
-                                <div class="accordion accordion-faq " id="accordionFlushExample">
-                                    @foreach ($atglances as $atglance)
-                                    @if ($atglance->category_sesi == $item && $atglance->date == $date)
-                                    <div class="accordion-item border mb-1 rounded">
-                                        <p class="accordion-header p-4">
-                                            <button class="accordion-button collapsed fw-semibold p-0" type="button"
-                                                data-bs-toggle="collapse" data-bs-target="#{{$loop->index}}"
-                                                aria-expanded="false" aria-controls="tes">
-                                                {{$atglance->title_ses}} - <small class="fst-italic"> {{$atglance->room}}</small>
+<div class="faq-accordion p-4 bg-lightgrey rounded border-2 border-light-subtle ">
+    <div class="accordion accordion-faq " id="accordionFlushExample">
+        @foreach ($atglances as $atglance)
+        @if ($atglance->category_sesi == $item && $atglance->date == $date)
+        <div class="accordion-item border mb-1 rounded">
+            <p class="accordion-header p-4">
+                <button class="accordion-button collapsed fw-semibold p-0" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#{{$loop->index}}"
+                    aria-expanded="false" aria-controls="tes">
+                    {{$atglance->title_ses}} - <small class="fst-italic"> {{$atglance->room}}</small>
 
-                                            </button>
-                                        </p>
-                                        <div id="{{$loop->index}}" class="accordion-collapse collapse"
-                                            data-bs-parent="#accordionFlushExample">
-                                            <div class="accordion-body bg-lightgrey">
-                                                <div class="px-0">
-                                                    <h4>{{$atglance->title_ses}}</h4>
-                                                    <p class="black mb-2">{{$atglance->time}} | {{$atglance->room}}</p>
-                                                    <p class="black mb-2"></p>
-                                                    <p class="mb-0">Moderator : <span
-                                                            class="black fw-semibold">{{$atglance->moderator}}
-                                                        </span></p>
-                                                    <p class="">Panelist : <span
-                                                            class="black fw-semibold">{{$atglance->panelist}}
-                                                        </span></p>
-                                                </div>
-                                                <div class="table-responsive">
-                                                    <table class="table rounded table-hover">
-                                                        <tbody>
-                                                            @foreach ($atglance->schedules as $schedule)
-                                                            <tr>
-                                                                <td>{{$schedule->time_speaker}}</td>
-                                                                <td><span
-                                                                        class="black fw-bold">{{$schedule->topic_title}}</span>
-                                                                    <br><small>Speaker: {{$schedule->speaker}}</small>
-                                                                </td>
-                                                                <td></td>
-                                                            </tr>
-                                                            @endforeach
-                                                        </tbody>
-                                                    </table>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    @endif
-                                    @endforeach
-                                </div>
-                            </div>
-                            @endif
-                            @endforeach
-                            @endforeach
-                        </div>
+                </button>
+            </p>
+            <div id="{{$loop->index}}" class="accordion-collapse collapse"
+                data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body bg-lightgrey">
+                    <div class="px-0">
+                        <h4>{{$atglance->title_ses}}</h4>
+                        <p class="black mb-2">{{$atglance->time}} | {{$atglance->room}}</p>
+                        <p class="black mb-2"></p>
+                        <p class="mb-0">Moderator : <span
+                                class="black fw-semibold">{{$atglance->moderator}}
+                            </span></p>
+                        <p class="">Panelist : <span
+                                class="black fw-semibold">{{$atglance->panelist}}
+                            </span></p>
+                    </div>
+                    <div class="table-responsive">
+                        <table class="table rounded table-hover">
+                            <tbody>
+                                @foreach ($atglance->schedules as $schedule)
+                                <tr>
+                                    <td>{{$schedule->time_speaker}}</td>
+                                    <td><span
+                                            class="black fw-bold">{{$schedule->topic_title}}</span>
+                                        <br><small>Speaker: {{$schedule->speaker}}</small>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                @endforeach
+                            </tbody>
+                        </table>
                     </div>
                 </div>
             </div>
         </div>
-    </section> --}}
+
+        @endif
+        @endforeach
+    </div>
+</div>
+@endif
+@endforeach
+@endforeach
+</div>
+</div>
+</div>
+</div>
+</div>
+</section> --}}
 </div>
