@@ -7,6 +7,7 @@ use App\Filament\Resources\RegistrationResource\RelationManagers;
 use App\Models\Registration;
 use Filament\Forms;
 use Filament\Forms\Components\DatePicker;
+use Filament\Forms\Components\MarkdownEditor;
 use Filament\Forms\Components\Select;
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Components\Toggle;
@@ -44,7 +45,9 @@ class RegistrationResource extends Resource
                         'foreign' => 'foreign',
                     ])
                     ->native(false),
-                TextInput::make('title'),
+                TextInput::make('title')
+                    ->required(),
+                TextInput::make('subtitle'),
                 TextInput::make('early_bird_reg')
                     ->numeric(),
                 DatePicker::make('date_early_bird')
@@ -60,6 +63,8 @@ class RegistrationResource extends Resource
                 Toggle::make('is_Active')
                     ->default(true)
                     ->inline(),
+                MarkdownEditor::make('description')
+                    ->columnSpanFull()
             ]);
     }
 

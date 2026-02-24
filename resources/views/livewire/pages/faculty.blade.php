@@ -17,18 +17,20 @@
             </div>
             <div class="mt-10">
                 <!-- name of each tab group should be unique -->
-                <div class="tabs tabs-border justify-evenly">
+                <div class="tabs tabs-border justify-evenly mb-5">
                     <input type="radio" name="my_tabs_2"
                         class="tab uppercase tracking-wider text-lg hover:text-[#302b88] text-[#b9608d]"
-                        aria-label="Indonesian Faculties" checked="checked" />
+                        aria-label="Indonesian Faculties"  />
                     <div class="tab-content  p-5 rounded-lg">
                         <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-5">
                             @foreach ($indofaculties as $indo)
-                            <div class="card bg-base-100 shadow-sm p-0 hover:shadow-md hover:scale-105 transition-all duration-200">
-                                <figure onclick="my_modal_{{$loop->index}}.showModal()" class="relative hover:cursor-pointer ">
+                            <div
+                                class="card bg-fuchsia-50/10 shadow-sm p-0 hover:shadow-md hover:scale-105 transition-all duration-200">
+                                <figure onclick="my_modal_{{$loop->index}}.showModal()"
+                                    class="relative hover:cursor-pointer ">
                                     <img src="{{$indo->image ? asset('storage/' . $indo->image) : "
                                         assets/images/speaker.png"}}" alt="{{$indo->name}}"
-                                        class="w-full h-full object-cover rounded">
+                                        class="w-full h-full lg:h-80 object-cover rounded-xl lg:rounded-full lg:px-2">
                                 </figure>
                                 <div class="card-body text-center">
                                     <h2 onclick="my_modal_{{$loop->index}}.showModal()"
@@ -93,24 +95,31 @@
 
                     <input type="radio" name="my_tabs_2"
                         class="tab uppercase tracking-wider  text-lg hover:text-[#302b88] text-[#b9608d]"
-                        aria-label="International faculties" />
+                        aria-label="International faculties" checked="checked"/>
                     <div class="tab-content  p-5 rounded-lg">
                         {{-- @dd($indofaculties) --}}
                         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
                             @foreach ($foreignfaculties as $foreign)
-                            <div class="card bg-base-100 shadow-sm p-0 hover:shadow-md hover:scale-105 transition-all duration-200">
-                                <figure onclick="my_modal_f{{$loop->index}}.showModal()" class="relative hover:cursor-pointer ">
+                            <div
+                                class="card bg-fuchsia-50/10 shadow-sm p-0 hover:shadow-md hover:scale-105 transition-all duration-200">
+                                <figure onclick="my_modal_f{{$loop->index}}.showModal()"
+                                    class="relative hover:cursor-pointer ">
                                     <img src="{{$foreign->image ? asset('storage/' . $foreign->image) : "
                                         assets/images/speaker.png"}}" alt="{{$foreign->name}}"
-                                        class="w-full h-full object-cover rounded">
-                                    
+                                        class="w-full h-full lg:h-80 object-cover rounded-xl lg:rounded-full lg:px-2">
+
                                 </figure>
                                 <div class="card-body text-center">
                                     <h2 onclick="my_modal_f{{$loop->index}}.showModal()"
-                                        class="text-xl font-semibold text-[#b9608d] hover:cursor-pointer hover text-[#302b88]">
+                                        class="text-xl font-semibold text-[#b9608d] hover:cursor-pointer hover:text-[#302b88]">
                                         {{$foreign->name}}
                                     </h2>
-                                    <p>{{$foreign->country}}</p>
+                                    <div class="badge badge-primary badge-soft badge-sm">
+                                        <p class="text-sm">{{$foreign->country}}</p>
+                                    </div>
+                                    @if ($foreign->description != null)
+                                    <p class="text-xs italic text-end text-gray-500">{{$foreign->description}}</p>
+                                    @endif
                                 </div>
                             </div>
 
@@ -162,7 +171,7 @@
                         <div class="mt-5 border-t border-dashed pt-3">
                             {{ $foreignfaculties->links() }}
                         </div>
-                        <p class="text-xs italic mt-5">*within confirmation</p>
+                        {{-- <p class="text-xs italic mt-5">*within confirmation</p> --}}
                     </div>
 
                 </div>

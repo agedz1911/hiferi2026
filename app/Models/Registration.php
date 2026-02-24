@@ -16,6 +16,8 @@ class Registration extends Model
         'is_Active',
         'date_early_bird',
         'date_normal_reg',
-        'date_onsite'
+        'date_onsite',
+        'subtitle',
+        'description',
     ];
 }
