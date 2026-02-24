@@ -20,7 +20,7 @@
                 <div class="tabs tabs-border justify-evenly mb-5">
                     <input type="radio" name="my_tabs_2"
                         class="tab uppercase tracking-wider text-lg hover:text-[#302b88] text-[#b9608d]"
-                        aria-label="Indonesian Faculties"  />
+                        aria-label="Indonesian Faculties" />
                     <div class="tab-content  p-5 rounded-lg">
                         <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-5">
                             @foreach ($indofaculties as $indo)
@@ -34,7 +34,7 @@
                                 </figure>
                                 <div class="card-body text-center">
                                     <h2 onclick="my_modal_{{$loop->index}}.showModal()"
-                                        class="text-xl font-semibold text-[#b9608d] hover text-[#302b88] hover:cursor-pointer">
+                                        class="text-xl font-semibold text-[#b9608d] hover:text-[#302b88] hover:cursor-pointer">
                                         {{$indo->name}}
                                     </h2>
                                     <p>{{$indo->description}}</p>
@@ -95,7 +95,7 @@
 
                     <input type="radio" name="my_tabs_2"
                         class="tab uppercase tracking-wider  text-lg hover:text-[#302b88] text-[#b9608d]"
-                        aria-label="International faculties" checked="checked"/>
+                        aria-label="International faculties" checked="checked" />
                     <div class="tab-content  p-5 rounded-lg">
                         {{-- @dd($indofaculties) --}}
                         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
@@ -114,8 +114,11 @@
                                         class="text-xl font-semibold text-[#b9608d] hover:cursor-pointer hover:text-[#302b88]">
                                         {{$foreign->name}}
                                     </h2>
-                                    <div class="badge badge-primary badge-soft badge-sm">
-                                        <p class="text-sm">{{$foreign->country}}</p>
+                                    <div class="flex justify-center">
+                                        <div class="badge badge-primary badge-soft badge-sm">
+                                            <p class="text-sm">{{$foreign->country == 'South Korea' ? 'Republic of
+                                                Korea' : $foreign->country}}</p>
+                                        </div>
                                     </div>
                                     @if ($foreign->description != null)
                                     <p class="text-xs italic text-end text-gray-500">{{$foreign->description}}</p>
