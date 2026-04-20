@@ -1,38 +1,34 @@
 <!-- Header -->
-<header class="bg-gradient-to-l from-[#302b88] via-[#b9608d] to-[#a45b80] hidden lg:block text-white text-sm py-2">
+<header class="bg-gradient-to-l from-[#262262] via-[#27AAE1] to-[#39B54A] hidden lg:block text-white text-sm py-2">
     <div class="mx-auto flex justify-between items-center px-4">
 
-        <div class="flex">
-            <div class="border-r pr-3">
-                <span class="ml-4 hover:underline hover:text-[#302b88] text-sm">
-                    <i class="fa fa-envelope mr-1"></i>
-                    <a href="mailto:inashumposdos@pharma-pro.com">
-                        inashumposdos@pharma-pro.com
-                    </a>
-                </span>
-            </div>
-        </div>
         <div>
-            {{-- <a class="btn bg-[#b9608d] hover:bg-[#a45b80] text-white btn-sm rounded-full shadow-none w-8" href="mailto:inashumposdos@pharma-pro.com">
+            {{-- <a class="btn hover:bg-[#262262] border-none bg-[#27AAE1] text-white btn-sm rounded-full shadow-none w-8" href="mailto:hiferi2026@pharma-pro.com">
                 <i class="fa fa-envelope">
                 </i>
             </a> --}}
-            <a class="btn bg-[#b9608d] hover:bg-[#a45b80] text-white btn-sm rounded-full shadow-none w-8" href="tel:+6281315809160">
+            <a class="btn hover:bg-[#262262] border-none bg-[#27AAE1] text-white btn-sm rounded-full shadow-none w-8" href="tel:+62816995230">
                 <i class="fa fa-phone">
                 </i>
             </a>
-            <a class="btn bg-[#b9608d] hover:bg-[#a45b80] text-white btn-sm rounded-full shadow-none w-8" href="https://wa.me/+6281315809160" target="_blank`">
+            <a class="btn hover:bg-[#262262] border-none bg-[#27AAE1] text-white btn-sm rounded-full shadow-none w-8" href="https://wa.me/+62816995230" target="_blank`">
                 <i class="fa fa-whatsapp">
                 </i>
             </a>
-            <a class="btn bg-[#b9608d] hover:bg-[#a45b80] text-white btn-sm rounded-full shadow-none w-8" href="https://wa.me/+628111018517" target="_blank`">
-                <i class="fa fa-whatsapp">
-                </i>
-            </a>
-            <a class="btn bg-[#b9608d] hover:bg-[#a45b80] text-white btn-sm rounded-full shadow-none w-8" href="#">
+            <a class="btn hover:bg-[#262262] border-none bg-[#27AAE1] text-white btn-sm rounded-full shadow-none w-8" href="#">
                 <i class="fa fa-instagram">
                 </i>
             </a>
+        </div>
+        <div class="flex">
+            <div class="border-r pr-3">
+                <span class="ml-4 hover:underline hover:text-[#39B54A] text-sm">
+                    <i class="fa fa-envelope mr-1"></i>
+                    <a href="mailto:hiferi2026@pharma-pro.com">
+                        hiferi2026@pharma-pro.com
+                    </a>
+                </span>
+            </div>
         </div>
     </div>
 </header>
@@ -44,14 +40,14 @@
         <div class="drawer-content flex flex-col">
             <div class="navbar">
                 <div class="navbar-start">
-                    <img src="assets/images/logo/logo-event.png" class="h-full max-h-9" alt="Logo" />
+                    <img src="assets/images/logo/logo-event.png" class="h-full max-h-12" alt="Logo" />
                 </div>
                 <div class="navbar-center hidden lg:flex py-2">
                     <x-section.menu />
                 </div>
                 <div class="navbar-end">
                     <div onclick="contact.showModal()"
-                        class="bg-[#b9608d] hover:bg-[#a45b80] text-white btn rounded-lg shadow-none mx-2 flex gap-2">
+                        class="bg-[#39B54A] hover:bg-[#2B3990] border-none text-white btn rounded-lg shadow-none mx-2 flex gap-2">
                         <i class="fa fa-image-portrait"></i>
                         Contact
                     </div>

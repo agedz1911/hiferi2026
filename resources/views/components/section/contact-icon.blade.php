@@ -1,15 +1,15 @@
 <div class="flex flex-col items-center">
     <div class="stats stats-vertical lg:stats-horizontal shadow w-full max-w-xl">
         <div class="stat">
-            <div class="stat-figure text-[#4b3689]">
+            <div class="stat-figure text-[#262262]">
                 <i class="fa fa-user inline-block text-4xl stroke-current"></i>
             </div>
             <div class="stat-title font-semibold">Secretariat</div>
-            <div class="stat-desc">Ms. Ardelia / Ms. Evi Dearny</div>
+            <div class="stat-desc">Ms. Silvia</div>
         </div>
 
         <div class="stat">
-            <div class="stat-figure text-[#4b3689]">
+            <div class="stat-figure text-[#262262]">
                 <i class="fa fa-location-dot inline-block text-4xl stroke-current"></i>
             </div>
             <div class="stat-title font-semibold">Address</div>
@@ -20,7 +20,7 @@
 
     <div class="stats stats-vertical lg:stats-horizontal shadow">
         <div class="stat">
-            <div class="stat-figure text-[#4b3689]">
+            <div class="stat-figure text-[#262262]">
                 <i class="fa fa-phone inline-block text-4xl stroke-current"></i>
             </div>
             <div class="stat-title font-semibold">Call</div>
@@ -28,11 +28,14 @@
         </div>
 
         <div class="stat">
-            <div class="stat-figure text-[#4b3689]">
+            <div class="stat-figure text-[#262262]">
                 <i class="fa fa-envelope inline-block text-4xl stroke-current"></i>
             </div>
             <div class="stat-title font-semibold">Email</div>
-            <div class="stat-desc hover:underline hover:text-primary"><a href="mailto:inashumposdos@pharma-pro.com ">inashumposdos@pharma-pro.com </a></div>
+            <div class="stat-desc">
+                <a class="hover:underline hover:text-success" href="mailto:hiferi2026@pharma-pro.com">hiferi2026@pharma-pro.com </a> <br>
+                <a class="hover:underline hover:text-success" href="mailto:silvia@pharma-pro.com">silvia@pharma-pro.com </a>
+            </div>
         </div>
 
         <div class="stat">
@@ -41,8 +44,7 @@
             </div>
             <div class="stat-title font-semibold">Whatsapp</div>
             <div class="stat-desc">
-                <a class="hover:underline hover:text-primary" target="_blank" href="https://wa.me/+6281315809160"> +62 813-1580-9160 (Ardelia) </a> <br>
-                <a class="hover:underline hover:text-primary" target="_blank" href="https://wa.me/+628111018517"> +62 811-1018-517 (Evi Dearny) </a>
+                <a class="hover:underline hover:text-success" target="_blank" href="https://wa.me/+62816995230"> +62 816-995-230 (Silvia) </a> 
             </div>
         </div>
         <div class="stat">

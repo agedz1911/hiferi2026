@@ -1,13 +1,13 @@
 <div>
     <section class="breadcrumbs relative pb-0">
-        <div class="absolute inset-0 bg-gradient-to-t from-[#302b88]/80 to-[#b9608d]/10"></div>
+        <div class="absolute inset-0 bg-gradient-to-t from-[#27AAE1]/80 to-[#39B54A]/10"></div>
         <div class="py-16 lg:py-28 text-center relative">
             <h2 class=" uppercase text-2xl font-bold tracking-wide lg:text-4xl">scientific schedule</h2>
         </div>
     </section>
 
     <div class="px-5 lg:px-10 mt-10">
-        <label class="input input-lg w-full">
+        <label class="input input-lg input-success rounded-lg w-full">
             <i class="fa fa-search opacity-45 text-sm"></i>
             <input wire:model.live='search' type="text" class="grow" placeholder="Search Topic, Speaker, Room" />
         </label>

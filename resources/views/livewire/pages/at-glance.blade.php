@@ -1,6 +1,6 @@
 <div>
     <section class="breadcrumbs relative pb-0">
-        <div class="absolute inset-0 bg-gradient-to-t from-[#302b88]/80 to-[#b9608d]/10"></div>
+        <div class="absolute inset-0 bg-gradient-to-t from-[#27AAE1]/80 to-[#39B54A]/10"></div>
         <div class="py-16 lg:py-28 text-center relative">
             <h2 class=" uppercase text-2xl font-bold tracking-wide lg:text-4xl">program at glance</h2>
         </div>
@@ -10,35 +10,35 @@
     <section class="px-5 md:px-10 pt-0 pb-10 md:py-20 bg-competition">
 
         <div class="flex items-center justify-center">
-            <div x-data="{ openTab: 5 }" class="lg:w-11/12 w-full mx-auto">
+            <div x-data="{ openTab: 1 }" class="lg:w-11/12 w-full mx-auto">
                 <div class="">
                     <div class="mb-4 flex flex-wrap space-x-4 p-2 bg-white rounded-lg shadow-md">
-                        <button x-on:click="openTab = 5" :class="{ 'bg-[#b9608d] text-white': openTab === 5 }"
-                            class="flex-1 py-2 px-4 rounded-md focus:outline-none focus:shadow-outline-blue transition-all duration-300">28
-                            July</button>
-                        <button x-on:click="openTab = 1" :class="{ 'bg-[#b9608d] text-white': openTab === 1 }"
-                            class="flex-1 py-2 px-4 rounded-md focus:outline-none focus:shadow-outline-blue transition-all duration-300">29
-                            July</button>
-                        <button x-on:click="openTab = 2" :class="{ 'bg-[#b9608d] text-white': openTab === 2 }"
-                            class="flex-1 py-2 px-4 rounded-md focus:outline-none focus:shadow-outline-blue transition-all duration-300">30
-                            July</button>
-                        <button x-on:click="openTab = 3" :class="{ 'bg-[#b9608d] text-white': openTab === 3 }"
-                            class="flex-1 py-2 px-4 rounded-md focus:outline-none focus:shadow-outline-blue transition-all duration-300">31
-                            July</button>
-                        <button x-on:click="openTab = 4" :class="{ 'bg-[#b9608d] text-white': openTab === 4 }"
-                            class="flex-1 py-2 px-4 rounded-md focus:outline-none focus:shadow-outline-blue transition-all duration-300">1
-                            August</button>
+                        {{-- <button x-on:click="openTab = 5" :class="{ 'bg-[#39B54A] text-white': openTab === 5 }"
+                            class="flex-1 py-2 px-4 rounded-md focus:outline-none focus:shadow-outline-blue transition-all duration-300">8
+                            October</button> --}}
+                        <button x-on:click="openTab = 1" :class="{ 'bg-[#39B54A] text-white': openTab === 1 }"
+                            class="flex-1 py-2 px-4 rounded-md focus:outline-none focus:shadow-outline-blue transition-all duration-300">8
+                            October</button>
+                        <button x-on:click="openTab = 2" :class="{ 'bg-[#39B54A] text-white': openTab === 2 }"
+                            class="flex-1 py-2 px-4 rounded-md focus:outline-none focus:shadow-outline-blue transition-all duration-300">9
+                            October</button>
+                        <button x-on:click="openTab = 3" :class="{ 'bg-[#39B54A] text-white': openTab === 3 }"
+                            class="flex-1 py-2 px-4 rounded-md focus:outline-none focus:shadow-outline-blue transition-all duration-300">10
+                            October</button>
+                        <button x-on:click="openTab = 4" :class="{ 'bg-[#39B54A] text-white': openTab === 4 }"
+                            class="flex-1 py-2 px-4 rounded-md focus:outline-none focus:shadow-outline-blue transition-all duration-300">11
+                            October</button>
 
                     </div>
 
                     <div x-show="openTab === 1"
-                        class="transition-all duration-300 bg-white p-4 rounded-lg shadow-md border-x-4 border-[#302b88]">
+                        class="transition-all duration-300 bg-white p-4 rounded-lg shadow-md border-x-4 border-[#262262]">
                         <div class="overflow-x-auto">
                             <table class="table">
                                 <thead>
                                     <tr class="text-base font-semibold mb-2">
 
-                                        <th>Fatmawati Hospital</th>
+                                        <th>8 Oct</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -120,15 +120,14 @@
                     </div>
 
                     <div x-show="openTab === 2"
-                        class="transition-all duration-300 bg-white p-4 rounded-lg shadow-md border-x-4 border-[#302b88]">
+                        class="transition-all duration-300 bg-white p-4 rounded-lg shadow-md border-x-4 border-[#262262]">
 
                         <div class="overflow-x-auto">
                             <table class="table">
                                 <thead>
                                     <tr class="text-base font-semibold mb-2">
 
-                                        <th>Fatmawati Hospital</th>
-                                        <th>Zeiss Office</th>
+                                        <th>9 Oct</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -280,16 +279,15 @@
                     </div>
 
                     <div x-show="openTab === 3"
-                        class="transition-all duration-300 bg-white p-4 rounded-lg shadow-md border-x-4 border-[#302b88]">
+                        class="transition-all duration-300 bg-white p-4 rounded-lg shadow-md border-x-4 border-[#262262]">
 
                         <div class="overflow-x-auto">
                             <table class="table">
                                 <thead>
                                     <tr class="text-base font-semibold mb-2">
 
-                                        <th>Zurich Ballroom</th>
-                                        <th>Lausanne Ballroom I</th>
-                                        <th>Lausanne Ballroom II</th>
+                                        <th>10 Oct</th>
+                                        
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -510,16 +508,14 @@
 
                     </div>
                     <div x-show="openTab === 4"
-                        class="transition-all duration-300 bg-white p-4 rounded-lg shadow-md border-x-4 border-[#302b88]">
+                        class="transition-all duration-300 bg-white p-4 rounded-lg shadow-md border-x-4 border-[#262262]">
 
                         <div class="overflow-x-auto">
                             <table class="table">
                                 <thead>
                                     <tr class="text-base font-semibold mb-2">
 
-                                        <th>Zurich Ballroom</th>
-                                        <th>Lausanne Ballroom I</th>
-                                        <th>Lausanne Ballroom II</th>
+                                        <th>11 Oct</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -740,7 +736,7 @@
 
                     </div>
                     <div x-show="openTab === 5"
-                        class="transition-all duration-300 bg-white p-4 rounded-lg shadow-md border-x-4 border-[#302b88]">
+                        class="transition-all duration-300 bg-white p-4 rounded-lg shadow-md border-x-4 border-[#262262]">
 
                         <p>tgl 28</p>
                     </div>

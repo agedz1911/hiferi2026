@@ -33,7 +33,19 @@
         </div>
     </div>
     @else
-    <img src="assets/images/banner.png" class="w-full rounded-xl" alt="Banner">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-5 align-items-center">
+        <div class="flex flex-col gap-4">
+            <div class="rounded-xl bg-white shadow-lg">
+                <img src="{{asset('assets/images/bandung/6.jpg')}}" class="w-full rounded-xl saturate-100" alt="jakarta 1">
+            </div>
+            <div class="rounded-xl bg-white shadow-lg">
+                <img src="{{asset('assets/images/bandung/5.jpg')}}" class="w-full rounded-xl sepia-25" alt="jakarta 2">
+            </div>
+        </div>
+        <div class="rounded-xl bg-white shadow-lg">
+            <img src="{{asset('assets/images/bandung/4.jpg')}}" class="w-full rounded-xl object-cover h-full saturate-200"
+                alt="jakarta 3">
+        </div>
+    </div>
     @endif
 </div>
-

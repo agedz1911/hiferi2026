@@ -1,6 +1,6 @@
 <div>
     <section class="breadcrumbs relative pb-0">
-        <div class="absolute inset-0 bg-gradient-to-t from-[#302b88]/80 to-[#b9608d]/10"></div>
+        <div class="absolute inset-0 bg-gradient-to-t from-[#27AAE1]/80 to-[#39B54A]/10"></div>
         <div class="py-16 lg:py-28 text-center relative">
             <h2 class="uppercase text-2xl font-bold tracking-wide lg:text-4xl">Visiting</h2>
         </div>
@@ -724,7 +724,7 @@
                     <p>" Welcome to the upscale urban oasis in north Jakarta. Experience Swiss and Indonesian flair in the intimate rooms and suites filled with thoughtful amenities, alongside vitality-inspired dining, Pürovel Spa & Sport and renowned Swiss hospitality. "</p>
                 </div>
             </div>
-            
+
         </div>
     </section>
 </div>
