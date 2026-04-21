@@ -97,7 +97,7 @@
                         </div>
                         <a class="text-pink-200 hover:text-white hover:underline" href="/welcome-message">Read
                             More...</a>
-                        <div class="p-4 rounded-xl bg-[#b9608d] w-full max-w-sm mt-3 mb-5">
+                        <div class="p-4 rounded-xl bg-[#39B54A] w-full max-w-sm mt-3 mb-5">
                             <div class="p-2 border-s border-white border-spacing-7">
                                 <p class="text-white text-xs italic">" {{$welcomeMessage->title}}
                                     "</p>
