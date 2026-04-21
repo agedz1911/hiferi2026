@@ -55,12 +55,12 @@
             </div>
             <div class="pb-10 mt-4">
                 <ul class="p-0 m-0 flex flex-row flex-wrap gap-4 lg:gap-6 justify-center">
-                    <li class="text-sm font-normal hover:text-[#b9608d] hover:underline"><a>Committee</a></li>
-                    <li class="text-sm font-normal hover:text-[#b9608d] hover:underline"><a>Faculties</a></li>
-                    <li class="text-sm font-normal hover:text-[#b9608d] hover:underline"><a>Schedule</a></li>
-                    <li class="text-sm font-normal hover:text-[#b9608d] hover:underline"><a>Registration</a></li>
-                    <li class="text-sm font-normal hover:text-[#b9608d] hover:underline"><a>Submission</a></li>
-                    <li class="text-sm font-normal hover:text-[#b9608d] hover:underline"><a>Venue</a>
+                    <li class="text-sm font-normal hover:text-[#b9608d] hover:underline"><a href="{{route('organizing-committee')}}">Committee</a></li>
+                    <li class="text-sm font-normal hover:text-[#b9608d] hover:underline"><a href="{{route('faculties')}}">Faculties</a></li>
+                    <li class="text-sm font-normal hover:text-[#b9608d] hover:underline"><a href="{{route('program-at-glance')}}">Schedule</a></li>
+                    <li class="text-sm font-normal hover:text-[#b9608d] hover:underline"><a href="{{route('registration')}}">Registration</a></li>
+                    <li class="text-sm font-normal hover:text-[#b9608d] hover:underline"><a href="{{route('submission')}}">Submission</a></li>
+                    <li class="text-sm font-normal hover:text-[#b9608d] hover:underline"><a href="{{route('visiting')}}">Venue</a>
                     </li>
                 </ul>
             </div>

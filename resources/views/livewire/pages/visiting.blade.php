@@ -2,563 +2,53 @@
     <section class="breadcrumbs relative pb-0">
         <div class="absolute inset-0 bg-gradient-to-t from-[#27AAE1]/80 to-[#39B54A]/10"></div>
         <div class="py-16 lg:py-28 text-center relative">
-            <h2 class="uppercase text-2xl font-bold tracking-wide lg:text-4xl">Visiting</h2>
+            <h2 class=" uppercase text-2xl font-bold tracking-wide lg:text-4xl">Visiting</h2>
         </div>
     </section>
 
-    <section class="px-5 md:px-10 pt-0 pb-10 md:py-20" id="jakarta">
-        <div class="px-2 lg:px-5">
-            <div class="flex gap-2 flex-wrap justify-between w-full items-end">
+    <section class="px-5 md:px-10 pt-0 pb-10 md:py-20" id="bali">
+        <div class="px-2 lg:px-5 text-slate-700">
+            {{-- <div class="flex gap-2 flex-wrap justify-between w-full items-end">
                 <div class="w-full pb-2">
-                    <p class="mb-1 text-[#b9608d]">Welcome to</p>
-                    <h2 class="mb-1 text-2xl font-bold tracking-wide">PIK (Pantai Indah Kapuk), Jakarta</h2>
-                    {{-- <p class="m-0 text-justify"><span class="text-[#b9608d]">(PIK)</span>
-                        is an elite residential and tourist area on the coast of North Jakarta which is famous for its
-                        various modern attractions such as cafes, restaurants, shopping centers, to natural recreation
-                        areas
-                        such as mangrove forests and artificial beaches ( PIK 1 & PIK 2 ), offering a modern lifestyle
-                        experience, delicious culinary delights, and Instagrammable photo spots, making it a popular
-                        destination for families and young people in Jakarta.</p> --}}
+                    <p class="mb-1 text-[#39B54A]">Welcome to</p>
+                    <h2 class="mb-1 text-3xl font-extrabold tracking-wide">Bandung, indonesia</h2>
+                    <p class="m-0 text-justify"><span class="text-[#39B54A]">Bandung</span> Bandung is a vibrant and
+                        creative city in West Java known for its cool mountain climate, rich colonial architecture such
+                        as the iconic Gedung Sate, and a dynamic culinary and cultural scene. Blending modern urban
+                        energy with scenic natural surroundings like Lembang and Tangkuban Perahu, the city has become a
+                        popular destination for education, tourism, fashion, and conferences. Its lively atmosphere and
+                        diverse attractions make Bandung an inspiring and welcoming host city for national and
+                        international events.</p>
                 </div>
-                {{-- <div class="">
-                    <a class="text-sm underline hover:text-[#b9608d]" href="javascript:void(0)">See more story of Bali
-                        <i class="fa-solid fa-angle-right"></i></a>
-                </div> --}}
-            </div>
+            </div> --}}
             <div class="grid grid-cols-1 md:grid-cols-2 mt-5">
                 <div class="w-full p-1 flex justify-center">
-                    <img src="assets/images/jakarta/4.jpg" class="w-full max-w-2xl rounded-lg shadow-lg"
-                        alt="VR Presentation and conference">
+                    <img src="{{asset('assets/images/bandung/g-sate.jpg')}}"
+                        class="w-full max-w-xl rounded-lg shadow-lg" alt="VR Presentation and conference">
                 </div>
-                <div class="w-full font-normal px-5">
-                    <p class="m-0 text-justify"><span class="text-[#b9608d]">(PIK)</span>
-                        is an elite residential and tourist area on the coast of North Jakarta which is famous for its
-                        various modern attractions such as cafes, restaurants, shopping centers, to natural recreation
-                        areas
-                        such as mangrove forests and artificial beaches ( PIK 1 & PIK 2 ), offering a modern lifestyle
-                        experience, delicious culinary delights, and Instagrammable photo spots, making it a popular
-                        destination for families and young people in Jakarta.</p>
-                    <div class="flex justify-between p-2 items-center">
-                        <button class="font-bold hover:text-[#b9608d] hover:cursor-pointer hover:underline">Visa
-                            Regulation</button><i class="fa fa-arrows-up-down"></i>
-                        <button onclick="electric.showModal()"
-                            class="font-bold hover:text-[#b9608d] hover:cursor-pointer hover:underline">Electric
-                            Current </button><i class="fa fa-arrows-up-down"></i>
-                        <a href="#swissotel"
-                            class="font-bold hover:text-[#b9608d] hover:cursor-pointer hover:underline">Conference
-                            Venue </a>
-                    </div>
-
-                    <dialog id="flight" class="modal">
-                        <div class="modal-box w-full max-w-4xl bg-transparent">
-                            <img src="assets/images/bali/Flightime-Bali.jpg" class="w-full rounded-lg shadow-lg"
-                                alt="VR Presentation and conference">
-                        </div>
-                        <form method="dialog" class="modal-backdrop">
-                            <button>close</button>
-                        </form>
-                    </dialog>
-                    <dialog id="electric" class="modal">
-                        <div class="modal-box w-full max-w-4xl bg-transparent">
-                            <img src="assets/images/jakarta/Electric-Bali.jpg" class="w-full rounded-lg shadow-lg"
-                                alt="VR Presentation and conference">
-                        </div>
-                        <form method="dialog" class="modal-backdrop">
-                            <button>close</button>
-                        </form>
-                    </dialog>
+                <div class="w-full pb-2">
+                    <p class="mb-1 text-[#39B54A]">Welcome to</p>
+                    <h2 class="mb-1 text-3xl font-extrabold tracking-wide">Bandung, indonesia</h2>
+                    <p class="m-0 text-justify"><span class="text-[#39B54A]">Bandung</span> Bandung is a vibrant and
+                        creative city in West Java known for its cool mountain climate, rich colonial architecture such
+                        as the iconic Gedung Sate, and a dynamic culinary and cultural scene. Blending modern urban
+                        energy with scenic natural surroundings like Lembang and Tangkuban Perahu, the city has become a
+                        popular destination for education, tourism, fashion, and conferences. Its lively atmosphere and
+                        diverse attractions make Bandung an inspiring and welcoming host city for national and
+                        international events.</p>
                 </div>
             </div>
 
 
 
             <div class="pt-10 lg:pt-20">
-                <h4 class="text-xl font-bold tracking-wide text-[#b9608d] mb-5">Top Reasons to Visit PIK Jakarta</h4>
+                {{-- <h4 class="text-xl font-semibold tracking-wide text-[#39B54A] mb-5">Top Reasons to Visit Bali</h4>
+                --}}
                 <!-- name of each tab group should be unique -->
                 <div class="tabs tabs-border justify-center gap-3 text-gray-500">
-                    <input type="radio" name="my_tabs_2" class="tab hover:text-[#b9608d] text-[#302b88]"
-                        aria-label="CULINARY" checked="checked" />
+                    <input type="radio" name="my_tabs_2" class="tab hover:text-[#39B54A] text-[#78c9bb]"
+                        aria-label="Transportation Information" checked="checked" />
                     <div class="tab-content border-base-300 bg-base-100 p-10 text-base">
-                        <div class="flex flex-wrap justify-around gap-5">
-                            <div class="card bg-base-100 w-96 shadow-sm">
-                                <figure>
-                                    <img src="assets/images/jakarta/kuliner/1.jpg" class="w-full" alt="Shoes" />
-                                </figure>
-                                <div class="card-body">
-                                    <h2 class="card-title text-[#b9608b]">Dapur Jum</h2>
-                                    <p class="text-justify">A restaurant with a “home-cooked” Indonesian menu - perfect
-                                        if you want affordable food
-                                        with filling portions. <br>
-                                        Address: Emerald Shophouse, Pantai Indah Kapuk St No. 32, Kamal Muara,
-                                        Penjaringan,
-                                        North Jakarta 14470
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="card bg-base-100 w-96 shadow-sm">
-                                <figure>
-                                    <img src="assets/images/jakarta/kuliner/2.jpg" class="w-full" alt="Shoes" />
-                                </figure>
-                                <div class="card-body">
-                                    <h2 class="card-title text-[#b9608b]">Pantjoran Chinatown PIK</h2>
-                                    <p class="text-justify">Pantjoran Chinatown boasts dozens of shops and tenants in
-                                        its culinary district. These
-                                        various eateries offer both halal and non-halal food. <br>
-                                        Some halal food and beverage places include Es Pluit Acen, Cakwe Katong, Chuwi,
-                                        Hong
-                                        Tang, Bakso Goreng Soekajadi, Bakmi Gang Kelinci, Mie Jowo Semar, Kwetiaw 78
-                                        Muara
-                                        Karang, Roti Srikaya Ajong, Ya Kun Kaya Toast, Uncle Orchard, and others. <br>
-                                        Meanwhile, non-halal food places include Cheung Kee Fried Buns, Xing Xing,
-                                        Kampung Bali,
-                                        Kam's Roast, Ajong Pork Crackers, Bakmi Congsim, Qiu 245 Canteen, Afuk Mixed
-                                        Rice,
-                                        Porkyloka, Warung Ce, Kwecap Veteran, Swikee Purwodadi Gloris, Lomie Pinangsia,
-                                        Siomay
-                                        Ayung, Kuotie Shantung, and others. <br>
-                                        Address : Pantjoran Chinatown PIK is a Pantai Indah Kapuk 2, Kamal Muara, North
-                                        Jakarta,
-                                        located in the Golf Island area, close to other PIK culinary destinations such
-                                        as Central
-                                        Market PIK and Urban Farm PIK
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="card bg-base-100 w-96 shadow-sm">
-                                <figure>
-                                    <img src="assets/images/jakarta/kuliner/3.jpg" class="w-full" alt="Shoes" />
-                                </figure>
-                                <div class="card-body">
-                                    <h2 class="card-title text-[#b9608b]">UMAQITA</h2>
-                                    <p class="text-justify">UMAQITA features a warm wooden interior, creating a homey
-                                        atmosphere . Perfect for
-                                        family meals or office gatherings, this restaurant serves delicious traditional
-                                        Indonesian
-                                        cuisine. <br>
-                                        The menu is available in both buffet and à la carte options , so you can choose
-                                        according to
-                                        your taste. <br>
-                                        Address : at Jl. Pantai Indah Kapuk No. 57/59, UMAQITA is open daily from 10:00
-                                        AM to
-                                        10:00 PM WIB
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="card bg-base-100 w-96 shadow-sm">
-                                <figure>
-                                    <img src="assets/images/jakarta/kuliner/4.jpg" class="w-full" alt="Shoes" />
-                                </figure>
-                                <div class="card-body">
-                                    <h2 class="card-title text-[#b9608b]">Kerak Telor</h2>
-                                    <p class="text-justify">Need a tellurianis a traditional Betawi (Jakarta) snack in
-                                        the form of a savory, spicy, sweet
-                                        omelette made from a mixture of sticky rice, eggs (chicken or duck), roasted
-                                        grated coconut,
-                                        ebi (dried shrimp), fried shallots, and spices, cooked by grilling on a small
-                                        frying pan with
-                                        charcoal until the bottom has a crispy crust, making it a popular Betawi
-                                        culinary icon,
-                                        especially at events such as the Jakarta Fair. <br>
-                                        Address : Jl. Satria I No.261, RT.9/RW.2, Ujung Menteng, Kec. Cakung, Kota
-                                        Jakarta Timur,
-                                        Daerah Khusus Ibukota Jakarta 13960.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="card bg-base-100 w-96 shadow-sm">
-                                <figure>
-                                    <img src="assets/images/jakarta/kuliner/5.jpg" class="w-full" alt="Shoes" />
-                                </figure>
-                                <div class="card-body">
-                                    <h2 class="card-title text-[#b9608b]">Nasi Goreng Kambing Kebon Sirih</h2>
-                                    <p class="text-justify">Established in 1958, the goat fried rice here boasts strong
-                                        spices and tender meat. The
-                                        queue is long, but it's worth it for the prices starting at Rp 40,000. They also
-                                        offer goat satay
-                                        and soup. Perfect for a late-night culinary experience <br>
-                                        Address : Jalan Kebon Sirih No. 3, Menteng.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="card bg-base-100 w-96 shadow-sm">
-                                <figure>
-                                    <img src="assets/images/jakarta/kuliner/6.jpg" class="w-full" alt="Shoes" />
-                                </figure>
-                                <div class="card-body">
-                                    <h2 class="card-title text-[#b9608b]">Bakmi Gang Kelinci</h2>
-                                    <p class="text-justify">Established in 1957, the mushroom chicken noodle soup here
-                                        is a true legend. The texture of
-                                        the homemade noodles and the savory broth make every bite nostalgic. Prices
-                                        start at Rp
-                                        28,000 per portion, and you can also try the shrimp gohyong or fried dumplings.
-                                        Perfect for
-                                        those who love classic Chinese food. <br>
-                                        Address : Jalan Kelinci Raya No. 1-3, Pasar Baru
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="card bg-base-100 w-96 shadow-sm">
-                                <figure>
-                                    <img src="assets/images/jakarta/kuliner/7.jpg" class="w-full" alt="Shoes" />
-                                </figure>
-                                <div class="card-body">
-                                    <h2 class="card-title text-[#b9608b]">MAMAM Indonesian Mom's Dishes</h2>
-                                    <p class="text-justify">Another dining destination in North Jakarta is MAMAM
-                                        Indonesian Mom's Dishes. This
-                                        restaurant serves a variety of Indonesian dishes, including grilled chicken,
-                                        fried rice, and
-                                        delicious chicken porridge. They also offer fried bananas and rujak petis (petis
-                                        salad) for
-                                        snacks. <br>
-                                        Address: Muara Karang Block P2 South No. 86, Pluit, Penjaringan District, North
-                                        Jakarta City
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <input type="radio" name="my_tabs_2" class="tab hover:text-[#b9608d] text-[#302b88]"
-                        aria-label="SOUVENIRS" />
-                    <div class="tab-content border-base-300 bg-base-100 p-10">
-                        <div class="flex flex-wrap justify-around gap-5">
-                            <div class="card bg-base-100 w-96 shadow-sm">
-                                <figure>
-                                    <img src="assets/images/jakarta/souvenir/1.jpg" class="w-full" alt="Shoes" />
-                                </figure>
-                                <div class="card-body">
-                                    <h2 class="card-title text-[#b9608b]">Roti Buaya</h2>
-                                    <p class="text-justify">Crocodile breadisBetawi sweet bread in the shape of a
-                                        crocodile which is a symbol
-                                        of loyalty,
-                                        steadfastness and wholeness in Betawi traditional weddings., brought by the
-                                        groom as a gift
-                                        to symbolize lifelong fidelity, as male crocodiles are thought to mate only once
-                                        in a lifetime
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="card bg-base-100 w-96 shadow-sm">
-                                <figure>
-                                    <img src="assets/images/jakarta/souvenir/2.jpg" class="w-full" alt="Shoes" />
-                                </figure>
-                                <div class="card-body">
-                                    <h2 class="card-title text-[#b9608b]">Dodol Betawi</h2>
-                                    <p class="text-justify">Betawi dodol is a type of dodol typical of the Betawi people
-                                        . Betawi dodol is
-                                        brownish black
-                                        in color with fewer flavor variations than dodol from other regions. Betawi
-                                        dodol flavors only
-                                        consist of white sticky rice , black sticky rice and durian . The process of
-                                        making Betawi dodol
-                                        is very complicated. The raw materials consisting of sticky rice, brown sugar,
-                                        granulated sugar
-                                        and coconut milk must be cooked on a stove with firewood for 8 hours.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="card bg-base-100 w-96 shadow-sm">
-                                <figure>
-                                    <img src="assets/images/jakarta/souvenir/3.jpg" class="w-full" alt="Shoes" />
-                                </figure>
-                                <div class="card-body">
-                                    <h2 class="card-title text-[#b9608b]">Bir Pletok</h2>
-                                    <p class="text-justify">Pletok Beeris a traditional Betawi drink that is warm,
-                                        non-alcoholic, made from boiled ginger
-                                        and various spices such as sappanwood (giving red color), lemongrass, pandan,
-                                        cinnamon,
-                                        cloves, nutmeg, and sugar, serves to warm the body, prevent colds, and is
-                                        refreshing, often
-                                        served at traditional events or enjoyed cold/hot as a healthy cultural drink.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="card bg-base-100 w-96 shadow-sm">
-                                <figure>
-                                    <img src="assets/images/jakarta/souvenir/4.jpg" class="w-full" alt="Shoes" />
-                                </figure>
-                                <div class="card-body">
-                                    <h2 class="card-title text-[#b9608b]">Miniatur Ondel-Ondel</h2>
-                                    <p class="text-justify">Ondel-Ondel is a giant doll that is understood by the Betawi
-                                        people as a sacred culture and is
-                                        used in sacrificial rituals to ancestral spirits
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="card bg-base-100 w-96 shadow-sm">
-                                <figure>
-                                    <img src="assets/images/jakarta/souvenir/5.jpg" class="w-full" alt="Shoes" />
-                                </figure>
-                                <div class="card-body">
-                                    <h2 class="card-title text-[#b9608b]">Miniatur Monas</h2>
-                                    <p class="text-justify">The National Monument , abbreviated as Monas or Tugu Monas,
-                                        is a 132-meter-high (433-
-                                        foot) memorial monument located right in the middle of Medan Merdeka Square ,
-                                        Central
-                                        Jakarta. Monas was erected to commemorate the resistance and struggle of the
-                                        Indonesian
-                                        people in gaining independence from the colonial rule of the Dutch Kingdom.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="card bg-base-100 w-96 shadow-sm">
-                                <figure>
-                                    <img src="assets/images/jakarta/souvenir/6.jpg" class="w-full" alt="Shoes" />
-                                </figure>
-                                <div class="card-body">
-                                    <h2 class="card-title text-[#b9608b]">Miniatur Bajaj</h2>
-                                    <p class="text-justify">Although the bajaj originated in India, this three-wheeled
-                                        vehicle has also become a part of
-                                        Jakarta's culture. This is understandable, as bajajs have been used as public
-                                        transportation in
-                                        Jakarta since the 1970s. You can make a miniature bajaj into a contemporary,
-                                        exclusive
-                                        souvenir from Jakarta. These souvenirs are often favored by diecast collectors,
-                                        as they can
-                                        add to their collection.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <input type="radio" name="my_tabs_2" class="tab hover:text-[#b9608d] text-[#302b88]"
-                        aria-label="ENTERTAINMAENT & CULTURAL LANDMARKS" />
-                    <div class="tab-content border-base-300 bg-base-100 p-3 md:p-10">
-                        <div class="flex flex-wrap justify-around gap-5">
-                            <div class="card bg-base-100 w-96 shadow-sm">
-                                <figure>
-                                    <img src="assets/images/jakarta/entertainment/1.jpg" class="w-full" alt="Shoes" />
-                                </figure>
-                                <div class="card-body">
-                                    <h2 class="card-title text-[#b9608b]">Jakarta Mangrove Resorts (Taman Wisata Alam
-                                        Angke Kapuk)</h2>
-                                    <p>This 99.82 hectare green paradise is located in the Kamal Muara sub-district,
-                                        adjacent to
-                                        the elite Pantai Indah Kapuk area in North Jakarta.<br>
-                                        Address: Jl. Mualim Teko, Pantai Indah Kapuk, Jakarta Utara, 14470.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="card bg-base-100 w-96 shadow-sm">
-                                <figure>
-                                    <img src="assets/images/jakarta/entertainment/3.jpg" class="w-full" alt="Shoes" />
-                                </figure>
-                                <div class="card-body">
-                                    <h2 class="card-title text-[#b9608b]">Kelenteng Cin te Yen PIK 2</h2>
-                                    <p>The Love Temple (Cin Te Yen) in PIK 2 is an iconic development inspired by the
-                                        Petak
-                                        Sembilan Temple in Glodok, built in the Ecopark PIK 2 area as a new,
-                                        magnificent,
-                                        modern, yet deeply rooted in Chinese culture, worship and tourism destination,
-                                        featuring numerous statues of gods and goddesses, a spacious worship area, and
-                                        integrated with the oriental-style Petak Sembilan Shophouses, becoming an
-                                        attractive
-                                        spiritual and commercial center<br>
-                                        Address: Petak Sembilan, Jl. Kemenangan III No.19 3, RT.3/RW.2, Glodok, Kec.
-                                        Taman
-                                        Sari, Kota Jakarta Barat, Daerah Khusus Ibukota Jakarta 11120.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="card bg-base-100 w-96 shadow-sm">
-                                <figure>
-                                    <img src="assets/images/jakarta/entertainment/2.jpg" class="w-full" alt="Shoes" />
-                                </figure>
-                                <div class="card-body">
-                                    <h2 class="card-title text-[#b9608b]">By The Sea PIK</h2>
-                                    <p>By The Sea PIK is North Jakarta 's newest destination , offering a shopping and
-                                        recreational experience with a distinctive seaside atmosphere. Located in the
-                                        Pantai
-                                        Indah Kapuk (PIK) area, it's a magnet for Jakartans and surrounding areas
-                                        seeking a
-                                        change from the hustle and bustle of the city. <br>
-                                        A tropical shopping district filled with high-quality, curated local artisanal
-                                        brands to
-                                        support Indonesian styles, arts, and trends going global..<br>
-                                        Address: Jl. Golf Island Timur, Kamal Muara, Daerah Khusus Ibukota Jakarta
-                                        14470.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="card bg-base-100 w-96 shadow-sm">
-                                <figure>
-                                    <img src="assets/images/jakarta/entertainment/4.jpg" class="w-full" alt="Shoes" />
-                                </figure>
-                                <div class="card-body">
-                                    <h2 class="card-title text-[#b9608b]">Entertainment Distrik PIK 2</h2>
-                                    <p>is an integrated entertainment center that offers a variety of sports, games and
-                                        culinary
-                                        activities in one area.Located at Pantai Indah Kapuk 2, this place is designed
-                                        as a "one-
-                                        stop entertainment" destination for all ages<br>
-                                        Address: Jl. H.R Jl. Rasuna Said No.8 Blok BB.7, Salembaran, Kosambi, Tangerang
-                                        Regency, Banten 15214.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="card bg-base-100 w-96 shadow-sm">
-                                <figure>
-                                    <img src="assets/images/jakarta/entertainment/5.jpg" class="w-full" alt="Shoes" />
-                                </figure>
-                                <div class="card-body">
-                                    <h2 class="card-title text-[#b9608b]">Ancol</h2>
-                                    <p>Ancol, or Taman Impian Jaya Ancol, is a large integrated recreation area in North
-                                        Jakarta,
-                                        offering a variety of entertainment from beaches to amusement parks.<br>
-                                        Address: Jl. Lodan Timur No.7, Ancol, Kec. Pademangan, Jakarta Utara, DKI
-                                        Jakarta
-                                        14430
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="card bg-base-100 w-96 shadow-sm">
-                                <figure>
-                                    <img src="assets/images/jakarta/entertainment/6.jpg" class="w-full" alt="Shoes" />
-                                </figure>
-                                <div class="card-body">
-                                    <h2 class="card-title text-[#b9608b]">Sarinah</h2>
-                                    <p>Sarinah has been operating since August 1966 as the first modern shopping center
-                                        in
-                                        Indonesia that houses small businesses, especially in the retail and lifestyle
-                                        sectors.<br>
-                                        Address: Jalan M. H. Thamrin 11, Gondangdia, Menteng, Jakarta Pusat 10350
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="card bg-base-100 w-96 shadow-sm">
-                                <figure>
-                                    <img src="assets/images/jakarta/2.jpg" class="w-full" alt="Shoes" />
-                                </figure>
-                                <div class="card-body">
-                                    <h2 class="card-title text-[#b9608b]">Monumen Nasional</h2>
-                                    <p>The National Monument , abbreviated as Monas or Tugu Monas, is a 132-meter-high
-                                        (433-foot) memorial monument located right in the middle of Medan Merdeka Square
-                                        ,
-                                        Central Jakarta . Monas was erected to commemorate the resistance and struggle
-                                        of the
-                                        Indonesian people in gaining independence from the colonial rule of the Dutch
-                                        Kingdom
-                                        . Construction began on August 17, 1961 under the orders of President Soekarno
-                                        and
-                                        was inaugurated and opened to the public on July 12, 1975 by President Soeharto
-                                        . This
-                                        monument is crowned with a flame covered in gold leaf , symbolizing the fighting
-                                        spirit
-                                        of the Indonesian people<br>
-                                        Address: Merdeka Square, Jakarta, Jalan Lapangan Monas, Gambir, Central Jakarta
-                                        City,
-                                        Jakarta 10110
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="card bg-base-100 w-96 shadow-sm">
-                                <figure>
-                                    <img src="assets/images/jakarta/entertainment/7.jpg" class="w-full" alt="Shoes" />
-                                </figure>
-                                <div class="card-body">
-                                    <h2 class="card-title text-[#b9608b]">Thamrin City</h2>
-                                    <p>Thamrin City is a shopping center in the center of Jakarta City located in a
-                                        mixed-
-                                        use/superblock area surrounded by apartments, residences, hotels, business
-                                        centers and
-                                        shopping centers. <br>
-                                        Thamrin City shopping center is equipped with several zones which are divided
-                                        into the
-                                        Nusantara Batik Center, Muslim Fashion Center, Weaving Center, Hajj & Umrah
-                                        Equipment Center as well as several big tenants such as Hypermart, Gold Gym,
-                                        Banking
-                                        and F&B tenants located at Thamrin Terrace.<br>
-                                        Address: Jl. H. M. Saleh Ishak, Kb. Melati, Kecamatan Tanah Abang, Kota Jakarta
-                                        Pusat,
-                                        Daerah Khusus Ibukota Jakarta 10230
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <input type="radio" name="my_tabs_2" class="tab hover:text-[#b9608d] text-[#302b88]"
-                        aria-label="NIGHTLIFE & ENTERTAINMENT" />
-                    <div class="tab-content border-base-300 bg-base-100 p-3 md:p-10">
-                        <div class="flex flex-wrap gap-5 justify-around">
-                            <div class="card bg-base-100 w-96 shadow-sm">
-                                <figure>
-                                    <img src="assets/images/jakarta/night/1.jpg" class="w-full" alt="Shoes" />
-                                </figure>
-                                <div class="card-body">
-                                    <h2 class="card-title text-[#b9608b]">Cream Café PIK Room</h2>
-                                    <p>This often-busy Korean-style cafe is known for its cozy and
-                                        modern interior. Its
-                                        signature
-                                        dishes include latte coffee and financier (pastry). <br>
-                                        Address: Golf Island, Rukan Beach Theme Park, Jl. Pantai Indah Kapuk No. 105
-                                        Block
-                                        E,
-                                        North Jakarta</p>
-                                </div>
-                            </div>
-                            <div class="card bg-base-100 w-96 shadow-sm">
-                                <figure>
-                                    <img src="assets/images/jakarta/night/2.jpg" class="w-full" alt="Shoes" />
-                                </figure>
-                                <div class="card-body">
-                                    <h2 class="card-title text-[#b9608b]">Kase Heritage Hobbit House</h2>
-                                    <p>This cafe offers a unique concept inspired by the Hobbit films, complete with an
-                                        interesting mini library. <br>
-                                        Address: Golf Island, Rukan Beach Boulevard, Jl. Pantai Indah Kapuk No.15 blok
-                                        B, Jkt
-                                        Utara, Daerah Khusus Ibukota Jakarta 14460</p>
-                                </div>
-                            </div>
-                            <div class="card bg-base-100 w-96 shadow-sm">
-                                <figure>
-                                    <img src="assets/images/jakarta/night/3.jpg" class="w-full" alt="Shoes" />
-                                </figure>
-                                <div class="card-body">
-                                    <h2 class="card-title text-[#b9608b]">Bluline Coffee</h2>
-                                    <p>Besides its aesthetics, this cafe is perfect for WFC due to its comfortable
-                                        atmosphere and
-                                        Wi-Fi. It offers unique menu items like Marita Tonic Espresso and Coffee Stout .
-                                        <br>
-                                        Address: Arcade Shophouse, Jalan Pantai Indah Utara 2 unit PB, North Jakarta.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="card bg-base-100 w-96 shadow-sm">
-                                <figure>
-                                    <img src="assets/images/jakarta/night/4.jpg" class="w-full" alt="Shoes" />
-                                </figure>
-                                <div class="card-body">
-                                    <h2 class="card-title text-[#b9608b]">Ombe Kofie PIK</h2>
-                                    <p>Often recommended as one of the best cafes in PIK for Work From Cafe (WFC), it is
-                                        known for its supportive atmosphere. <br>
-                                        Address: Pantai Indah Kapuk Jl. Pantai Indah Utara 2 No.Kav C1 2, RT.2/RW.7,
-                                        Kapuk
-                                        Muara, Kecamatan Penjaringan, Jkt Utara, Daerah Khusus Ibukota Jakarta 14460.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="card bg-base-100 w-96 shadow-sm">
-                                <figure>
-                                    <img src="assets/images/jakarta/night/5.jpg" class="w-full" alt="Shoes" />
-                                </figure>
-                                <div class="card-body">
-                                    <h2 class="card-title text-[#b9608b]">La Riviera PIK 2 - Kota Belanda</h2>
-                                    <p>La Riviera PIK 2's biggest attraction is its views, inspired by the architecture
-                                        and scenery
-                                        of Amsterdam , the Netherlands. <br>
-                                        Address: Address: Banten, Tangerang Regency, Teluknaga, 15510
-                                    </p>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <input type="radio" name="my_tabs_2" class="tab hover:text-[#b9608d] text-[#302b88]"
-                        aria-label="TRANSPORTATION TO NEARBY DESTINATION" />
-                    <div class="tab-content border-base-300 bg-base-100 p-10">
                         <div class="flex flex-col lg:flex-row gap-5">
                             <div class="w-full lg:w-1/2 ">
                                 <div class="carousel w-full shadow-md rounded-2xl relative" x-data="{ 
@@ -603,7 +93,7 @@
                                         x-transition:leave="transition ease-in duration-300"
                                         x-transition:leave-start="opacity-100 transform translate-x-0"
                                         x-transition:leave-end="opacity-0 transform -translate-x-full">
-                                        <img src="assets/images/jakarta/transport/3.jpg"
+                                        <img src="{{asset('assets/images/bandung/whoos/Picture1.jpg')}}"
                                             class="w-full rounded-lg shadow-lg" alt="Kuliner Bali 1">
                                         <div
                                             class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
@@ -624,7 +114,7 @@
                                         x-transition:leave="transition ease-in duration-300"
                                         x-transition:leave-start="opacity-100 transform translate-x-0"
                                         x-transition:leave-end="opacity-0 transform -translate-x-full">
-                                        <img src="assets/images/jakarta/transport/1.jpg"
+                                        <img src="{{asset('assets/images/bandung/whoos/Picture2.jpg')}}"
                                             class="w-full rounded-lg shadow-lg" alt="Kuliner Bali 2">
                                         <div
                                             class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
@@ -645,7 +135,7 @@
                                         x-transition:leave="transition ease-in duration-300"
                                         x-transition:leave-start="opacity-100 transform translate-x-0"
                                         x-transition:leave-end="opacity-0 transform -translate-x-full">
-                                        <img src="assets/images/jakarta/transport/2.jpg"
+                                        <img src="{{asset('assets/images/bandung/whoos/Picture3.jpg')}}"
                                             class="w-full rounded-lg shadow-lg" alt="Kuliner Bali 3">
                                         <div
                                             class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
@@ -656,27 +146,6 @@
                                         </div>
                                     </div>
 
-                                    <!-- Slide 4 -->
-                                    {{-- <div id="slide4"
-                                        class="carousel-item relative w-full ease-in-out duration-300 h-full object-cover"
-                                        x-show="currentSlide === 4"
-                                        x-transition:enter="transition ease-out duration-300"
-                                        x-transition:enter-start="opacity-0 transform translate-x-full"
-                                        x-transition:enter-end="opacity-100 transform translate-x-0"
-                                        x-transition:leave="transition ease-in duration-300"
-                                        x-transition:leave-start="opacity-100 transform translate-x-0"
-                                        x-transition:leave-end="opacity-0 transform -translate-x-full">
-                                        <img src="assets/images/bali/kuliner4.jpg" class="w-full rounded-lg shadow-lg"
-                                            alt="Kuliner Bali 4">
-                                        <div
-                                            class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-                                            <button wire:click="previousSlide"
-                                                class="btn btn-circle btn-success btn-outline">❮</button>
-                                            <button wire:click="nextSlide"
-                                                class="btn btn-circle btn-success btn-outline">❯</button>
-                                        </div>
-                                    </div> --}}
-
                                     <!-- Indicators (Optional) -->
                                     <div class="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex gap-2">
                                         @for($i = 1; $i <= $totalSlides; $i++) <button wire:click="goToSlide({{ $i }})"
@@ -686,45 +155,703 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="w-full lg:w-1/2 ">
-                                <p class="text-justify">Soekarno-Hatta Airport to PIK (Pantai Indah Kapuk)</p>
-                                <p>By Taxi / Ride-Hailing (Grab / Gojek / Taxi Bandara) <br>
-                                    Route: Soekarno-Hatta Airport – Tol Prof. Dr. Sedyatmo – Pluit – Pantai Indah Kapuk
-                                    <br>
-                                    Distance: ~ 25–30 km / ~ 45–90 Minutes <br>
-                                    Estimated Cost: ~ Rp. 150.000 – 300.000 (depending on traffic & service)
+                            <div class="w-full lg:w-1/2">
+                                <p class="text-justify">Bandung is well served by a variety of transportation options,
+                                    including Whoosh High–Speed, Train Services and Kertajati International Airport,
+                                    which connects the city to numerous domestic and international destinations. Both
+                                    international and domestic participants can reach Bandung easily, with multiple
+                                    direct flight options available.
+                                    Participants traveling from Jakarta may take:
                                 </p>
+                                <ul class="list-disc list-inside ml-2">
+                                    <li>A regular train from Gambir Station to Bandung Station, with an approximate
+                                        travel time of 3 hours, or</li>
+                                    <li>The Whoosh high-speed train from Halim Station, which takes approximately 45–54
+                                        minutes.</li>
+                                </ul>
+                                <p class="text-justify mt-3">Upon arrival at Padalarang Station, travelers can continue
+                                    their journey by taking
+                                    the feeder train to Bandung Station, which takes approximately 15 minutes. From
+                                    Bandung Station, the event venue hotel is approximately 15 minutes away and can be
+                                    conveniently reached by taxi or online ride–hailing services, ensuring a smooth and
+                                    hassle–free journey</p>
+
+                                <p class="text-black mb-2 mt-3 font-semibold">How to Ride the Whoosh from Soekarno–Hatta
+                                    Airport</p>
+
+                                <p class="text-justify">Confused about how to take the Whoosh high–speed train from
+                                    Soekarno–Hatta nternational Airport? Don’t worry—it’s easy and convenient. The
+                                    official departure station for the Whoosh is Halim Station, so travelers from the
+                                    airport will need to use another mode of transportation to get there.</p>
+                                <p>Below are four practical ways to travel from Soekarno–Hatta Airport to Halim Station
+                                </p>
+                                <ul class="list-decimal list-inside mt-3">
+                                    <li class="mb-3"><span class="font-semibold text-black"> Take the DAMRI Bus from
+                                            Soekarno–Hatta
+                                            Airport</span>
+                                        <p>The DAMRI bus is a reliable and efficient public transportation option. It
+                                            operates on a point–to–point route, meaning there are no intermediate stops,
+                                            helping to reduce travel time.</p>
+                                        <p>Details: <br>
+                                            Departure Schedule: 7:30 AM – 7:30 PM WIB (every hour) <br>
+                                            Estimated Travel Time: 40–50 minutes
+                                        </p>
+                                        <p>Route: <br>
+                                            Exit the airport via the South or North Perimeter Road (depending on your
+                                            terminal), enter the Sedyatmo Toll Road, continue to the Jakarta Inner City
+                                            Toll Road, and exit at the Halim Toll Road.
+                                        </p>
+                                        <p>Drop–off Points: <br>
+                                            Halim Station or KCIC Halim area <br>
+                                            Bus Stops at Airport: Near terminal exits at Terminal 1A, 1B, 1C, Terminal
+                                            2F, and Terminal 3
+                                        </p>
+                                    </li>
+                                    <li class="mb-3"><span class="font-semibold text-black"> Take the Airport Train and
+                                            LRT</span>
+                                        <p class="text-justify">If you prefer rail transport, you can combine the
+                                            Airport Train (Skytrain & Railink) with the Jabodebek LRT.</p>
+                                        <p>Details: <br>
+                                            Departure Schedule: 6:00 AM – 10:00 PM WIB (every 30 minutes) <br>
+                                            Estimated Travel Time: 1–1.5 hours
+                                        </p>
+                                        <p>Route: <br>
+                                            Take the Skytrain from your terminal
+                                            Transfer to the Railink Airport Train
+                                            Get off at BNI City Station
+                                            Walk to Dukuh Atas LRT Station
+                                            Take the Jabodebek LRT to Halim Station
+                                        </p>
+                                        <p>Tips: <br>
+                                            Prepare electronic money in advance and avoid bringing excessive luggage, as
+                                            this route involves transfers and walking.
+                                        </p>
+                                    </li>
+                                    <li class="mb-3"><span class="font-semibold text-black"> Take an Online Taxi</span>
+                                        <p class="text-justify">For a more direct and hassle–free option, you can use an
+                                            online taxi. This is ideal if you’re traveling with large luggage or with
+                                            family.</p>
+                                        <p>You can also book a car rental through platforms like Traveloka or Bluebird
+                                            for added comfort. Travel time may be shorter outside peak traffic hours
+                                        </p>
+                                    </li>
+                                    <li class="mb-3"><span class="font-semibold text-black"> Airport Pickup and Drop–off
+                                            Service</span>
+                                        <p class="text-justify">For maximum convenience, consider using Traveloka and
+                                            Bluebird airport pickup and drop–off service to Halim Station</p>
+                                        <p>Benefits: <br>
+                                            • Available 24/7 <br>
+                                            • Multiple vehicle options (shuttle, bus, taxi) <br>
+                                            • Drivers monitor flight delays and wait if necessary <br>
+                                            • Easy booking anytime, anywhere <br>
+                                            • This service eliminates the stress of finding transportation upon arrival
+                                            and helps ensure you reach Halim Station on time.
+                                        </p>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
                     </div>
-                </div>
 
+                    <input type="radio" name="my_tabs_2" class="tab hover:text-[#39B54A] text-[#78c9bb]"
+                        aria-label="Interesting tourist attractions" />
+                    <div class="tab-content border-base-300 bg-base-100 p-10">
+                        <div class="flex flex-wrap gap-3 justify-around">
+                            <div class="card bg-base-100 w-full md:w-96 shadow-sm">
+                                <figure>
+                                    <img src="{{asset('assets/images/bandung/Picture4.jpg')}}"
+                                        class="w-full rounded-lg" />
+                                </figure>
+                                <div class="card-body">
+                                    <h2 class="card-title text-warning">Ciwidey White Crater</h2>
+                                    <p class="text-justify">Have you ever seen the White Crater of Ciwidey as the
+                                        backdrop for stunning Instagram photos? This popular tourist destination in
+                                        Bandung is truly mesmerizing. If you’ve never visited, this magical place is a
+                                        must–see at least once in your lifetime</p>
+                                    <p class="text-justify">
+                                        The White Crater of Ciwidey is a crater lake formed by the eruption of Mount
+                                        Patuha, an active volcano in West Java. The lake’s water contains a very high
+                                        level of acidity, which gives it a unique whitish–green hue—sometimes appearing
+                                        blue or even brown. These colors can change depending on sulfur levels and
+                                        temperature
+                                    </p>
+                                    <p class="text-justify">
+                                        If you’re lucky, you’ll catch the crater at its most beautiful whitish–green
+                                        shade, creating a breathtaking backdrop for photos
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="card bg-base-100 w-full md:w-96 shadow-sm">
+                                <figure>
+                                    <img src="{{asset('assets/images/bandung/Picture5.jpg')}}"
+                                        class="w-full rounded-lg" />
+                                </figure>
+                                <div class="card-body">
+                                    <h2 class="card-title text-warning">Lembang Bamboo Village</h2>
+                                    <p class="text-justify">
+                                        Natural beauty blended with a traditional Sundanese atmosphere makes Dusun Bambu
+                                        a delightful tourist destination in Bandung. This perfect combination offers a
+                                        serene escape from the bustle of city life
+                                    </p>
+                                    <p class="text-justify">It’s hard not to be captivated by the lakeside dining area,
+                                        which has become Dusun Bambu’s iconic highlight and often appears in photos of
+                                        this popular attraction. Visitors can also enjoy an overnight stay, choosing
+                                        between comfortable villas or a unique glamping experience surrounded by nature
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="card bg-base-100 w-full md:w-96 shadow-sm">
+                                <figure>
+                                    <img src="{{asset('assets/images/bandung/Picture6.jpg')}}"
+                                        class="w-full rounded-lg" />
+                                </figure>
+                                <div class="card-body">
+                                    <h2 class="card-title text-warning">The Lodge Maribaya</h2>
+                                    <p class="text-justify">
+                                        Tourism in Lembang has been booming in recent years, and The Lodge Maribaya
+                                        stands out as one of the area’s most popular and up–and–coming destinations.
+                                        Reopening in 2016 with a fresh new look, The Lodge Maribaya has become an ideal
+                                        getaway in Bandung, especially for families looking for a unique and memorable
+                                        experience
+                                    </p>
+                                    <p class="text-justify">Beyond its distinctive camping area featuring uniquely
+                                        designed tents, The Lodge Maribaya offers a variety of thrilling attractions,
+                                        including the Sky Tree, Hang Gliding, Zip Bike, and Mountain Swing—perfect for
+                                        visitors seeking both adventure and scenic views
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="card bg-base-100 w-full md:w-96 shadow-sm">
+                                <figure>
+                                    <img src="{{asset('assets/images/bandung/Picture7.jpg')}}"
+                                        class="w-full rounded-lg" />
+                                </figure>
+                                <div class="card-body">
+                                    <h2 class="card-title text-warning">Saung Angklung Udjo</h2>
+                                    <p class="text-justify">
+                                        Saung Angklung Udjo is a popular cultural destination in Bandung that offers an
+                                        immersive experience of Sundanese arts in one complete package. As its name
+                                        suggests, the centerpiece here is the angklung—an iconic Indonesian bamboo
+                                        instrument—along with its history and musical traditions
+                                    </p>
+                                    <p class="text-justify">Visitors can enjoy lively angklung performances that combine
+                                        music, dance, and audience participation. Beyond watching shows, guests also
+                                        have the opportunity to learn how angklungs are made and even join special
+                                        training classes for those who want hands–on experience
+                                    </p>
+                                    <p class="text-justify">Before leaving, don’t miss the souvenir shop, where you can
+                                        purchase an angklung to take home as a meaningful reminder of your cultural
+                                        visit</p>
+                                </div>
+                            </div>
+                            <div class="card bg-base-100 w-full md:w-96 shadow-sm">
+                                <figure>
+                                    <img src="{{asset('assets/images/bandung/Picture8.jpg')}}"
+                                        class="w-full rounded-lg" />
+                                </figure>
+                                <div class="card-body">
+                                    <h2 class="card-title text-warning">Glamping Lakeside Rancabali</h2>
+                                    <p class="text-justify">
+                                        Located near the renowned White Crater of Ciwidey and the Water Village of Ranca
+                                        Upas, Glamping Lakeside Rancabali offers a distinctive glamping experience on
+                                        the shores of Situ Patenggang Lake. Surrounded by breathtaking lake views,
+                                        refreshing mountain air, and tranquil mornings, this destination provides an
+                                        unforgettable retreat in nature
+                                    </p>
+                                    <p class="text-justify">According to the official website, accommodation at Glamping
+                                        Lakeside Rancabali is available starting from IDR 1.1 million per night, with
+                                        various lodging options to suit different preferences. For visitors who prefer
+                                        not to stay overnight, the iconic Pinisi Resto is open to the public and offers
+                                        a unique dining experience with panoramic views of the lake
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="card bg-base-100 w-full md:w-96 shadow-sm">
+                                <figure>
+                                    <img src="{{asset('assets/images/bandung/Picture10.jpg')}}"
+                                        class="w-full rounded-lg" />
+                                </figure>
+                                <div class="card-body">
+                                    <h2 class="card-title text-warning">Sanghyang Heuleut</h2>
+                                    <p class="text-justify">
+                                        Sanghyang Heuleut is believed to be a natural pool dating back to prehistoric
+                                        times. Local legend even suggests that this enchanting lagoon once served as a
+                                        bathing place for celestial maidens. Such tales seem fitting, as the site offers
+                                        crystal–clear, cool water surrounded by striking white rock formations, creating
+                                        a truly captivating natural setting
+                                    </p>
+                                    <p class="text-justify">Swimming in Sanghyang Heuleut is a refreshing and memorable
+                                        experience. However, visitors should be aware that the location is relatively
+                                        remote, situated nearly two hours by car from the city center. From the parking
+                                        area, a short hike is also required to reach the lagoon, adding a sense of
+                                        adventure to the journey
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="card bg-base-100 w-full md:w-96 shadow-sm">
+                                <figure>
+                                    <img src="{{asset('assets/images/bandung/Picture11.jpg')}}"
+                                        class="w-full rounded-lg" />
+                                </figure>
+                                <div class="card-body">
+                                    <h2 class="card-title text-warning">Begonia Flower Garden Lembang</h2>
+                                    <p class="text-justify">
+                                        Begonia Flower Garden Lembang is a popular tourist destination located in the
+                                        Maribaya area, featuring an expansive flower garden covering approximately two
+                                        hectares. The garden showcases a wide variety of beautifully arranged flowers,
+                                        including marigolds, tulips, geraniums, and celosia, creating numerous
+                                        picturesque and Instagram–worthy photo spots
+                                    </p>
+                                    <p class="text-justify">This attraction can easily be combined with visits to other
+                                        popular destinations in Lembang, such as The Lodge Maribaya and Fairy Garden. It
+                                        is also conveniently accessible—simply search for “Begonia Garden” on Google
+                                        Maps to find the location
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <input type="radio" name="my_tabs_2" class="tab hover:text-[#39B54A] text-[#78c9bb]"
+                        aria-label="Culinary" />
+                    <div class="tab-content border-base-300 bg-base-100 p-10">
+                        <div class="flex flex-wrap justify-around gap-5">
+                            <div class="card bg-base-100 w-full md:w-96 shadow-sm">
+                                <figure>
+                                    <img src="{{asset('assets/images/bandung/Picture12.jpg')}}"
+                                        class="w-full rounded-lg" />
+                                </figure>
+                                <div class="card-body">
+                                    <h2 class="card-title text-warning">Kopi Saring Sinar Pagi</h2>
+                                    <p class="text-justify">
+                                        Looking for a popular breakfast spot in Bandung? Kopi Saring Sinar Pagi, located
+                                        in the Cihapit area, is a well–known morning destination open daily from 6:30
+                                        a.m. to 12:00 p.m
+                                    </p>
+                                    <p class="text-justify">Operating as a tent–style eatery, Kopi Saring Sinar Pagi
+                                        offers ample seating for guests. Visitors are advised to arrive early,
+                                        especially on weekends, as the place can become quite busy and long queues are
+                                        common
+                                    </p>
+                                    <p class="text-justify">
+                                        The breakfast menu features a diverse selection of local favorites, including
+                                        Bakmi Ayam (chicken noodles), Nasi Telur Pontianak (Pontianak–style egg rice),
+                                        and Roti Srikaya (bread with srikaya spread). A variety of snacks is also
+                                        available, such as Bakwan Pontianak (Pontianak–style fritters) and Kuo Tie.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="card bg-base-100 w-full md:w-96 shadow-sm">
+                                <figure>
+                                    <img src="{{asset('assets/images/bandung/Picture13.jpg')}}"
+                                        class="w-full rounded-lg" />
+                                </figure>
+                                <div class="card-body">
+                                    <h2 class="card-title text-warning">Mang H. Oyo's Chicken Porridge</h2>
+                                    <p class="text-justify">
+                                        Porridge has always been a popular choice for breakfast, and one of Bandung’s
+                                        most iconic options is Mang H. Oyo’s Chicken Porridge. Renowned for its
+                                        distinctive texture, the porridge is famously so thick that it is said not to
+                                        spill even when the bowl is turned upside down
+                                    </p>
+                                    <p class="text-justify">What makes this porridge even more special is the quality of
+                                        its ingredients. The rice used is harvested from H. Oyo’s own rice fields,
+                                        ensuring freshness and consistency in every serving
+                                    </p>
+                                    <p class="text-justify">
+                                        Mang H. Oyo’s Chicken Porridge is located at Jalan Sulanjana No. 30, Tamansari,
+                                        Bandung, and is open daily from 6:00 a.m., making it an ideal spot for a
+                                        satisfying morning meal
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="card bg-base-100 w-full md:w-96 shadow-sm">
+                                <figure>
+                                    <img src="{{asset('assets/images/bandung/Picture14.jpg')}}"
+                                        class="w-full rounded-lg" />
+                                </figure>
+                                <div class="card-body">
+                                    <h2 class="card-title text-warning">Cibiuk Sundanese Restaurant</h2>
+                                    <p class="text-justify">
+                                        Cibiuk Sundanese Restaurant is located at Jalan Soekarno Hatta No. 508,
+                                        Batununggal, South Bandung, Bandung City, West Java. The restaurant operates
+                                        daily from 9:00 a.m. to 9:00 p.m
+                                    </p>
+                                    <p class="text-justify">One of its highlights is the pavilion–style dining area,
+                                        where guests can enjoy meals with family or friends while surrounded by a
+                                        tranquil riverside setting. Cibiuk Sundanese Restaurant offers nasi liwet set
+                                        packages for two to five people
+                                    </p>
+                                    <p class="text-justify">
+                                        The menu features traditional Sundanese dishes, including nasi liwet, fried
+                                        free–range chicken, grilled gourami, and a variety of signature chili sauces,
+                                        providing an authentic local dining experience
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="card bg-base-100 w-full md:w-96 shadow-sm">
+                                <figure>
+                                    <img src="{{asset('assets/images/bandung/Picture15.jpg')}}"
+                                        class="w-full rounded-lg" />
+                                </figure>
+                                <div class="card-body">
+                                    <h2 class="card-title text-warning">Hong Sin Restaurant</h2>
+                                    <p class="text-justify">
+                                        Hong Sin Restaurant is a well–known Chinese restaurant located at Jalan Banceuy
+                                        No. 110, Braga, Sumur Bandung District, Bandung City, West Java. The restaurant
+                                        offers a wide selection of classic Chinese dishes, including Beef Ca with Oyster
+                                        Sauce, Fried Vermicelli, Chicken Kuluyuk, Steamed Chicken Rice, Sweet and Sour
+                                        Wonton Ca, Puyunghay, and Fish Ball Soup
+                                    </p>
+                                    <p class="text-justify">
+                                        Please note that Hong Sin Restaurant also serves dishes containing pork. <br>
+                                        Hong Sin Restaurant is open daily in two sessions: from 7:00 a.m. to 2:00 p.m.,
+                                        and from 5:00 p.m. to 10:00 p.m.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="card bg-base-100 w-full md:w-96 shadow-sm">
+                                <figure>
+                                    <img src="{{asset('assets/images/bandung/Picture16.jpg')}}"
+                                        class="w-full rounded-lg" />
+                                </figure>
+                                <div class="card-body">
+                                    <h2 class="card-title text-warning">Linggarjati Restaurant</h2>
+                                    <p class="text-justify">
+                                        Established in the 1950s, this chicken noodle restaurant has earned a strong
+                                        reputation for its distinctive and consistently rich noodle flavors. The
+                                        restaurant offers a wide selection of noodle dishes, including chicken noodles,
+                                        meatball noodles, wonton noodles, and tripe noodles, all prepared using their
+                                        own signature homemade seasonings
+                                    </p>
+                                    <p class="text-justify">
+                                        Each serving is priced at approximately IDR 50,000 per dish, offering good value
+                                        for its quality and heritage. The restaurant is conveniently located at Jalan
+                                        Balonggede No. 1, Bandung City, and operates daily from 8:30 a.m. to 7:00 p.m
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="card bg-base-100 w-full md:w-96 shadow-sm">
+                                <figure>
+                                    <img src="{{asset('assets/images/bandung/Picture17.jpg')}}"
+                                        class="w-full rounded-lg" />
+                                </figure>
+                                <div class="card-body">
+                                    <h2 class="card-title text-warning">Mie Kocok Mang Dadeng</h2>
+                                    <p class="text-justify">
+                                        Noodle–based dishes have long been a favorite among many people, and Indonesia
+                                        is home to a wide variety of noodle specialties that highlight this culinary
+                                        tradition. One of the most iconic is Mie Kocok, a well–known dish originating
+                                        from Bandung, West Java
+                                    </p>
+                                    <p class="text-justify">
+                                        Mie Kocok is served with soft yellow noodles in a distinctive, savory beef broth
+                                        that is rich in flavor and deeply satisfying. The name “kocok,” which means “to
+                                        shake,” comes from its unique preparation process, in which the noodles and
+                                        other ingredients are shaken together in a container before being served
+                                    </p>
+                                    <p class="text-justify">
+                                        The dish features chewy wheat–based yellow noodles made with water and eggs,
+                                        complemented by a fragrant beef broth simmered with a blend of traditional
+                                        spices. It is typically topped with fresh bean sprouts, beef tendon, beef
+                                        meatballs, and is often served with lime and chili sauce for those who enjoy a
+                                        refreshing and spicy kick. The combination of broth, spices, and toppings
+                                        creates a truly memorable culinary experience
+                                    </p>
+                                    <p class="text-justify">
+                                        In Bandung, one of the most legendary places to enjoy this dish is Mie Kocok
+                                        Mang Dadeng. Widely regarded as one of the city’s culinary icons, it is a
+                                        must–visit destination for both local residents and international tourists
+                                        seeking an authentic taste of Bandung
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="card bg-base-100 w-full md:w-96 shadow-sm">
+                                <figure>
+                                    <img src="{{asset('assets/images/bandung/Picture18.jpg')}}"
+                                        class="w-full rounded-lg" />
+                                </figure>
+                                <div class="card-body">
+                                    <h2 class="card-title text-warning">Soto Bandung M.Tarya</h2>
+                                    <p class="text-justify">
+                                        One of the most renowned soto restaurants in Bandung is located at Jalan Sawah
+                                        Kurung No. 16, Regol, Bandung City. The restaurant is open daily from 8:00 a.m.
+                                        to 9:00 p.m., making it a convenient option for both lunch and dinner
+                                    </p>
+                                    <p class="text-justify">
+                                        Its signature dish, Soto Bandung, is a clear and flavorful beef soup made with
+                                        radish greens, tender beef and beef tenderloin, fried soybeans, sliced spring
+                                        onions, celery, and a topping of crispy fried shallots. Known for its fresh and
+                                        savory taste, this dish is a favorite among locals and visitors alike
+                                    </p>
+
+                                </div>
+                            </div>
+                            <div class="card bg-base-100 w-full md:w-96 shadow-sm">
+                                <figure>
+                                    <img src="{{asset('assets/images/bandung/Picture19.jpg')}}"
+                                        class="w-full rounded-lg" />
+                                </figure>
+                                <div class="card-body">
+                                    <h2 class="card-title text-warning">Sidodadi Bakery</h2>
+                                    <p class="text-justify">
+                                        Established in 1954, Sidodadi Bakery is a long–standing bakery renowned for its
+                                        soft yet dense bread, offered with a wide variety of fillings at affordable
+                                        prices. Despite its modest size, the bakery remains highly popular, often
+                                        resulting in a bustling atmosphere as customers line up to select their
+                                        preferred items
+                                    </p>
+                                    <p class="text-justify">
+                                        Orders at Sidodadi Bakery are still handled manually, preserving a traditional
+                                        touch. Customers write their selections on a piece of paper provided by the
+                                        shop, adding to the bakery’s nostalgic charm
+                                    </p>
+                                    <p class="text-justify">
+                                        Sidodadi Bakery is located at Jalan Otto Iskandar Dinata No. 255 and is open
+                                        daily from 10:00 a.m. to 8:00 p.m
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <input type="radio" name="my_tabs_2" class="tab hover:text-[#39B54A] text-[#78c9bb]"
+                        aria-label="Transportation from Soekarno Hatta International Airport (CGK) to Bandung" />
+                    <div class="tab-content border-base-300 bg-base-100 p-10">
+
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-2">
+                            <div class="w-full px-5 border rounded-lg border-slate-300">
+                                <p class="text-sm font-black my-2">Schedule & Bus Ticket from Soekarno Hatta
+                                    International
+                                    Airport (CGK) to Bandung</p>
+                                <div class="overflow-x-auto">
+                                    <table class="table">
+                                        <!-- head -->
+                                        <thead>
+                                            <tr>
+                                                <th>Operator Bus</th>
+                                                <th>The 1st Bus Schedule Time</th>
+                                                <th>Minimum Rate</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <!-- row 1 -->
+                                            <tr>
+                                                <td>Cititrans</td>
+                                                <td>12:15 AM</td>
+                                                <td>Rp 157.500</td>
+                                            </tr>
+                                            <tr>
+                                                <td>RedWhite Star Primajasa</td>
+                                                <td>12:15 AM</td>
+                                                <td>Rp 195.000</td>
+                                            </tr>
+                                            <tr>
+                                                <td>DAMRI</td>
+                                                <td>07:00 AM</td>
+                                                <td>Rp 175.000</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Jackal holidays</td>
+                                                <td>12:30 AM</td>
+                                                <td>Rp 199.000</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="w-full px-5 border rounded-lg border-slate-300">
+                                <p class="text-sm font-black my-2">Schedule & Shuttle Price from Soekarno Hatta
+                                    International Airport (CGK) to Bandung</p>
+                                <div class="overflow-x-auto">
+                                    <table class="table">
+                                        <!-- head -->
+                                        <thead>
+                                            <tr>
+                                                <th>Operator Shuttle</th>
+                                                <th>Time</th>
+                                                <th>Rate</th>
+                                                <th>Destination</th>
+                                                <th>Remarks</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <!-- row 1 -->
+                                            <tr>
+                                                <td>Cititrans</td>
+                                                <td>Ready 24 hour (00.15-23.45)</td>
+                                                <td>Rp 157.500-Rp 200.000</td>
+                                                <td>Dipatiukur</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>DAMRI</td>
+                                                <td>12:15 AM</td>
+                                                <td>Around Rp 175.000</td>
+                                                <td></td>
+                                                <td>more convenient with USB port, price may vary</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Primajasa</td>
+                                                <td>07:00 AM</td>
+                                                <td>Rp 170.000-Rp 195.000</td>
+                                                <td></td>
+                                                <td>have many branch in Bandung</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Jackal holidays</td>
+                                                <td>12:30 AM</td>
+                                                <td>Around Rp 199.000</td>
+                                                <td>Pasteur/Dipati Ukur/Buahbatu</td>
+                                                <td>Regular shuttle and private </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Sinar Jaya</td>
+                                                <td></td>
+                                                <td>Around Rp 185.000</td>
+                                                <td>Pasteur/Surapaticore</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Lintas Shuttle</td>
+                                                <td></td>
+                                                <td>Rp 105.000-Rp 130.000</td>
+                                                <td></td>
+                                                <td>More economical choice</td>
+                                            </tr>
+
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="w-full px-5 border rounded-lg border-slate-300">
+                                <p class="text-sm font-black my-2">Jackal Holidays Shuttle</p>
+                                <ul class="list-disc ml-3">
+                                    <li> Terminal 1A <br>
+                                        Arrival Gate 1A, located on the left side behind the Information Center.</li>
+                                    <li> Terminal 1B <br>
+                                        Located inside the Kalayang Skytrain shelter, with the entrance on the right
+                                        side.</li>
+                                    <li> Terminal 2F <br>
+                                        Gate 6, located inside the bus shelter, near the DAMRI bus shelter.</li>
+                                    <li> Terminal 3 <br>
+                                        Gate 5, Domestic Arrivals area, located near BRI Bank and BRI Digital Bank.
+                                    </li>
+                                </ul>
+                                <p class="my-2 font-semibold">BANDARA SOEKARNO HATTA -> PASTEUR (POOL TRANSIT)
+                                    Rp.205.000,-</p>
+                                <img src="{{asset('assets/images/bandung/shuttle/1.jpg')}}" class="w-full rounded-lg"
+                                    alt="">
+                                <a href="https://www.jackalholidays.com/tentang"
+                                    class="btn btn-success mb-5 mt-2 text-xs"><i class="fa fa-info-circle"></i> More Information</a>
+                            </div>
+                            <div class="w-full px-5 border rounded-lg border-slate-300">
+                                <p class="text-sm font-black my-2">Daytrans <br> Arrival Pasteur</p>
+
+                                <img src="{{asset('assets/images/bandung/shuttle/2.jpg')}}" class="w-full rounded-lg"
+                                    alt="">
+                                <a href="https://www.daytrans.co.id/"
+                                    class="btn btn-success mb-5 mt-2 text-xs"><i class="fa fa-info-circle"></i> More Information</a>
+                            </div>
+                            <div class="w-full px-5 border rounded-lg border-slate-300">
+                                <p class="text-sm font-black my-2">DAMRI <br> Soekarno Hatta International Airport -> Kunafe Pasteur</p>
+
+                                <img src="{{asset('assets/images/bandung/shuttle/2.jpg')}}" class="w-full rounded-lg"
+                                    alt="">
+                                <a href="https://damri.co.id/id"
+                                    class="btn btn-success mb-5 mt-2 text-xs"><i class="fa fa-info-circle"></i> More Information</a>
+                            </div>
+                            <div class="w-full px-5 border rounded-lg border-slate-300">
+                                <p class="text-sm font-black my-2">RedWhite Star Primajasa <br> Soekarno Hatta International Airport -> Pasteur; Price: Rp.195.000, -</p>
+                                <p>Arrival Indomaret Djunjunan Pasteur or Vio Hotel Pasteur</p>
+                                <img src="{{asset('assets/images/bandung/shuttle/3.jpg')}}" class="w-full rounded-lg"
+                                    alt="">
+                                <a href="https://www.redbus.id/search?fromCityName=Bandara%20Soekarno%20Hatta%20(All%20Locations)&fromCityId=203494&toCityName=Pasteur,%20Bandung&toCityId=193680&busType=Any&opId=20280&rDoj=&returnDoj=&isReturn=false&onward=27-Dec-2025"
+                                    class="btn btn-success mb-5 mt-2 text-xs"><i class="fa fa-info-circle"></i> More Information</a>
+                            </div>
+                            <div class="w-full px-5 border rounded-lg border-slate-300">
+                                <p class="text-sm font-black my-2">Lintas Shuttle <br> Soekarno Hatta International Airport -> Pasteur Drop Point; Price: Rp.190.000,-</p>
+                                <img src="{{asset('assets/images/bandung/shuttle/4.jpg')}}" class="w-full rounded-lg"
+                                    alt="">
+                                <a href="https://www.mylintas.co.id/reservation/search"
+                                    class="btn btn-success mb-5 mt-2 text-xs"><i class="fa fa-info-circle"></i> More Information</a>
+                            </div>
+                            <div class="w-full px-5 border rounded-lg border-slate-300">
+                                <p class="text-sm font-black my-2">Bhinneka Sangkuriang Transport <br> Soekarno Hatta International Airport -> Pasteur; Price: Rp.190.000,-</p>
+                                <img src="{{asset('assets/images/bandung/shuttle/5.jpg')}}" class="w-full rounded-lg"
+                                    alt="">
+                                <a href="https://bhisa.id/bandara"
+                                    class="btn btn-success mb-5 mt-2 text-xs"><i class="fa fa-info-circle"></i> More Information</a>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
             </div>
             <!--end row-->
         </div>
     </section>
 
-    <section id="swissotel" class="px-5 md:px-10 py-10 md:py-20" id="venue">
+    <section id="bndcc" class="px-5 md:px-10 py-10 md:py-20" id="venue">
         <div class="px-2 lg:px-5">
-            <p class="mb-1 text-[#b9608d]">Conference Venue</p>
-            <h2 class="mb-1 text-xl font-bold tracking-wide">Swissôtel Jakarta PIK Avenue</h2>
+            <p class="mb-1 text-[#39B54A]">Conference Venue</p>
+            <h2 class="mb-1 text-xl font-extrabold tracking-wide">Holiday Inn Bandung Pasteur, Bandung, West Java</h2>
 
             <div class="flex flex-col lg:flex-row gap-5 mt-8 text-gray-500">
                 <div class="w-full lg:w-1/2 ">
-                    <img src="assets/images/jakarta/6.jpg" class="w-full rounded-lg shadow-lg "
+                    <img src="{{asset('assets/images/bandung/1.jpg')}}" class="w-full rounded-lg shadow-lg "
                         alt="VR Presentation and conference">
                 </div>
                 <div class="w-full lg:w-1/2 ">
-                    <p class="text-justify mb-2">At Swissôtel Jakarta PIK Avenue, enter a vitalising haven in the north
-                        of Indonesia's capital. Handily near Soekarno-Hatta International Airport, the hotel stands in
-                        one of Jakarta's safest districts with sweeping views of the bay and direct access to PIK Avenue
-                        shopping centre. From Swissôtel Jakarta PIK Avenue, discover the prestigious PIK area with
-                        popular culinary delights.</p>
-                    <p class="text-justify">After exploring Jakarta, relish the hotel's tasty Chinese dishes in its inviting restaurant. And bask in the authentic warmth of Swiss hospitality at the heart of a bustling Asian hub.</p>
-                    <p>" Welcome to the upscale urban oasis in north Jakarta. Experience Swiss and Indonesian flair in the intimate rooms and suites filled with thoughtful amenities, alongside vitality-inspired dining, Pürovel Spa & Sport and renowned Swiss hospitality. "</p>
+                    <p class="text-justify mb-2">Whether you’re on business travel or a leisurely holiday in Bandung,
+                        Holiday Inn Bandung Pasteur provides everything you need to be at your best.</p>
+                    <p class="text-justify">Our hotel offers spacious accommodation in Bandung built modernly from the
+                        ground up, providing space to live your life while away from home</p>
+                    <p class="text-justify">Our iconic rooms will be our Family Room which is perfect for your holiday
+                        getaway in Bandung and
+                        an Executive Room for a conference or meeting event in Bandung. Our Convention Centre is one of
+                        the largest function rooms in Bandung, it is able to cater up to 2000 people. Perfect for a
+                        grand luxury wedding, corporate gathering, or product launching</p>
+                    <p class="text-justify">Stay well in our exclusive spa and fitness center or take a fresh dip in our
+                        pools. Enjoy a great
+                        meal in Bandung with delicate menus in The Ambassador Restaurant, and Magenta Coffee & Wine.
+                        Feel free to enjoy our signature program every time you bring your family holiday to Bandung
+                        with Kids Stay and Eat Free family-friendly perks.</p>
                 </div>
             </div>
+            <div class="flex flex-col lg:flex-row gap-5 mt-8 text-gray-500">
 
+                <div class="w-full lg:w-1/2 order-2 lg:order-1">
+
+                    <h4 class="text-lg font-semibold mb-3">Meetings & Events</h4>
+                    <p class="text-justify mb-2">Holiday Inn Bandung Pasteur is a one-stop destination for every event
+                        in
+                        Bandung. Our Bandung event venue is located strategically in Pasteur Bandung area with easy
+                        access from Cipularang toll gate, makes an easy drive from Jakarta and 15 minutes away from
+                        Husein Sastranegara Airport or Bandung Railway Station.</p>
+                    <p class="text-justify mb-2">We are offering spacious rooms in Bandung built modernly from the
+                        ground up, providing space to
+                        live your life while away from home. With more than 100 twin-share beds and 24 function rooms
+                        available, our room and venues are definitely a perfect place for MICE destination in Bandung
+                    </p>
+                    <p class="text-justify mb-2">Holiday Inn Bandung Pasteur's Convention Centre is one of the largest
+                        function room in Bandung,
+                        able to caters up to 2000 people. Excellent for a grand wedding, corporate gathering or product
+                        launching event in Bandung</p>
+                    <h4 class="text-lg font-semibold mb-3 mt-2">Convention Centre</h4>
+                    <p class="text-justify">The Luxurious and Largest Convention Centre is exquisitely pillarless
+                        suitable for your
+                        prestigious event. Equipped with the latest technology features LED screen and digital sound
+                        system. Feel the high-end conference and meeting in-style experience. This Luxury hotel offers
+                        the Convention Centre with capacity of up to 2000 persons, suiting all needs for a professional
+                        conference set up, corporate gatherings or elegance and wedding parties.</p>
+                </div>
+                <div class="w-full lg:w-1/2 order-1 lg:order-2">
+                    <img src="{{asset('assets/images/bandung/3.webp')}}" class="w-full rounded-lg shadow-lg "
+                        alt="VR Presentation and conference">
+                </div>
+            </div>
         </div>
     </section>
 </div>

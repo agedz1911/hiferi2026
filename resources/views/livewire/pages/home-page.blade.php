@@ -91,7 +91,7 @@
                     </span></h2>
                 <div class="flex flex-col md:flex-row justify-center">
                     @foreach ($welcomeMessages as $welcomeMessage)
-                    <div class="mb-5 w-full max-w-2xl items-start px-2 lg:px-8">
+                    <div class="mb-5 w-full max-w-3xl items-start px-2 lg:px-8">
                         <div class="pb-4 text-justify text-white">
                             {!! Str::limit(str($welcomeMessage->description)->markdown()->sanitizeHtml(), 450) !!} <br>
                         </div>
@@ -122,7 +122,7 @@
                         <div class="w-full border-e border-opacity-35 border-white">
                             <div class="border-b border-opacity-25 border-white md:border-b-0 text-center py-5 px-2">
                                 <h1 class="text-white m-0 text-4xl md:text-5xl font-semibold"><span class="num"
-                                        data-val="15"></span><span>+</span>
+                                        data-val="25"></span><span>+</span>
                                 </h1>
                                 <p class="text-xs text-white">Symposium</p>
                             </div>
@@ -130,15 +130,15 @@
                         <div class="w-full border-e border-opacity-35 border-white">
                             <div class="border-b border-opacity-25 border-white md:border-b-0 text-center py-5 px-2">
                                 <h1 class="text-white m-0 text-4xl md:text-5xl font-semibold"><span class="num"
-                                        data-val="5"></span><span>+</span>
+                                        data-val="16"></span><span>+</span>
                                 </h1>
-                                <p class="text-xs text-white">Workshop & Live Surgeries </p>
+                                <p class="text-xs text-white">Workshops </p>
                             </div>
                         </div>
                         <div class="w-full border-e border-opacity-35 border-white">
                             <div class="border-b border-opacity-25 border-white md:border-b-0 text-center py-5 px-2">
                                 <h1 class="text-white m-0 text-4xl md:text-5xl font-semibold"><span class="num"
-                                        data-val="30"></span><span>+</span>
+                                        data-val="40"></span><span>+</span>
                                 </h1>
                                 <p class="text-xs text-white">Topics</p>
                             </div>

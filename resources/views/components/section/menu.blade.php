@@ -11,7 +11,8 @@
         <ul tabindex="0" class="dropdown-content menu bg-base-100 rounded-box gap-2 w-60 p-2 shadow-sm">
             <li>
                 <a href="/welcome-message" wire:navigate
-                    class="{{ request()->is('welcome-message') ? 'text-[#39B54A]' : '' }} justify-between hover:text-[#39B54A] ">Welcome Message <i class="fa-solid fa-angle-right"></i></a>
+                    class="{{ request()->is('welcome-message') ? 'text-[#39B54A]' : '' }} justify-between hover:text-[#39B54A] ">Welcome
+                    Message <i class="fa-solid fa-angle-right"></i></a>
             </li>
             <li>
                 <a href="/organizing-committee" wire:navigate
@@ -31,7 +32,12 @@
             class="{{ request()->is('program-at-glance') || request()->is('topics') || request()->is('scientific-schedule') ? 'text-[#39B54A]' : 'text-[#262262]' }} hover:cursor-pointer hover:text-[#39B54A]">
             Scientific Program <i class="fa-solid fa-angle-down"></i></div>
         <ul tabindex="0" class="dropdown-content menu bg-base-100 rounded-box gap-2 w-60 p-2 shadow-sm">
-            
+
+            <li>
+                <a href="/topics" wire:navigate
+                    class="{{ request()->is('topics') ? 'text-[#39B54A]' : '' }} justify-between hover:text-[#39B54A]">
+                    Topics <i class="fa-solid fa-angle-right"></i></a>
+            </li>
             <li>
                 <a href="/program-at-glance" wire:navigate
                     class="{{ request()->is('program-at-glance') ? 'text-[#39B54A]' : '' }} justify-between hover:text-[#39B54A]">Program
@@ -42,11 +48,6 @@
                     class="{{ request()->is('scientific-schedule') ? 'text-[#39B54A]' : '' }} justify-between hover:text-[#39B54A]">Scientific
                     Schedule <i class="fa-solid fa-angle-right"></i></a>
             </li>
-            {{-- <li>
-                <a href="#" wire:navigate
-                    class="{{ request()->is('topics') ? 'text-[#39B54A]' : '' }} justify-between hover:text-[#39B54A]">
-                    Program Book <i class="fa-solid fa-angle-right"></i></a>
-            </li> --}}
     </div>
 
 
@@ -60,7 +61,7 @@
             class="{{ request()->is('accommodation') ? 'text-[#39B54A]' : 'text-[#262262]' }} hover:text-[#39B54A] hover:underline">Accommodation
         </a>
     </li>
-    
+
     <div class="dropdown dropdown-hover">
         <div tabindex="0"
             class="{{ request()->is('submission')  || request()->is('presentation-schedule')  ? 'text-[#39B54A]' : 'text-[#262262]' }} hover:cursor-pointer hover:text-[#39B54A]">
@@ -72,12 +73,13 @@
                     Free Paper Schedule <i class="fa-solid fa-angle-right"></i></a>
             </li>
             <li>
-                <a href="#"
-                    class="justify-between hover:text-[#39B54A]">Free Paper Presentation Submission <i class="fa-solid fa-angle-right"></i></a>
+                <a href="#" class="justify-between hover:text-[#39B54A]">Free Paper Presentation Submission <i
+                        class="fa-solid fa-angle-right"></i></a>
             </li> --}}
             <li>
                 <a href="/submission" wire:navigate
-                    class="{{ request()->is('submission') ? 'text-[#39B54A]' : '' }} justify-between hover:text-[#39B54A]">Abstract Submission<i class="fa-solid fa-angle-right"></i></a>
+                    class="{{ request()->is('submission') ? 'text-[#39B54A]' : '' }} justify-between hover:text-[#39B54A]">Abstract
+                    Submission<i class="fa-solid fa-angle-right"></i></a>
             </li>
     </div>
     <div class="dropdown dropdown-hover">
@@ -88,15 +90,17 @@
             <li>
                 <a href="/visiting" wire:navigate
                     class="{{ request()->is('visiting') ? 'text-[#39B54A]' : '' }} justify-between hover:text-[#39B54A]">
-                    Jakarta <i class="fa-solid fa-angle-right"></i></a>
+                    Bandung <i class="fa-solid fa-angle-right"></i></a>
             </li>
             {{-- <li>
                 <a href="/visiting"
-                    class="{{ request()->is('visiting#venue') ? 'text-[#39B54A]' : '' }} justify-between hover:text-[#39B54A]">Conference Venue <i class="fa-solid fa-angle-right"></i></a>
-            </li> 
+                    class="{{ request()->is('visiting#venue') ? 'text-[#39B54A]' : '' }} justify-between hover:text-[#39B54A]">Conference
+                    Venue <i class="fa-solid fa-angle-right"></i></a>
+            </li>
             <li>
                 <a href="/social-program" wire:navigate
-                    class="{{ request()->is('social-program') ? 'text-[#39B54A]' : '' }} justify-between hover:text-[#39B54A]">Social Program <i class="fa-solid fa-angle-right"></i></a>
+                    class="{{ request()->is('social-program') ? 'text-[#39B54A]' : '' }} justify-between hover:text-[#39B54A]">Social
+                    Program <i class="fa-solid fa-angle-right"></i></a>
             </li> --}}
     </div>
 

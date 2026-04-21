@@ -24,15 +24,16 @@
                                     </th>
                                     <th scope="col" class="px-6 py-3">
                                         Early Bird Registration <br>
-                                        up to 30 March 2026
+                                        up to 30 June 2026
                                     </th>
                                     <th scope="col" class="px-6 py-3">
-                                        Late / Onsite Registration <br>
-                                        After 30 March 2026
+                                        Regular Registration <br>
+                                        up to 28 August 2026
                                     </th>
-                                    {{-- <th scope="col" class="px-6 py-3">
-                                        Onsite Registration
-                                    </th> --}}
+                                    <th scope="col" class="px-6 py-3">
+                                        Late/Onsite Registration <br>
+                                        Start from 29 August 2026
+                                    </th>
 
                                 </tr>
                             </thead>
@@ -51,18 +52,18 @@
                                         IDR {{$regLocal->normal_reg != 0 ? number_format($regLocal->normal_reg, 0, ',',
                                         '.') : 'to be announce'}}
                                     </td>
-                                    {{-- <td class="px-6 py-4 text-center">
+                                    <td class="px-6 py-4 text-center">
                                         IDR {{$regLocal->onsite_reg != 0 ? number_format($regLocal->onsite_reg, 0, ',',
                                         '.'): 'to be announce'}}
-                                    </td> --}}
+                                    </td>
                                 </tr>
                                 @endif
                                 @endforeach
                             </tbody>
                         </table>
                         <div class="relative mt-2">
-                            <a href="https://expo.virconex-id.com/registration/inashum2026"
-                                class="btn bg-[#39B54A] text-white hover:bg-[#862254] btn-lg rounded-xl mb-3 float-end text-sm"><i
+                            <a href="javascript:void(0)"
+                                class="btn bg-[#39B54A] text-white hover:bg-[#288b35] btn-lg rounded-xl mb-3 float-end text-sm"><i
                                     class="fa-solid fa-list mx-3"></i>Register Now!</a>
                         </div>
                     </div>
@@ -81,7 +82,7 @@
                                 </div>
                                 {!! str($regLocal->description)->markdown()->sanitizeHtml() !!}
                                 <div class="mt-6">
-                                    <a href="https://expo.virconex-id.com/registration/inashum2026"
+                                    <a href="javascript:void(0)"
                                         class="btn bg-[#39B54A] text-white hover:bg-[#39B54A]  rounded-xl mb-3 btn-block"><i
                                             class="fa-solid fa-list mx-3"></i>Register Now!</a>
                                 </div>
@@ -104,9 +105,9 @@
                                         1 August 2026
                                         Swissôtel Jakarta PIK Avenue, Jakarta
                                     </th>
-                                    {{-- <th scope="col" class="px-6 py-3">
+                                    <th scope="col" class="px-6 py-3">
                                         Nurse / Medical Students
-                                    </th> --}}
+                                    </th>
 
                                 </tr>
                             </thead>
@@ -122,11 +123,11 @@
                                         number_format($regLocal->early_bird_reg,
                                         0, ',', '.') : 'to be announce'}}
                                     </td>
-                                    {{-- <td class="px-6 py-4 text-center">
+                                    <td class="px-6 py-4 text-center">
                                         {{$regLocal->normal_reg != 0 ? 'IDR' . number_format($regLocal->normal_reg, 0,
                                         ',',
                                         '.') : ''}}
-                                    </td> --}}
+                                    </td>
 
                                 </tr>
                                 @endif
@@ -134,7 +135,7 @@
                             </tbody>
                         </table>
                         <div class="relative mt-2">
-                            <a href="https://expo.virconex-id.com/registration/inashum2026"
+                            <a href="javascript:void(0)"
                                 class="btn bg-[#39B54A] text-white hover:bg-[#39B54A] btn-lg rounded-xl mb-3 float-end text-sm"><i
                                     class="fa-solid fa-list mx-3"></i>Register Now!</a>
                         </div>
@@ -161,15 +162,16 @@
                                     </th>
                                     <th scope="col" class="px-6 py-3">
                                         Early Bird Registration <br>
-                                        up to 30 March 2026
+                                        up to 30 June 2026
                                     </th>
                                     <th scope="col" class="px-6 py-3">
-                                        Late / Onsite Registration <br>
-                                        After 30 March 2026
+                                        Regular Registration <br>
+                                        up to 28 August 2026
                                     </th>
-                                    {{-- <th scope="col" class="px-6 py-3">
-                                        Onsite Registration
-                                    </th> --}}
+                                    <th scope="col" class="px-6 py-3">
+                                        Late/Onsite Registration <br>
+                                        Start from 29 August 2026
+                                    </th>
 
                                 </tr>
                             </thead>
@@ -181,28 +183,28 @@
                                         {{$regForeign->title}}
                                     </th>
                                     <td class="px-6 py-4 text-center">
-                                        IDR {{$regForeign->early_bird_reg != 0 ?
+                                        USD {{$regForeign->early_bird_reg != 0 ?
                                         number_format($regForeign->early_bird_reg,
                                         0, ',', '.') : 'to be announce'}}
                                     </td>
                                     <td class="px-6 py-4 text-center">
-                                        IDR {{$regForeign->normal_reg != 0 ? number_format($regForeign->normal_reg, 0,
+                                        USD {{$regForeign->normal_reg != 0 ? number_format($regForeign->normal_reg, 0,
                                         ',',
                                         '.') : 'to be announce'}}
                                     </td>
-                                    {{-- <td class="px-6 py-4 text-center">
-                                        IDR {{$regForeign->onsite_reg != 0 ? number_format($regForeign->onsite_reg, 0,
+                                    <td class="px-6 py-4 text-center">
+                                        USD {{$regForeign->onsite_reg != 0 ? number_format($regForeign->onsite_reg, 0,
                                         ',',
                                         '.'): 'to be announce'}}
-                                    </td> --}}
+                                    </td>
                                 </tr>
                                 @endif
                                 @endforeach
                             </tbody>
                         </table>
                         <div class="relative mt-2">
-                            <a href="https://expo.virconex-id.com/registration/inashum2026"
-                                class="btn bg-[#39B54A] text-white hover:bg-[#862254] btn-lg rounded-xl mb-3 float-end text-sm"><i
+                            <a href="javascript:void(0)"
+                                class="btn bg-[#39B54A] text-white hover:bg-[#278032] btn-lg rounded-xl mb-3 float-end text-sm"><i
                                     class="fa-solid fa-list mx-3"></i>Register Now!</a>
                         </div>
                     </div>
@@ -219,10 +221,10 @@
                                         28, 29 & 30 July, 2026 <br>
                                         Fatmawati Hospital, Jakarta
                                     </th>
-                                    {{-- <th scope="col" class="px-6 py-3">
-                                        Late / Onsite Registration <br>
-                                        After 30 March 2026
-                                    </th> --}}
+                                    <th scope="col" class="px-6 py-3">
+                                        Regular Registration <br>
+                                        up to 28 August 2026
+                                    </th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -233,14 +235,14 @@
                                         {{$regForeign->title}}
                                     </th>
                                     <td class="px-6 py-4 text-center">
-                                        {{$regForeign->early_bird_reg != 0 ? 'IDR ' .
+                                        {{$regForeign->early_bird_reg != 0 ? 'USD ' .
                                         number_format($regForeign->early_bird_reg, 0, ',', '.') : 'to be announce'}}
 
                                     </td>
-                                    {{-- <td class="px-6 py-4 text-center">
-                                        {{$regForeign->early_bird_reg != 0 ? 'IDR ' .
+                                    <td class="px-6 py-4 text-center">
+                                        {{$regForeign->early_bird_reg != 0 ? 'USD ' .
                                         number_format($regForeign->normal_reg, 0, ',', '.') : ''}}
-                                    </td> --}}
+                                    </td>
 
                                 </tr>
                                 @endif
@@ -248,7 +250,7 @@
                             </tbody>
                         </table>
                         <div class="relative mt-2">
-                            <a href="https://expo.virconex-id.com/registration/inashum2026"
+                            <a href="javascript:void(0)"
                                 class="btn bg-[#39B54A] text-white hover:bg-[#39B54A] btn-lg rounded-xl mb-3 float-end text-sm"><i
                                     class="fa-solid fa-list mx-3"></i>Register Now!</a>
                         </div>
@@ -266,10 +268,10 @@
                                         30 July, 2026 <br>
                                         Zeiss Office
                                     </th>
-                                    {{-- <th scope="col" class="px-6 py-3">
-                                        Late / Onsite Registration <br>
-                                        After 30 March 2026
-                                    </th> --}}
+                                    <th scope="col" class="px-6 py-3">
+                                        Regular Registration <br>
+                                        up to 28 August 2026
+                                    </th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -280,14 +282,14 @@
                                         {{$regForeign->title}}
                                     </th>
                                     <td class="px-6 py-4 text-center">
-                                        {{$regForeign->early_bird_reg != 0 ? 'IDR ' .
+                                        {{$regForeign->early_bird_reg != 0 ? 'USD ' .
                                         number_format($regForeign->early_bird_reg, 0, ',', '.') : 'to be announce'}}
 
                                     </td>
-                                    {{-- <td class="px-6 py-4 text-center">
-                                        {{$regForeign->early_bird_reg != 0 ? 'IDR ' .
+                                    <td class="px-6 py-4 text-center">
+                                        {{$regForeign->early_bird_reg != 0 ? 'USD ' .
                                         number_format($regForeign->normal_reg, 0, ',', '.') : ''}}
-                                    </td> --}}
+                                    </td>
 
                                 </tr>
                                 @endif
@@ -295,7 +297,7 @@
                             </tbody>
                         </table>
                         <div class="relative mt-2">
-                            <a href="https://expo.virconex-id.com/registration/inashum2026"
+                            <a href="javascript:void(0)"
                                 class="btn bg-[#39B54A] text-white hover:bg-[#39B54A] btn-lg rounded-xl mb-3 float-end text-sm"><i
                                     class="fa-solid fa-list mx-3"></i>Register Now!</a>
                         </div>
@@ -314,9 +316,9 @@
                                         1 August 2026
                                         Swissôtel Jakarta PIK Avenue, Jakarta
                                     </th>
-                                    {{-- <th scope="col" class="px-6 py-3">
+                                    <th scope="col" class="px-6 py-3">
                                         Nurse / Medical Students
-                                    </th> --}}
+                                    </th>
 
                                 </tr>
                             </thead>
@@ -328,15 +330,15 @@
                                         {{$regForeign->title}}
                                     </th>
                                     <td class="px-6 py-4 text-center">
-                                        {{$regForeign->early_bird_reg != 0 ? 'IDR ' .
+                                        {{$regForeign->early_bird_reg != 0 ? 'USD ' .
                                         number_format($regForeign->early_bird_reg,
                                         0, ',', '.') : 'to be announce'}}
                                     </td>
-                                    {{-- <td class="px-6 py-4 text-center">
-                                        {{$regForeign->normal_reg != 0 ? 'IDR' . number_format($regForeign->normal_reg, 0,
+                                    <td class="px-6 py-4 text-center">
+                                        {{$regForeign->normal_reg != 0 ? 'USD' . number_format($regForeign->normal_reg, 0,
                                         ',',
                                         '.') : ''}}
-                                    </td> --}}
+                                    </td>
 
                                 </tr>
                                 @endif
@@ -344,7 +346,7 @@
                             </tbody>
                         </table>
                         <div class="relative mt-2">
-                            <a href="https://expo.virconex-id.com/registration/inashum2026"
+                            <a href="javascript:void(0)"
                                 class="btn bg-[#39B54A] text-white hover:bg-[#39B54A] btn-lg rounded-xl mb-3 float-end text-sm"><i
                                     class="fa-solid fa-list mx-3"></i>Register Now!</a>
                         </div>

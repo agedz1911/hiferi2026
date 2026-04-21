@@ -6,7 +6,7 @@ use App\Models\Faculty as ModelsFaculty;
 use Livewire\Attributes\Title;
 use Livewire\Component;
 
-#[Title('INASHUM-INAPOS-IDOS - Faculties')]
+#[Title('KONAS IX HIFERI - Faculties')]
 class Faculty extends Component
 {
     public $searchTerm = "";
@@ -29,11 +29,11 @@ class Faculty extends Component
         }
         $indofaculties = $queryIndo
             ->orderBy('name', 'asc')
-            ->paginate(12);
+            ->paginate(24);
 
         $foreignfaculties = $queryForeign
             ->orderBy('name', 'asc')
-            ->paginate(12);
+            ->paginate(24);
 
         return view('livewire.pages.faculty', ['indofaculties' => $indofaculties, 'foreignfaculties' => $foreignfaculties]);
     }

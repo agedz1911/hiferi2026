@@ -7,7 +7,7 @@ use Livewire\Attributes\Title;
 use Livewire\Component;
 
 
-#[Title('INASHUM-INAPOS-IDOS - Organizing Committee')]
+#[Title('KONAS IX HIFERI - Organizing Committee')]
 
 class Committee extends Component
 {

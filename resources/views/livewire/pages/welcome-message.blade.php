@@ -10,7 +10,7 @@
         <div class="mb-6 px-4 md:px-24">
             @foreach ($messages as $welcomeMessage)
             @if ($loop->even)
-            <div class="card shadow-sm bg-transparent border border-[#b9608d] border-opacity-25 w-full mb-5">
+            <div class="card shadow-sm bg-transparent border border-[#262262] border-opacity-25 w-full mb-5">
                 <div class="card-body">
                     <div class="flex flex-col">
                         <div class="order-2 lg:order-1 p-2">
@@ -21,8 +21,8 @@
                                         assets/images/speaker.jpg"}}" alt="{{$welcomeMessage->name}}"
                                         class="w-full max-w-52 shadow-lg rounded-lg ">
                                 </div> --}}
-                                <div class="p-4 rounded-lg bg-[#b9608d] w-full max-w-sm">
-                                    <div class="ps-4 border-s border-[#b9608d] border-spacing-7">
+                                <div class="p-4 rounded-lg bg-[#39B54A] w-full max-w-sm">
+                                    <div class="ps-4 border-s border-[#fff] border-spacing-7">
                                         <p class="text-white text-xs italic">" {{$welcomeMessage->title}}
                                             "</p>
                                         <h6 class="font-semibold text-white">{{$welcomeMessage->name}}</h6>
@@ -45,7 +45,7 @@
                 </div>
             </div>
             @else
-            <div class="card shadow-sm bg-transparent border border-[#b9608d] border-opacity-25 w-full mb-5">
+            <div class="card shadow-sm bg-transparent border border-[#262262] border-opacity-25 w-full mb-5">
                 <div class="card-body">
                     <div class="flex flex-col">
                         <div class="order-2 lg:order-2 p-2">
@@ -56,8 +56,8 @@
                                         assets/images/speaker.jpg"}}" alt="{{$welcomeMessage->name}}"
                                         class="w-full max-w-52 shadow-lg rounded-lg ">
                                 </div> --}}
-                                <div class="p-4 rounded-lg bg-[#b9608d] w-full max-w-sm">
-                                    <div class="ps-4 border-s border-[#b9608d] border-spacing-7">
+                                <div class="p-4 rounded-lg bg-[#39B54A] w-full max-w-sm">
+                                    <div class="ps-4 border-s border-[#fff] border-spacing-7">
                                         <p class="text-white text-xs italic">" {{$welcomeMessage->title}}
                                             "</p>
                                         <h6 class="font-semibold text-white">{{$welcomeMessage->name}}</h6>

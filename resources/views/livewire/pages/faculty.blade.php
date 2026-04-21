@@ -25,12 +25,12 @@
                         <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-5">
                             @foreach ($indofaculties as $indo)
                             <div
-                                class="card bg-fuchsia-50/10 shadow-sm p-0 hover:shadow-md hover:scale-105 transition-all duration-200">
+                                class="card bg-emerald-100/10 shadow-sm p-0 hover:shadow-md hover:scale-105 transition-all duration-200">
                                 <figure onclick="my_modal_{{$loop->index}}.showModal()"
                                     class="relative hover:cursor-pointer ">
                                     <img src="{{$indo->image ? asset('storage/' . $indo->image) : "
                                         assets/images/speaker.png"}}" alt="{{$indo->name}}"
-                                        class="w-full h-full lg:h-80 object-cover rounded-xl lg:rounded-full lg:px-2">
+                                        class="w-full h-full lg:h-96 object-cover rounded-xl  lg:px-2">
                                 </figure>
                                 <div class="card-body text-center">
                                     <h2 onclick="my_modal_{{$loop->index}}.showModal()"
@@ -101,12 +101,12 @@
                         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
                             @foreach ($foreignfaculties as $foreign)
                             <div
-                                class="card bg-fuchsia-50/10 shadow-sm p-0 hover:shadow-md hover:scale-105 transition-all duration-200">
+                                class="card bg-emerald-100/10 shadow-sm p-0 hover:shadow-md hover:scale-105 transition-all duration-200">
                                 <figure onclick="my_modal_f{{$loop->index}}.showModal()"
                                     class="relative hover:cursor-pointer ">
                                     <img src="{{$foreign->image ? asset('storage/' . $foreign->image) : "
                                         assets/images/speaker.png"}}" alt="{{$foreign->name}}"
-                                        class="w-full h-full lg:h-80 object-cover rounded-xl lg:rounded-full lg:px-2">
+                                        class="w-full h-full lg:h-96 object-cover rounded-xl  lg:px-2">
 
                                 </figure>
                                 <div class="card-body text-center">
@@ -115,7 +115,7 @@
                                         {{$foreign->name}}
                                     </h2>
                                     <div class="flex justify-center">
-                                        <div class="badge badge-primary badge-soft badge-sm">
+                                        <div class="badge badge-info badge-soft badge-sm">
                                             <p class="text-sm">{{$foreign->country == 'South Korea' ? 'Republic of
                                                 Korea' : $foreign->country}}</p>
                                         </div>

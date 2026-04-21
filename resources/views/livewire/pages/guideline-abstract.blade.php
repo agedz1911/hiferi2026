@@ -21,7 +21,7 @@
                         <h2 class="card-title">Online <span class="text-[#39B54A]">Submission</span></h2>
                         <p class="text-gray-600 italic">*make sure the file complies with the guidelines.</p>
                         <div class="card-actions justify-end mt-5">
-                            <a href="https://expo.virconex-id.com/abstract/inashum2026" class="btn btn-success"><i class="fa-solid fa-upload me-1"></i> Submit Abstract</a>
+                            <a href="javascript:void(0)" class="btn btn-success"><i class="fa-solid fa-upload me-1"></i> Submit Abstract</a>
                         </div>
                     </div>
                 </div>
