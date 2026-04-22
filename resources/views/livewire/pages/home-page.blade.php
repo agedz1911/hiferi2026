@@ -28,7 +28,7 @@
                         Dedicated to Care, Driven by Innovation, Defined by Success. "</p>
                 </div>
                 <p class="text-[#302b88] mt-3">
-                    October 8<sup>th</sup> - 11<sup>th</sup> August, 2026 <br> Holiday Inn, Pasteur, Bandung
+                    October 8<sup>th</sup> - 11<sup>th</sup>, 2026 <br> Holiday Inn, Pasteur, Bandung
                 </p>
                 <div class="mt-7 w-full gap-1 flex flex-wrap">
                     <a
