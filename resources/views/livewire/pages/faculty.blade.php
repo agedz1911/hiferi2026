@@ -174,7 +174,7 @@
                         <div class="mt-5 border-t border-dashed pt-3">
                             {{ $foreignfaculties->links() }}
                         </div>
-                        {{-- <p class="text-xs italic mt-5">*within confirmation</p> --}}
+                        <p class="text-xs italic mt-5">*within confirmation</p>
                     </div>
 
                 </div>

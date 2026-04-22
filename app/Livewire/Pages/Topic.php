@@ -10,7 +10,7 @@ class Topic extends Component
 {
     public function render()
     {
-        $topics = \App\Models\topic::orderBy('no_urut', 'asc')->where('is_active', true)->get();
+        $topics = \App\Models\Topic::orderBy('no_urut', 'asc')->where('is_active', true)->get();
         $uniqueCategories = $topics->pluck('category')->unique();
 
         return view('livewire.pages.topic', [
