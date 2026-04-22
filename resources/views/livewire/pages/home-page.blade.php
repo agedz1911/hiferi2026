@@ -19,7 +19,7 @@
                             <p class="text-xs">The National Congress of</p>
                         </div>
                         <p class="text-xs tracking-tighter">The Indonesian Association of Reproductive Endocrinology and
-                            fertility</p>
+                            Fertility</p>
                     </div>
                 </div>
                 <div class="w-full max-w-2xl">
@@ -166,7 +166,7 @@
                         <p class="text-xs">The National Congress of</p>
                     </div>
                     <p class="text-xs tracking-tighter">The Indonesian Association of Reproductive Endocrinology and
-                        fertility</p>
+                        Fertility</p>
                 </div>
             </div>
             <div class="w-full max-w-2xl">

@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>{{ $title ?? 'INASHUM - INAPOS - IDOS' }}</title>
-    <meta name="description" content="49 Annual Scientific Meeting of Indonesian Urological Association" />
-    <meta name="keywords" content="urology, urology education, urological, indonesia urologi, iaui, incontinence urology, pan pasific urology, ppcs, PPCS, continence care" />
+    <meta name="description" content="The National Congress of The Indonesian Association of Reproductive Endocrinology and Fertility" />
+    <meta name="keywords" content="Endocrinology and fertility" />
     <meta name="author" content="AV-PRO" />
 
     <!-- Custom CSS -->
