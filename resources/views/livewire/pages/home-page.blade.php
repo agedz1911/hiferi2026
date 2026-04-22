@@ -94,9 +94,16 @@
                     <div class="mb-5 w-full max-w-3xl items-start px-2 lg:px-8">
                         <div class="pb-4 text-justify text-white">
                             {!! Str::limit(str($welcomeMessage->description)->markdown()->sanitizeHtml(), 450) !!} <br>
+                            <a class="text-pink-200 hover:text-white hover:underline" href="/welcome-message">Read
+                                More...</a>
                         </div>
-                        <a class="text-pink-200 hover:text-white hover:underline" href="/welcome-message">Read
-                            More...</a>
+                        <div>
+                            <div class="avatar">
+                                <img src="{{$welcomeMessage->image ? asset('storage/' . $welcomeMessage->image) : "
+                                        assets/images/speaker.png"}}" alt="{{$welcomeMessage->name}}"
+                                    class="w-full max-w-52 shadow-md rounded-lg ">
+                            </div>
+                        </div>
                         <div class="p-4 rounded-xl bg-[#39B54A] w-full max-w-sm mt-3 mb-5">
                             <div class="p-2 border-s border-white border-spacing-7">
                                 <p class="text-white text-xs italic">" {{$welcomeMessage->title}}
@@ -270,7 +277,7 @@
                 <div class="lg:w-1/3 w-fit">
                     <div class="py-10  px-4 text-white rounded-lg shadow-md bg-[#262262]">
                         <div class="">
-                            <h5 class="pb-2 tracking-wide font-semibold">EVENT VENUE : 
+                            <h5 class="pb-2 tracking-wide font-semibold">EVENT VENUE :
                             </h5>
                             <p class="pb-5 m-0 text-sm"> Holiday Inn, Pasteur, Bandung </p>
                             <h5 class="pb-2 tracking-wide font-semibold">ADDRESS :
@@ -287,9 +294,9 @@
                 <div class="lg:w-2/3 w-full px-1 flex flex-col md:flex-row gap-2">
                     <iframe class="rounded-lg w-full "
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.954133989028!2d107.5906402!3d-6.8960897!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e665b08b263d%3A0x2edd60e3b317f7b4!2sHoliday%20Inn%20Bandung%20Pasteur!5e0!3m2!1sid!2sid!4v1776679432573!5m2!1sid!2sid"
-                        width="600"  style="border:0;" allowfullscreen="" loading="lazy"
+                        width="600" style="border:0;" allowfullscreen="" loading="lazy"
                         referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    
+
 
                 </div>
             </div>
@@ -333,7 +340,7 @@
         // Get current date and time
         const currentTime = new Date();
 
-        const targetTime = new Date(2026, 9, 8, 08,00,00);
+        const targetTime = new Date(2026, 9, 8, 08, 00, 00);
 
         // Update countdown time
         function updateCountdown() {
