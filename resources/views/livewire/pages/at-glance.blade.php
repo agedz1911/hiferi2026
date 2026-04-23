@@ -68,25 +68,25 @@
                                                 <div class="modal-box w-11/12 max-w-5xl text-start">
                                                     <div class="flex justify-between mb-3 ">
                                                         <div class="text-start">
-                                                            <h3 class="mb-0">Date: 
+                                                            <h3 class="mb-0">Date: <span class="">
                                                                     {{\Carbon\Carbon::parse($room1->date)->format('d
                                                                     F
-                                                                    Y')}}</h3>
-                                                            <h3 class="mb-0">Time: 
-                                                                    {{$room1->time}}</h3>
+                                                                    Y')}}</span></h3>
+                                                            <h3 class="mb-0">Time: <span class="">
+                                                                    {{$room1->time}}</span></h3>
                                                         </div>
                                                         <div>
-                                                            <p class="">Room :
+                                                            <p class="">Room :<span class="">
                                                                     {{$room1->room}}
-                                                                
+                                                                </span>
                                                             </p>
                                                         </div>
                                                     </div>
-                                                    <p class="mb-0">Session : 
-                                                            {{$room1->title_ses}}</p>
-                                                    <p class=">Moderator : 
+                                                    <p class="mb-0">Session : <span class="">
+                                                            {{$room1->title_ses}}</span></p>
+                                                    <p class=">Moderator : <span class="">
                                                             {{$room1->moderator}}
-                                                        </p>
+                                                        </span></p>
                                                     <div class="overflow-x-auto mt-5">
                                                         <table class="table">
                                                             <!-- head -->
@@ -137,25 +137,25 @@
                                                 <div class="modal-box w-11/12 max-w-5xl text-start">
                                                     <div class="flex justify-between mb-3 ">
                                                         <div class="text-start">
-                                                            <h3 class="mb-0">Date: 
+                                                            <h3 class="mb-0">Date: <span class="">
                                                                     {{\Carbon\Carbon::parse($room2->date)->format('d
                                                                     F
-                                                                    Y')}}</h3>
-                                                            <h3 class="mb-0">Time: 
-                                                                    {{$room2->time}}</h3>
+                                                                    Y')}}</span></h3>
+                                                            <h3 class="mb-0">Time: <span class="">
+                                                                    {{$room2->time}}</span></h3>
                                                         </div>
                                                         <div>
-                                                            <p class="">Room :
+                                                            <p class="">Room :<span class="">
                                                                     {{$room2->room}}
-                                                                
+                                                                </span>
                                                             </p>
                                                         </div>
                                                     </div>
-                                                    <p class="mb-0">Session : 
-                                                            {{$room2->title_ses}}</p>
-                                                    <p class=">Moderator : 
+                                                    <p class="mb-0">Session : <span class="">
+                                                            {{$room2->title_ses}}</span></p>
+                                                    <p class=">Moderator : <span class="">
                                                             {{$room2->moderator}}
-                                                        </p>
+                                                        </span></p>
                                                     <div class="overflow-x-auto mt-5">
                                                         <table class="table">
                                                             <!-- head -->
@@ -206,25 +206,25 @@
                                                 <div class="modal-box w-11/12 max-w-5xl text-start">
                                                     <div class="flex justify-between mb-3 ">
                                                         <div class="text-start">
-                                                            <h3 class="mb-0">Date: 
+                                                            <h3 class="mb-0">Date: <span class="">
                                                                     {{\Carbon\Carbon::parse($room3->date)->format('d
                                                                     F
-                                                                    Y')}}</h3>
-                                                            <h3 class="mb-0">Time: 
-                                                                    {{$room3->time}}</h3>
+                                                                    Y')}}</span></h3>
+                                                            <h3 class="mb-0">Time: <span class="">
+                                                                    {{$room3->time}}</span></h3>
                                                         </div>
                                                         <div>
-                                                            <p class="">Room :
+                                                            <p class="">Room :<span class="">
                                                                     {{$room3->room}}
-                                                                
+                                                                </span>
                                                             </p>
                                                         </div>
                                                     </div>
-                                                    <p class="mb-0">Session : 
-                                                            {{$room3->title_ses}}</p>
-                                                    <p class=">Moderator : 
+                                                    <p class="mb-0">Session : <span class="">
+                                                            {{$room3->title_ses}}</span></p>
+                                                    <p class=">Moderator : <span class="">
                                                             {{$room3->moderator}}
-                                                        </p>
+                                                        </span></p>
                                                     <div class="overflow-x-auto mt-5">
                                                         <table class="table">
                                                             <!-- head -->
@@ -275,25 +275,25 @@
                                                 <div class="modal-box w-11/12 max-w-5xl text-start">
                                                     <div class="flex justify-between mb-3 ">
                                                         <div class="text-start">
-                                                            <h3 class="mb-0">Date: 
+                                                            <h3 class="mb-0">Date: <span class="">
                                                                     {{\Carbon\Carbon::parse($room4->date)->format('d
                                                                     F
-                                                                    Y')}}</h3>
-                                                            <h3 class="mb-0">Time: 
-                                                                    {{$room4->time}}</h3>
+                                                                    Y')}}</span></h3>
+                                                            <h3 class="mb-0">Time: <span class="">
+                                                                    {{$room4->time}}</span></h3>
                                                         </div>
                                                         <div>
-                                                            <p class="">Room :
+                                                            <p class="">Room :<span class="">
                                                                     {{$room4->room}}
-                                                                
+                                                                </span>
                                                             </p>
                                                         </div>
                                                     </div>
-                                                    <p class="mb-0">Session : 
-                                                            {{$room4->title_ses}}</p>
-                                                    <p class=">Moderator : 
+                                                    <p class="mb-0">Session : <span class="">
+                                                            {{$room4->title_ses}}</span></p>
+                                                    <p class=">Moderator : <span class="">
                                                             {{$room4->moderator}}
-                                                        </p>
+                                                        </span></p>
                                                     <div class="overflow-x-auto mt-5">
                                                         <table class="table">
                                                             <!-- head -->
@@ -344,25 +344,25 @@
                                                 <div class="modal-box w-11/12 max-w-5xl text-start">
                                                     <div class="flex justify-between mb-3 ">
                                                         <div class="text-start">
-                                                            <h3 class="mb-0">Date: 
+                                                            <h3 class="mb-0">Date: <span class="">
                                                                     {{\Carbon\Carbon::parse($room5->date)->format('d
                                                                     F
-                                                                    Y')}}</h3>
-                                                            <h3 class="mb-0">Time: 
-                                                                    {{$room5->time}}</h3>
+                                                                    Y')}}</span></h3>
+                                                            <h3 class="mb-0">Time: <span class="">
+                                                                    {{$room5->time}}</span></h3>
                                                         </div>
                                                         <div>
-                                                            <p class="">Room :
+                                                            <p class="">Room :<span class="">
                                                                     {{$room5->room}}
-                                                                
+                                                                </span>
                                                             </p>
                                                         </div>
                                                     </div>
-                                                    <p class="mb-0">Session : 
-                                                            {{$room5->title_ses}}</p>
-                                                    <p class=">Moderator : 
+                                                    <p class="mb-0">Session : <span class="">
+                                                            {{$room5->title_ses}}</span></p>
+                                                    <p class=">Moderator : <span class="">
                                                             {{$room5->moderator}}
-                                                        </p>
+                                                        </span></p>
                                                     <div class="overflow-x-auto mt-5">
                                                         <table class="table">
                                                             <!-- head -->
@@ -413,25 +413,25 @@
                                                 <div class="modal-box w-11/12 max-w-5xl text-start">
                                                     <div class="flex justify-between mb-3 ">
                                                         <div class="text-start">
-                                                            <h3 class="mb-0">Date: 
+                                                            <h3 class="mb-0">Date: <span class="">
                                                                     {{\Carbon\Carbon::parse($room6->date)->format('d
                                                                     F
-                                                                    Y')}}</h3>
-                                                            <h3 class="mb-0">Time: 
-                                                                    {{$room6->time}}</h3>
+                                                                    Y')}}</span></h3>
+                                                            <h3 class="mb-0">Time: <span class="">
+                                                                    {{$room6->time}}</span></h3>
                                                         </div>
                                                         <div>
-                                                            <p class="">Room :
+                                                            <p class="">Room :<span class="">
                                                                     {{$room6->room}}
-                                                                
+                                                                </span>
                                                             </p>
                                                         </div>
                                                     </div>
-                                                    <p class="mb-0">Session : 
-                                                            {{$room6->title_ses}}</p>
-                                                    <p class=">Moderator : 
+                                                    <p class="mb-0">Session : <span class="">
+                                                            {{$room6->title_ses}}</span></p>
+                                                    <p class=">Moderator : <span class="">
                                                             {{$room6->moderator}}
-                                                        </p>
+                                                        </span></p>
                                                     <div class="overflow-x-auto mt-5">
                                                         <table class="table">
                                                             <!-- head -->
@@ -482,25 +482,25 @@
                                                 <div class="modal-box w-11/12 max-w-5xl text-start">
                                                     <div class="flex justify-between mb-3 ">
                                                         <div class="text-start">
-                                                            <h3 class="mb-0">Date: 
+                                                            <h3 class="mb-0">Date: <span class="">
                                                                     {{\Carbon\Carbon::parse($room7->date)->format('d
                                                                     F
-                                                                    Y')}}</h3>
-                                                            <h3 class="mb-0">Time: 
-                                                                    {{$room7->time}}</h3>
+                                                                    Y')}}</span></h3>
+                                                            <h3 class="mb-0">Time: <span class="">
+                                                                    {{$room7->time}}</span></h3>
                                                         </div>
                                                         <div>
-                                                            <p class="">Room :
+                                                            <p class="">Room :<span class="">
                                                                     {{$room7->room}}
-                                                                
+                                                                </span>
                                                             </p>
                                                         </div>
                                                     </div>
-                                                    <p class="mb-0">Session : 
-                                                            {{$room7->title_ses}}</p>
-                                                    <p class=">Moderator : 
+                                                    <p class="mb-0">Session : <span class="">
+                                                            {{$room7->title_ses}}</span></p>
+                                                    <p class=">Moderator : <span class="">
                                                             {{$room7->moderator}}
-                                                        </p>
+                                                        </span></p>
                                                     <div class="overflow-x-auto mt-5">
                                                         <table class="table">
                                                             <!-- head -->
@@ -551,25 +551,25 @@
                                                 <div class="modal-box w-11/12 max-w-5xl text-start">
                                                     <div class="flex justify-between mb-3 ">
                                                         <div class="text-start">
-                                                            <h3 class="mb-0">Date: 
+                                                            <h3 class="mb-0">Date: <span class="">
                                                                     {{\Carbon\Carbon::parse($room8->date)->format('d
                                                                     F
-                                                                    Y')}}</h3>
-                                                            <h3 class="mb-0">Time: 
-                                                                    {{$room8->time}}</h3>
+                                                                    Y')}}</span></h3>
+                                                            <h3 class="mb-0">Time: <span class="">
+                                                                    {{$room8->time}}</span></h3>
                                                         </div>
                                                         <div>
-                                                            <p class="">Room :
+                                                            <p class="">Room :<span class="">
                                                                     {{$room8->room}}
-                                                                
+                                                                </span>
                                                             </p>
                                                         </div>
                                                     </div>
-                                                    <p class="mb-0">Session : 
-                                                            {{$room8->title_ses}}</p>
-                                                    <p class=">Moderator : 
+                                                    <p class="mb-0">Session : <span class="">
+                                                            {{$room8->title_ses}}</span></p>
+                                                    <p class=">Moderator : <span class="">
                                                             {{$room8->moderator}}
-                                                        </p>
+                                                        </span></p>
                                                     <div class="overflow-x-auto mt-5">
                                                         <table class="table">
                                                             <!-- head -->
@@ -646,25 +646,25 @@
                                                 <div class="modal-box w-11/12 max-w-5xl text-start">
                                                     <div class="flex justify-between mb-3">
                                                         <div class="text-start">
-                                                            <h3 class="mb-0">Date: 
+                                                            <h3 class="mb-0">Date: <span class="">
                                                                     {{\Carbon\Carbon::parse($room91->date)->format('d
                                                                     F
-                                                                    Y')}}</h3>
-                                                            <h3 class="mb-0">Time: 
-                                                                    {{$room91->time}}</h3>
+                                                                    Y')}}</span></h3>
+                                                            <h3 class="mb-0">Time: <span class="">
+                                                                    {{$room91->time}}</span></h3>
                                                         </div>
                                                         <div>
-                                                            <p class="">Room :
+                                                            <p class="">Room :<span class="">
                                                                     {{$room91->room}}
-                                                                
+                                                                </span>
                                                             </p>
                                                         </div>
                                                     </div>
-                                                    <p class="mb-0">Session : 
-                                                            {{$room91->title_ses}}</p>
-                                                    <p class=">Moderator : 
+                                                    <p class="mb-0">Session : <span class="">
+                                                            {{$room91->title_ses}}</span></p>
+                                                    <p class=">Moderator : <span class="">
                                                             {{$room91->moderator}}
-                                                        </p>
+                                                        </span></p>
                                                     <div class="overflow-x-auto mt-5">
                                                         <table class="table">
                                                             <!-- head -->
@@ -715,25 +715,25 @@
                                                 <div class="modal-box w-11/12 max-w-5xl text-start">
                                                     <div class="flex justify-between mb-3">
                                                         <div class="text-start">
-                                                            <h3 class="mb-0">Date: 
+                                                            <h3 class="mb-0">Date: <span class="">
                                                                     {{\Carbon\Carbon::parse($room92->date)->format('d
                                                                     F
-                                                                    Y')}}</h3>
-                                                            <h3 class="mb-0">Time: 
-                                                                    {{$room92->time}}</h3>
+                                                                    Y')}}</span></h3>
+                                                            <h3 class="mb-0">Time: <span class="">
+                                                                    {{$room92->time}}</span></h3>
                                                         </div>
                                                         <div>
-                                                            <p class="">Room :
+                                                            <p class="">Room :<span class="">
                                                                     {{$room92->room}}
-                                                                
+                                                                </span>
                                                             </p>
                                                         </div>
                                                     </div>
-                                                    <p class="mb-0">Session : 
-                                                            {{$room92->title_ses}}</p>
-                                                    <p class=">Moderator : 
+                                                    <p class="mb-0">Session : <span class="">
+                                                            {{$room92->title_ses}}</span></p>
+                                                    <p class=">Moderator : <span class="">
                                                             {{$room92->moderator}}
-                                                        </p>
+                                                        </span></p>
                                                     <div class="overflow-x-auto mt-5">
                                                         <table class="table">
                                                             <!-- head -->
@@ -784,25 +784,25 @@
                                                 <div class="modal-box w-11/12 max-w-5xl text-start">
                                                     <div class="flex justify-between mb-3">
                                                         <div class="text-start">
-                                                            <h3 class="mb-0">Date: 
+                                                            <h3 class="mb-0">Date: <span class="">
                                                                     {{\Carbon\Carbon::parse($room93->date)->format('d
                                                                     F
-                                                                    Y')}}</h3>
-                                                            <h3 class="mb-0">Time: 
-                                                                    {{$room93->time}}</h3>
+                                                                    Y')}}</span></h3>
+                                                            <h3 class="mb-0">Time: <span class="">
+                                                                    {{$room93->time}}</span></h3>
                                                         </div>
                                                         <div>
-                                                            <p class="">Room :
+                                                            <p class="">Room :<span class="">
                                                                     {{$room93->room}}
-                                                                
+                                                                </span>
                                                             </p>
                                                         </div>
                                                     </div>
-                                                    <p class="mb-0">Session : 
-                                                            {{$room93->title_ses}}</p>
-                                                    <p class=">Moderator : 
+                                                    <p class="mb-0">Session : <span class="">
+                                                            {{$room93->title_ses}}</span></p>
+                                                    <p class=">Moderator : <span class="">
                                                             {{$room93->moderator}}
-                                                        </p>
+                                                        </span></p>
                                                     <div class="overflow-x-auto mt-5">
                                                         <table class="table">
                                                             <!-- head -->
@@ -853,25 +853,25 @@
                                                 <div class="modal-box w-11/12 max-w-5xl text-start">
                                                     <div class="flex justify-between mb-3">
                                                         <div class="text-start">
-                                                            <h3 class="mb-0">Date: 
+                                                            <h3 class="mb-0">Date: <span class="">
                                                                     {{\Carbon\Carbon::parse($room94->date)->format('d
                                                                     F
-                                                                    Y')}}</h3>
-                                                            <h3 class="mb-0">Time: 
-                                                                    {{$room94->time}}</h3>
+                                                                    Y')}}</span></h3>
+                                                            <h3 class="mb-0">Time: <span class="">
+                                                                    {{$room94->time}}</span></h3>
                                                         </div>
                                                         <div>
-                                                            <p class="">Room :
+                                                            <p class="">Room :<span class="">
                                                                     {{$room94->room}}
-                                                                
+                                                                </span>
                                                             </p>
                                                         </div>
                                                     </div>
-                                                    <p class="mb-0">Session : 
-                                                            {{$room94->title_ses}}</p>
-                                                    <p class=">Moderator : 
+                                                    <p class="mb-0">Session : <span class="">
+                                                            {{$room94->title_ses}}</span></p>
+                                                    <p class=">Moderator : <span class="">
                                                             {{$room94->moderator}}
-                                                        </p>
+                                                        </span></p>
                                                     <div class="overflow-x-auto mt-5">
                                                         <table class="table">
                                                             <!-- head -->
@@ -922,25 +922,25 @@
                                                 <div class="modal-box w-11/12 max-w-5xl text-start">
                                                     <div class="flex justify-between mb-3">
                                                         <div class="text-start">
-                                                            <h3 class="mb-0">Date: 
+                                                            <h3 class="mb-0">Date: <span class="">
                                                                     {{\Carbon\Carbon::parse($room95->date)->format('d
                                                                     F
-                                                                    Y')}}</h3>
-                                                            <h3 class="mb-0">Time: 
-                                                                    {{$room95->time}}</h3>
+                                                                    Y')}}</span></h3>
+                                                            <h3 class="mb-0">Time: <span class="">
+                                                                    {{$room95->time}}</span></h3>
                                                         </div>
                                                         <div>
-                                                            <p class="">Room :
+                                                            <p class="">Room :<span class="">
                                                                     {{$room95->room}}
-                                                                
+                                                                </span>
                                                             </p>
                                                         </div>
                                                     </div>
-                                                    <p class="mb-0">Session : 
-                                                            {{$room95->title_ses}}</p>
-                                                    <p class=">Moderator : 
+                                                    <p class="mb-0">Session : <span class="">
+                                                            {{$room95->title_ses}}</span></p>
+                                                    <p class=">Moderator : <span class="">
                                                             {{$room95->moderator}}
-                                                        </p>
+                                                        </span></p>
                                                     <div class="overflow-x-auto mt-5">
                                                         <table class="table">
                                                             <!-- head -->
@@ -991,25 +991,25 @@
                                                 <div class="modal-box w-11/12 max-w-5xl text-start">
                                                     <div class="flex justify-between mb-3">
                                                         <div class="text-start">
-                                                            <h3 class="mb-0">Date: 
+                                                            <h3 class="mb-0">Date: <span class="">
                                                                     {{\Carbon\Carbon::parse($room96->date)->format('d
                                                                     F
-                                                                    Y')}}</h3>
-                                                            <h3 class="mb-0">Time: 
-                                                                    {{$room96->time}}</h3>
+                                                                    Y')}}</span></h3>
+                                                            <h3 class="mb-0">Time: <span class="">
+                                                                    {{$room96->time}}</span></h3>
                                                         </div>
                                                         <div>
-                                                            <p class="">Room :
+                                                            <p class="">Room :<span class="">
                                                                     {{$room96->room}}
-                                                                
+                                                                </span>
                                                             </p>
                                                         </div>
                                                     </div>
-                                                    <p class="mb-0">Session : 
-                                                            {{$room96->title_ses}}</p>
-                                                    <p class=">Moderator : 
+                                                    <p class="mb-0">Session : <span class="">
+                                                            {{$room96->title_ses}}</span></p>
+                                                    <p class=">Moderator : <span class="">
                                                             {{$room96->moderator}}
-                                                        </p>
+                                                        </span></p>
                                                     <div class="overflow-x-auto mt-5">
                                                         <table class="table">
                                                             <!-- head -->
@@ -1060,25 +1060,25 @@
                                                 <div class="modal-box w-11/12 max-w-5xl text-start">
                                                     <div class="flex justify-between mb-3">
                                                         <div class="text-start">
-                                                            <h3 class="mb-0">Date: 
+                                                            <h3 class="mb-0">Date: <span class="">
                                                                     {{\Carbon\Carbon::parse($room97->date)->format('d
                                                                     F
-                                                                    Y')}}</h3>
-                                                            <h3 class="mb-0">Time: 
-                                                                    {{$room97->time}}</h3>
+                                                                    Y')}}</span></h3>
+                                                            <h3 class="mb-0">Time: <span class="">
+                                                                    {{$room97->time}}</span></h3>
                                                         </div>
                                                         <div>
-                                                            <p class="">Room :
+                                                            <p class="">Room :<span class="">
                                                                     {{$room97->room}}
-                                                                
+                                                                </span>
                                                             </p>
                                                         </div>
                                                     </div>
-                                                    <p class="mb-0">Session : 
-                                                            {{$room97->title_ses}}</p>
-                                                    <p class=">Moderator : 
+                                                    <p class="mb-0">Session : <span class="">
+                                                            {{$room97->title_ses}}</span></p>
+                                                    <p class=">Moderator : <span class="">
                                                             {{$room97->moderator}}
-                                                        </p>
+                                                        </span></p>
                                                     <div class="overflow-x-auto mt-5">
                                                         <table class="table">
                                                             <!-- head -->
@@ -1129,25 +1129,25 @@
                                                 <div class="modal-box w-11/12 max-w-5xl text-start">
                                                     <div class="flex justify-between mb-3">
                                                         <div class="text-start">
-                                                            <h3 class="mb-0">Date: 
+                                                            <h3 class="mb-0">Date: <span class="">
                                                                     {{\Carbon\Carbon::parse($room98->date)->format('d
                                                                     F
-                                                                    Y')}}</h3>
-                                                            <h3 class="mb-0">Time: 
-                                                                    {{$room98->time}}</h3>
+                                                                    Y')}}</span></h3>
+                                                            <h3 class="mb-0">Time: <span class="">
+                                                                    {{$room98->time}}</span></h3>
                                                         </div>
                                                         <div>
-                                                            <p class="">Room :
+                                                            <p class="">Room :<span class="">
                                                                     {{$room98->room}}
-                                                                
+                                                                </span>
                                                             </p>
                                                         </div>
                                                     </div>
-                                                    <p class="mb-0">Session : 
-                                                            {{$room98->title_ses}}</p>
-                                                    <p class=">Moderator : 
+                                                    <p class="mb-0">Session : <span class="">
+                                                            {{$room98->title_ses}}</span></p>
+                                                    <p class=">Moderator : <span class="">
                                                             {{$room98->moderator}}
-                                                        </p>
+                                                        </span></p>
                                                     <div class="overflow-x-auto mt-5">
                                                         <table class="table">
                                                             <!-- head -->
@@ -1221,25 +1221,25 @@
                                                 <div class="modal-box w-11/12 max-w-5xl text-start">
                                                     <div class="flex justify-between mb-3">
                                                         <div class="text-start">
-                                                            <h3 class="mb-0">Date: 
+                                                            <h3 class="mb-0">Date: <span class="">
                                                                     {{\Carbon\Carbon::parse($ballroomall10->date)->format('d
                                                                     F
-                                                                    Y')}}</h3>
-                                                            <h3 class="mb-0">Time: 
-                                                                    {{$ballroomall10->time}}</h3>
+                                                                    Y')}}</span></h3>
+                                                            <h3 class="mb-0">Time: <span class="">
+                                                                    {{$ballroomall10->time}}</span></h3>
                                                         </div>
                                                         <div>
-                                                            <p class="">Room :
+                                                            <p class="">Room :<span class="">
                                                                     {{$ballroomall10->room}}
-                                                                
+                                                                </span>
                                                             </p>
                                                         </div>
                                                     </div>
-                                                    <p class="mb-0">Session : 
-                                                            {{$ballroomall10->title_ses}}</p>
-                                                    <p class=">Moderator : 
+                                                    <p class="mb-0">Session : <span class="">
+                                                            {{$ballroomall10->title_ses}}</span></p>
+                                                    <p class=">Moderator : <span class="">
                                                             {{$ballroomall10->moderator}}
-                                                        </p>
+                                                        </span></p>
                                                     <div class="overflow-x-auto mt-5">
                                                         <table class="table">
                                                             <!-- head -->
@@ -1289,25 +1289,25 @@
                                                 <div class="modal-box w-11/12 max-w-5xl text-start">
                                                     <div class="flex justify-between mb-3">
                                                         <div class="text-start">
-                                                            <h3 class="mb-0">Date: 
+                                                            <h3 class="mb-0">Date: <span class="">
                                                                     {{\Carbon\Carbon::parse($ballroom110->date)->format('d
                                                                     F
-                                                                    Y')}}</h3>
-                                                            <h3 class="mb-0">Time: 
-                                                                    {{$ballroom110->time}}</h3>
+                                                                    Y')}}</span></h3>
+                                                            <h3 class="mb-0">Time: <span class="">
+                                                                    {{$ballroom110->time}}</span></h3>
                                                         </div>
                                                         <div>
-                                                            <p class="">Room :
+                                                            <p class="">Room :<span class="">
                                                                     {{$ballroom110->room}}
-                                                                
+                                                                </span>
                                                             </p>
                                                         </div>
                                                     </div>
-                                                    <p class="mb-0">Session : 
-                                                            {{$ballroom110->title_ses}}</p>
-                                                    <p class=">Moderator : 
+                                                    <p class="mb-0">Session : <span class="">
+                                                            {{$ballroom110->title_ses}}</span></p>
+                                                    <p class=">Moderator : <span class="">
                                                             {{$ballroom110->moderator}}
-                                                        </p>
+                                                        </span></p>
                                                     <div class="overflow-x-auto mt-5">
                                                         <table class="table">
                                                             <!-- head -->
@@ -1357,25 +1357,25 @@
                                                 <div class="modal-box w-11/12 max-w-5xl text-start">
                                                     <div class="flex justify-between mb-3">
                                                         <div class="text-start">
-                                                            <h3 class="mb-0">Date: 
+                                                            <h3 class="mb-0">Date: <span class="">
                                                                     {{\Carbon\Carbon::parse($ballroom210->date)->format('d
                                                                     F
-                                                                    Y')}}</h3>
-                                                            <h3 class="mb-0">Time: 
-                                                                    {{$ballroom210->time}}</h3>
+                                                                    Y')}}</span></h3>
+                                                            <h3 class="mb-0">Time: <span class="">
+                                                                    {{$ballroom210->time}}</span></h3>
                                                         </div>
                                                         <div>
-                                                            <p class="">Room :
+                                                            <p class="">Room :<span class="">
                                                                     {{$ballroom210->room}}
-                                                                
+                                                                </span>
                                                             </p>
                                                         </div>
                                                     </div>
-                                                    <p class="mb-0">Session : 
-                                                            {{$ballroom210->title_ses}}</p>
-                                                    <p class=">Moderator : 
+                                                    <p class="mb-0">Session : <span class="">
+                                                            {{$ballroom210->title_ses}}</span></p>
+                                                    <p class=">Moderator : <span class="">
                                                             {{$ballroom210->moderator}}
-                                                        </p>
+                                                        </span></p>
                                                     <div class="overflow-x-auto mt-5">
                                                         <table class="table">
                                                             <!-- head -->
@@ -1425,25 +1425,25 @@
                                                 <div class="modal-box w-11/12 max-w-5xl text-start">
                                                     <div class="flex justify-between mb-3">
                                                         <div class="text-start">
-                                                            <h3 class="mb-0">Date: 
+                                                            <h3 class="mb-0">Date: <span class="">
                                                                     {{\Carbon\Carbon::parse($ballroom310->date)->format('d
                                                                     F
-                                                                    Y')}}</h3>
-                                                            <h3 class="mb-0">Time: 
-                                                                    {{$ballroom310->time}}</h3>
+                                                                    Y')}}</span></h3>
+                                                            <h3 class="mb-0">Time: <span class="">
+                                                                    {{$ballroom310->time}}</span></h3>
                                                         </div>
                                                         <div>
-                                                            <p class="">Room :
+                                                            <p class="">Room :<span class="">
                                                                     {{$ballroom310->room}}
-                                                                
+                                                                </span>
                                                             </p>
                                                         </div>
                                                     </div>
-                                                    <p class="mb-0">Session : 
-                                                            {{$ballroom310->title_ses}}</p>
-                                                    <p class=">Moderator : 
+                                                    <p class="mb-0">Session : <span class="">
+                                                            {{$ballroom310->title_ses}}</span></p>
+                                                    <p class=">Moderator : <span class="">
                                                             {{$ballroom310->moderator}}
-                                                        </p>
+                                                        </span></p>
                                                     <div class="overflow-x-auto mt-5">
                                                         <table class="table">
                                                             <!-- head -->
@@ -1493,25 +1493,25 @@
                                                 <div class="modal-box w-11/12 max-w-5xl text-start">
                                                     <div class="flex justify-between mb-3">
                                                         <div class="text-start">
-                                                            <h3 class="mb-0">Date: 
+                                                            <h3 class="mb-0">Date: <span class="">
                                                                     {{\Carbon\Carbon::parse($room110->date)->format('d
                                                                     F
-                                                                    Y')}}</h3>
-                                                            <h3 class="mb-0">Time: 
-                                                                    {{$room110->time}}</h3>
+                                                                    Y')}}</span></h3>
+                                                            <h3 class="mb-0">Time: <span class="">
+                                                                    {{$room110->time}}</span></h3>
                                                         </div>
                                                         <div>
-                                                            <p class="">Room :
+                                                            <p class="">Room :<span class="">
                                                                     {{$room110->room}}
-                                                                
+                                                                </span>
                                                             </p>
                                                         </div>
                                                     </div>
-                                                    <p class="mb-0">Session : 
-                                                            {{$room110->title_ses}}</p>
-                                                    <p class=">Moderator : 
+                                                    <p class="mb-0">Session : <span class="">
+                                                            {{$room110->title_ses}}</span></p>
+                                                    <p class=">Moderator : <span class="">
                                                             {{$room110->moderator}}
-                                                        </p>
+                                                        </span></p>
                                                     <div class="overflow-x-auto mt-5">
                                                         <table class="table">
                                                             <!-- head -->
@@ -1585,25 +1585,25 @@
                                                 <div class="modal-box w-11/12 max-w-5xl text-start">
                                                     <div class="flex justify-between mb-3">
                                                         <div class="text-start">
-                                                            <h3 class="mb-0">Date: 
+                                                            <h3 class="mb-0">Date: <span class="">
                                                                     {{\Carbon\Carbon::parse($ballroomall11->date)->format('d
                                                                     F
-                                                                    Y')}}</h3>
-                                                            <h3 class="mb-0">Time: 
-                                                                    {{$ballroomall11->time}}</h3>
+                                                                    Y')}}</span></h3>
+                                                            <h3 class="mb-0">Time: <span class="">
+                                                                    {{$ballroomall11->time}}</span></h3>
                                                         </div>
                                                         <div>
-                                                            <p class="">Room :
+                                                            <p class="">Room :<span class="">
                                                                     {{$ballroomall11->room}}
-                                                                
+                                                                </span>
                                                             </p>
                                                         </div>
                                                     </div>
-                                                    <p class="mb-0">Session : 
-                                                            {{$ballroomall11->title_ses}}</p>
-                                                    <p class=">Moderator : 
+                                                    <p class="mb-0">Session : <span class="">
+                                                            {{$ballroomall11->title_ses}}</span></p>
+                                                    <p class=">Moderator : <span class="">
                                                             {{$ballroomall11->moderator}}
-                                                        </p>
+                                                        </span></p>
                                                     <div class="overflow-x-auto mt-5">
                                                         <table class="table">
                                                             <!-- head -->
@@ -1653,25 +1653,25 @@
                                                 <div class="modal-box w-11/12 max-w-5xl text-start">
                                                     <div class="flex justify-between mb-3">
                                                         <div class="text-start">
-                                                            <h3 class="mb-0">Date: 
+                                                            <h3 class="mb-0">Date: <span class="">
                                                                     {{\Carbon\Carbon::parse($ballroom111->date)->format('d
                                                                     F
-                                                                    Y')}}</h3>
-                                                            <h3 class="mb-0">Time: 
-                                                                    {{$ballroom111->time}}</h3>
+                                                                    Y')}}</span></h3>
+                                                            <h3 class="mb-0">Time: <span class="">
+                                                                    {{$ballroom111->time}}</span></h3>
                                                         </div>
                                                         <div>
-                                                            <p class="">Room :
+                                                            <p class="">Room :<span class="">
                                                                     {{$ballroom111->room}}
-                                                                
+                                                                </span>
                                                             </p>
                                                         </div>
                                                     </div>
-                                                    <p class="mb-0">Session : 
-                                                            {{$ballroom111->title_ses}}</p>
-                                                    <p class=">Moderator : 
+                                                    <p class="mb-0">Session : <span class="">
+                                                            {{$ballroom111->title_ses}}</span></p>
+                                                    <p class=">Moderator : <span class="">
                                                             {{$ballroom111->moderator}}
-                                                        </p>
+                                                        </span></p>
                                                     <div class="overflow-x-auto mt-5">
                                                         <table class="table">
                                                             <!-- head -->
@@ -1721,25 +1721,25 @@
                                                 <div class="modal-box w-11/12 max-w-5xl text-start">
                                                     <div class="flex justify-between mb-3">
                                                         <div class="text-start">
-                                                            <h3 class="mb-0">Date: 
+                                                            <h3 class="mb-0">Date: <span class="">
                                                                     {{\Carbon\Carbon::parse($ballroom211->date)->format('d
                                                                     F
-                                                                    Y')}}</h3>
-                                                            <h3 class="mb-0">Time: 
-                                                                    {{$ballroom211->time}}</h3>
+                                                                    Y')}}</span></h3>
+                                                            <h3 class="mb-0">Time: <span class="">
+                                                                    {{$ballroom211->time}}</span></h3>
                                                         </div>
                                                         <div>
-                                                            <p class="">Room :
+                                                            <p class="">Room :<span class="">
                                                                     {{$ballroom211->room}}
-                                                                
+                                                                </span>
                                                             </p>
                                                         </div>
                                                     </div>
-                                                    <p class="mb-0">Session : 
-                                                            {{$ballroom211->title_ses}}</p>
-                                                    <p class=">Moderator : 
+                                                    <p class="mb-0">Session : <span class="">
+                                                            {{$ballroom211->title_ses}}</span></p>
+                                                    <p class=">Moderator : <span class="">
                                                             {{$ballroom211->moderator}}
-                                                        </p>
+                                                        </span></p>
                                                     <div class="overflow-x-auto mt-5">
                                                         <table class="table">
                                                             <!-- head -->
@@ -1789,25 +1789,25 @@
                                                 <div class="modal-box w-11/12 max-w-5xl text-start">
                                                     <div class="flex justify-between mb-3">
                                                         <div class="text-start">
-                                                            <h3 class="mb-0">Date: 
+                                                            <h3 class="mb-0">Date: <span class="">
                                                                     {{\Carbon\Carbon::parse($ballroom311->date)->format('d
                                                                     F
-                                                                    Y')}}</h3>
-                                                            <h3 class="mb-0">Time: 
-                                                                    {{$ballroom311->time}}</h3>
+                                                                    Y')}}</span></h3>
+                                                            <h3 class="mb-0">Time: <span class="">
+                                                                    {{$ballroom311->time}}</span></h3>
                                                         </div>
                                                         <div>
-                                                            <p class="">Room :
+                                                            <p class="">Room :<span class="">
                                                                     {{$ballroom311->room}}
-                                                                
+                                                                </span>
                                                             </p>
                                                         </div>
                                                     </div>
-                                                    <p class="mb-0">Session : 
-                                                            {{$ballroom311->title_ses}}</p>
-                                                    <p class=">Moderator : 
+                                                    <p class="mb-0">Session : <span class="">
+                                                            {{$ballroom311->title_ses}}</span></p>
+                                                    <p class=">Moderator : <span class="">
                                                             {{$ballroom311->moderator}}
-                                                        </p>
+                                                        </span></p>
                                                     <div class="overflow-x-auto mt-5">
                                                         <table class="table">
                                                             <!-- head -->
@@ -1857,25 +1857,25 @@
                                                 <div class="modal-box w-11/12 max-w-5xl text-start">
                                                     <div class="flex justify-between mb-3">
                                                         <div class="text-start">
-                                                            <h3 class="mb-0">Date: 
+                                                            <h3 class="mb-0">Date: <span class="">
                                                                     {{\Carbon\Carbon::parse($room111->date)->format('d
                                                                     F
-                                                                    Y')}}</h3>
-                                                            <h3 class="mb-0">Time: 
-                                                                    {{$room111->time}}</h3>
+                                                                    Y')}}</span></h3>
+                                                            <h3 class="mb-0">Time: <span class="">
+                                                                    {{$room111->time}}</span></h3>
                                                         </div>
                                                         <div>
-                                                            <p class="">Room :
+                                                            <p class="">Room :<span class="">
                                                                     {{$room111->room}}
-                                                                
+                                                                </span>
                                                             </p>
                                                         </div>
                                                     </div>
-                                                    <p class="mb-0">Session : 
-                                                            {{$room111->title_ses}}</p>
-                                                    <p class=">Moderator : 
+                                                    <p class="mb-0">Session : <span class="">
+                                                            {{$room111->title_ses}}</span></p>
+                                                    <p class=">Moderator : <span class="">
                                                             {{$room111->moderator}}
-                                                        </p>
+                                                        </span></p>
                                                     <div class="overflow-x-auto mt-5">
                                                         <table class="table">
                                                             <!-- head -->
