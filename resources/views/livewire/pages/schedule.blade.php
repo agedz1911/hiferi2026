@@ -100,16 +100,16 @@
             <div class="w-full lg:w-3/4 order-2 lg:order-1">
                 @foreach ($uniqDates as $date)
                 <div class="text-center lg:text-start border-t border-dashed pt-2">
-                    <h2 class="text-lg font-semibold uppercase text-[#b9608d] tracking-wider">
+                    <h2 class="text-lg font-semibold uppercase text-[#39B54A] tracking-wider">
                         {{\Carbon\Carbon::parse($date)->format('l, d F')}}
                     </h2>
                 </div>
                 @foreach ($uniqCategories as $item)
                 @if (
-                !($date == '2026-07-29' && ($item == 'Symposium' || $item == 'Master Class' || $item == 'Scientific Competition')) &&
-                !($date == '2026-07-30' && ($item == 'Symposium' || $item == 'Master Class' || $item == 'Scientific Competition')) &&
-                !($date == '2026-07-31' && ($item == 'Workshop' || $item == 'Master Class' || $item == 'Scientific Competition')) &&
-                !($date == '2026-08-01' && ($item == 'Workshop' || $item == 'Scientific Competition'))
+                !($date == '2026-10-08' && ($item == 'Symposium' || $item == 'Master Class' || $item == 'Scientific Competition')) &&
+                !($date == '2026-10-09' && ($item == 'Symposium' || $item == 'Master Class' || $item == 'Scientific Competition')) &&
+                !($date == '2026-10-10' && ($item == 'Workshop' || $item == 'Master Class')) &&
+                !($date == '2026-10-11' && ($item == 'Workshop' ))
                 )
                 <p class="font-semibold tracking-wider my-5"><i
                         class="fa fa-angle-right text-sm font-semibold"></i> {{$item}}</p>
@@ -120,15 +120,15 @@
                 <div class="collapse bg-base-100 border border-base-300 my-2">
                     <input type="radio" name="my-accordion-1" />
                     <div class="collapse-title font-semibold">{{$atglance->title_ses}} - <span class="text-xs"><i
-                                class="fa fa-map-marker text-[#9E1F63]"></i> {{$atglance->room}} </span></div>
+                                class="fa fa-map-marker text-[#39B54A]"></i> {{$atglance->room}} </span></div>
                     <div class="collapse-content text-sm">
                         <div class="flex flex-wrap justify-between gap-4 items-start">
                             <div>
                                 <p class="mb-1">
                                     <span class="font-semibold">Session:</span> {{$atglance->title_ses}}
                                 </p>
-                                <p class="mb-2"><i class="fa fa-clock text-[#9E1F63]"></i> {{$atglance->time}} | <i
-                                        class="fa fa-map-marker text-[#9E1F63]"></i> {{$atglance->room}}</p>
+                                <p class="mb-2"><i class="fa fa-clock text-[#39B54A]"></i> {{$atglance->time}} | <i
+                                        class="fa fa-map-marker text-[#39B54A]"></i> {{$atglance->room}}</p>
                             </div>
                             <div>
                                 {{-- {{$atglance->category_sesi}} --}}

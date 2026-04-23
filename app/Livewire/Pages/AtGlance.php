@@ -14,19 +14,19 @@ class AtGlance extends Component
 {
     public $atglances;
 
-    public $duasembilan;
-    public $tigapuluh;
-    public $tigapuluhsatu;
-    public $satu;
+    public $delapan;
+    public $sembilan;
+    public $sepuluh;
+    public $sebelas;
 
 
     public function mount()
     {
         $this->atglances = ScheduleSession::all();
-        $this->duasembilan = $this->atglances->where('date', '2026-07-29')->sortBy('no_urut');
-        $this->tigapuluh = $this->atglances->where('date', '2026-07-30')->sortBy('no_urut');
-        $this->tigapuluhsatu = $this->atglances->where('date', '2026-07-31')->sortBy('no_urut');
-        $this->satu = $this->atglances->where('date', '2026-08-01')->sortBy('no_urut');
+        $this->delapan = $this->atglances->where('date', '2026-10-08')->sortBy('no_urut');
+        $this->sembilan = $this->atglances->where('date', '2026-10-09')->sortBy('no_urut');
+        $this->sepuluh = $this->atglances->where('date', '2026-10-10')->sortBy('no_urut');
+        $this->sebelas = $this->atglances->where('date', '2026-10-11')->sortBy('no_urut');
     }
 
     public function render()

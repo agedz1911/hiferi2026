@@ -48,11 +48,18 @@ class ScheduleSessionResource extends Resource
                 TextInput::make('time'),
                 Select::make('room')
                     ->options([
-                        'Fatmawati Hospital' => 'Fatmawati Hospital',
-                        'Zeiss Office' => 'Zeiss Office',
-                        'Zurich Ballroom' => 'Zurich Ballroom',
-                        'Lausanne Ballroom I' => 'Lausanne Ballroom I',
-                        'Lausanne Ballroom II' => 'Lausanne Ballroom II' 
+                        'BALLROOM 1,2,3' => 'BALLROOM 1,2,3',
+                        'BALLROOM 1' => 'BALLROOM 1',
+                        'BALLROOM 2' => 'BALLROOM 2',
+                        'BALLROOM 3' => 'BALLROOM 3',
+                        'ROOM 1' => 'ROOM 1', 
+                        'ROOM 2' => 'ROOM 2',
+                        'ROOM 3' => 'ROOM 3',
+                        'ROOM 4' => 'ROOM 4',
+                        'ROOM 5' => 'ROOM 5',
+                        'ROOM 6' => 'ROOM 6',
+                        'ROOM 7' => 'ROOM 7',
+                        'ROOM 8' => 'ROOM 8',
                     ]),
                 TextInput::make('moderator'),
                 Textarea::make('panelist'),

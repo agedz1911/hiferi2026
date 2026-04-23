@@ -11,7 +11,7 @@
             {{-- <div class="flex gap-2 flex-wrap justify-between w-full items-end">
                 <div class="w-full pb-2">
                     <p class="mb-1 text-[#39B54A]">Welcome to</p>
-                    <h2 class="mb-1 text-3xl font-extrabold tracking-wide">Bandung, indonesia</h2>
+                    <h2 class="mb-1 text-3xl font-extrabold tracking-wide">Bandung, Indonesia</h2>
                     <p class="m-0 text-justify"><span class="text-[#39B54A]">Bandung</span> Bandung is a vibrant and
                         creative city in West Java known for its cool mountain climate, rich colonial architecture such
                         as the iconic Gedung Sate, and a dynamic culinary and cultural scene. Blending modern urban
