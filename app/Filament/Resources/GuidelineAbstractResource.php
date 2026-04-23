@@ -7,6 +7,7 @@ use App\Filament\Resources\GuidelineAbstractResource\RelationManagers;
 use App\Models\GuidelineAbstract;
 use Filament\Forms;
 use Filament\Forms\Components\MarkdownEditor;
+use Filament\Forms\Components\Select;
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Form;
 use Filament\Resources\Resource;
@@ -27,7 +28,13 @@ class GuidelineAbstractResource extends Resource
         return $form
             ->schema([
                 TextInput::make('title'),
-                TextInput::make('category'),
+                Select::make('category')
+                    ->options([
+                        'Free Paper' => 'Free Paper',
+                        'Abstract Video' => 'Abstract Video',
+                        'Educative Video' => 'Educative Video',
+                    ])
+                    ->required(),
                 MarkdownEditor::make('description'),
                 TextInput::make('no_urut')
                     ->numeric()
