@@ -84,7 +84,7 @@
                                                     </div>
                                                     <p class="mb-0">Session : <span class="">
                                                             {{$room1->title_ses}}</span></p>
-                                                    <p class=">Moderator : <span class="">
+                                                    <p class="">Moderator : <span class="">
                                                             {{$room1->moderator}}
                                                         </span></p>
                                                     <div class="overflow-x-auto mt-5">
@@ -153,7 +153,7 @@
                                                     </div>
                                                     <p class="mb-0">Session : <span class="">
                                                             {{$room2->title_ses}}</span></p>
-                                                    <p class=">Moderator : <span class="">
+                                                    <p class="">Moderator : <span class="">
                                                             {{$room2->moderator}}
                                                         </span></p>
                                                     <div class="overflow-x-auto mt-5">
@@ -222,7 +222,7 @@
                                                     </div>
                                                     <p class="mb-0">Session : <span class="">
                                                             {{$room3->title_ses}}</span></p>
-                                                    <p class=">Moderator : <span class="">
+                                                    <p class="">Moderator : <span class="">
                                                             {{$room3->moderator}}
                                                         </span></p>
                                                     <div class="overflow-x-auto mt-5">
@@ -291,7 +291,7 @@
                                                     </div>
                                                     <p class="mb-0">Session : <span class="">
                                                             {{$room4->title_ses}}</span></p>
-                                                    <p class=">Moderator : <span class="">
+                                                    <p class="">Moderator : <span class="">
                                                             {{$room4->moderator}}
                                                         </span></p>
                                                     <div class="overflow-x-auto mt-5">
@@ -360,7 +360,7 @@
                                                     </div>
                                                     <p class="mb-0">Session : <span class="">
                                                             {{$room5->title_ses}}</span></p>
-                                                    <p class=">Moderator : <span class="">
+                                                    <p class="">Moderator : <span class="">
                                                             {{$room5->moderator}}
                                                         </span></p>
                                                     <div class="overflow-x-auto mt-5">
@@ -429,7 +429,7 @@
                                                     </div>
                                                     <p class="mb-0">Session : <span class="">
                                                             {{$room6->title_ses}}</span></p>
-                                                    <p class=">Moderator : <span class="">
+                                                    <p class="">Moderator : <span class="">
                                                             {{$room6->moderator}}
                                                         </span></p>
                                                     <div class="overflow-x-auto mt-5">
@@ -498,7 +498,7 @@
                                                     </div>
                                                     <p class="mb-0">Session : <span class="">
                                                             {{$room7->title_ses}}</span></p>
-                                                    <p class=">Moderator : <span class="">
+                                                    <p class="">Moderator : <span class="">
                                                             {{$room7->moderator}}
                                                         </span></p>
                                                     <div class="overflow-x-auto mt-5">
@@ -567,7 +567,7 @@
                                                     </div>
                                                     <p class="mb-0">Session : <span class="">
                                                             {{$room8->title_ses}}</span></p>
-                                                    <p class=">Moderator : <span class="">
+                                                    <p class="">Moderator : <span class="">
                                                             {{$room8->moderator}}
                                                         </span></p>
                                                     <div class="overflow-x-auto mt-5">
@@ -662,7 +662,7 @@
                                                     </div>
                                                     <p class="mb-0">Session : <span class="">
                                                             {{$room91->title_ses}}</span></p>
-                                                    <p class=">Moderator : <span class="">
+                                                    <p class="">Moderator : <span class="">
                                                             {{$room91->moderator}}
                                                         </span></p>
                                                     <div class="overflow-x-auto mt-5">
@@ -731,7 +731,7 @@
                                                     </div>
                                                     <p class="mb-0">Session : <span class="">
                                                             {{$room92->title_ses}}</span></p>
-                                                    <p class=">Moderator : <span class="">
+                                                    <p class="">Moderator : <span class="">
                                                             {{$room92->moderator}}
                                                         </span></p>
                                                     <div class="overflow-x-auto mt-5">
@@ -800,7 +800,7 @@
                                                     </div>
                                                     <p class="mb-0">Session : <span class="">
                                                             {{$room93->title_ses}}</span></p>
-                                                    <p class=">Moderator : <span class="">
+                                                    <p class="">Moderator : <span class="">
                                                             {{$room93->moderator}}
                                                         </span></p>
                                                     <div class="overflow-x-auto mt-5">
@@ -869,7 +869,7 @@
                                                     </div>
                                                     <p class="mb-0">Session : <span class="">
                                                             {{$room94->title_ses}}</span></p>
-                                                    <p class=">Moderator : <span class="">
+                                                    <p class="">Moderator : <span class="">
                                                             {{$room94->moderator}}
                                                         </span></p>
                                                     <div class="overflow-x-auto mt-5">
@@ -938,7 +938,7 @@
                                                     </div>
                                                     <p class="mb-0">Session : <span class="">
                                                             {{$room95->title_ses}}</span></p>
-                                                    <p class=">Moderator : <span class="">
+                                                    <p class="">Moderator : <span class="">
                                                             {{$room95->moderator}}
                                                         </span></p>
                                                     <div class="overflow-x-auto mt-5">
@@ -1007,7 +1007,7 @@
                                                     </div>
                                                     <p class="mb-0">Session : <span class="">
                                                             {{$room96->title_ses}}</span></p>
-                                                    <p class=">Moderator : <span class="">
+                                                    <p class="">Moderator : <span class="">
                                                             {{$room96->moderator}}
                                                         </span></p>
                                                     <div class="overflow-x-auto mt-5">
@@ -1076,7 +1076,7 @@
                                                     </div>
                                                     <p class="mb-0">Session : <span class="">
                                                             {{$room97->title_ses}}</span></p>
-                                                    <p class=">Moderator : <span class="">
+                                                    <p class="">Moderator : <span class="">
                                                             {{$room97->moderator}}
                                                         </span></p>
                                                     <div class="overflow-x-auto mt-5">
@@ -1145,7 +1145,7 @@
                                                     </div>
                                                     <p class="mb-0">Session : <span class="">
                                                             {{$room98->title_ses}}</span></p>
-                                                    <p class=">Moderator : <span class="">
+                                                    <p class="">Moderator : <span class="">
                                                             {{$room98->moderator}}
                                                         </span></p>
                                                     <div class="overflow-x-auto mt-5">
@@ -1237,7 +1237,7 @@
                                                     </div>
                                                     <p class="mb-0">Session : <span class="">
                                                             {{$ballroomall10->title_ses}}</span></p>
-                                                    <p class=">Moderator : <span class="">
+                                                    <p class="">Moderator : <span class="">
                                                             {{$ballroomall10->moderator}}
                                                         </span></p>
                                                     <div class="overflow-x-auto mt-5">
@@ -1305,7 +1305,7 @@
                                                     </div>
                                                     <p class="mb-0">Session : <span class="">
                                                             {{$ballroom110->title_ses}}</span></p>
-                                                    <p class=">Moderator : <span class="">
+                                                    <p class="">Moderator : <span class="">
                                                             {{$ballroom110->moderator}}
                                                         </span></p>
                                                     <div class="overflow-x-auto mt-5">
@@ -1373,7 +1373,7 @@
                                                     </div>
                                                     <p class="mb-0">Session : <span class="">
                                                             {{$ballroom210->title_ses}}</span></p>
-                                                    <p class=">Moderator : <span class="">
+                                                    <p class="">Moderator : <span class="">
                                                             {{$ballroom210->moderator}}
                                                         </span></p>
                                                     <div class="overflow-x-auto mt-5">
@@ -1441,7 +1441,7 @@
                                                     </div>
                                                     <p class="mb-0">Session : <span class="">
                                                             {{$ballroom310->title_ses}}</span></p>
-                                                    <p class=">Moderator : <span class="">
+                                                    <p class="">Moderator : <span class="">
                                                             {{$ballroom310->moderator}}
                                                         </span></p>
                                                     <div class="overflow-x-auto mt-5">
@@ -1509,7 +1509,7 @@
                                                     </div>
                                                     <p class="mb-0">Session : <span class="">
                                                             {{$room110->title_ses}}</span></p>
-                                                    <p class=">Moderator : <span class="">
+                                                    <p class="">Moderator : <span class="">
                                                             {{$room110->moderator}}
                                                         </span></p>
                                                     <div class="overflow-x-auto mt-5">
@@ -1601,7 +1601,7 @@
                                                     </div>
                                                     <p class="mb-0">Session : <span class="">
                                                             {{$ballroomall11->title_ses}}</span></p>
-                                                    <p class=">Moderator : <span class="">
+                                                    <p class="">Moderator : <span class="">
                                                             {{$ballroomall11->moderator}}
                                                         </span></p>
                                                     <div class="overflow-x-auto mt-5">
@@ -1669,7 +1669,7 @@
                                                     </div>
                                                     <p class="mb-0">Session : <span class="">
                                                             {{$ballroom111->title_ses}}</span></p>
-                                                    <p class=">Moderator : <span class="">
+                                                    <p class="">Moderator : <span class="">
                                                             {{$ballroom111->moderator}}
                                                         </span></p>
                                                     <div class="overflow-x-auto mt-5">
@@ -1737,7 +1737,7 @@
                                                     </div>
                                                     <p class="mb-0">Session : <span class="">
                                                             {{$ballroom211->title_ses}}</span></p>
-                                                    <p class=">Moderator : <span class="">
+                                                    <p class="">Moderator : <span class="">
                                                             {{$ballroom211->moderator}}
                                                         </span></p>
                                                     <div class="overflow-x-auto mt-5">
@@ -1805,7 +1805,7 @@
                                                     </div>
                                                     <p class="mb-0">Session : <span class="">
                                                             {{$ballroom311->title_ses}}</span></p>
-                                                    <p class=">Moderator : <span class="">
+                                                    <p class="">Moderator : <span class="">
                                                             {{$ballroom311->moderator}}
                                                         </span></p>
                                                     <div class="overflow-x-auto mt-5">
@@ -1873,7 +1873,7 @@
                                                     </div>
                                                     <p class="mb-0">Session : <span class="">
                                                             {{$room111->title_ses}}</span></p>
-                                                    <p class=">Moderator : <span class="">
+                                                    <p class="">Moderator : <span class="">
                                                             {{$room111->moderator}}
                                                         </span></p>
                                                     <div class="overflow-x-auto mt-5">
