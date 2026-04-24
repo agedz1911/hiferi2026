@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>{{ $title ?? 'INASHUM - INAPOS - IDOS' }}</title>
+    <title>{{ $title ?? 'HIFERI 2026' }}</title>
     <meta name="description" content="The National Congress of The Indonesian Association of Reproductive Endocrinology and Fertility" />
     <meta name="keywords" content="Endocrinology and fertility" />
     <meta name="author" content="AV-PRO" />
