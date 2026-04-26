@@ -12,9 +12,9 @@
                         <td>
                             <p class="text-gray-500"> {{
                             $date->date_end
-                            ? \Carbon\Carbon::parse($date->date)->format('d F') . ' - ' .
-                            \Carbon\Carbon::parse($date->date_end)->format('d F, Y')
-                            : \Carbon\Carbon::parse($date->date)->format('d F, Y')
+                            ? \Carbon\Carbon::parse($date->date)->format('F d') . ' - ' .
+                            \Carbon\Carbon::parse($date->date_end)->format('F d, Y')
+                            : \Carbon\Carbon::parse($date->date)->format('F d, Y')
                             }}</p>
                         </td>
                     </tr>

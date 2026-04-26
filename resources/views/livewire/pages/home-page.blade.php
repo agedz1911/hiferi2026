@@ -36,7 +36,7 @@
                             class="fa-solid fa-file-download mr-1 text-xs"></i>Download Announcement </a>
                     <a href="/registration" wire:navigate
                         class="btn text-sm px-5 md:px-10 py-3 text-center rounded-lg btn-lg btn-soft btn-success"><i
-                            class="fa-solid fa-pen-to-square"></i> Regiter Now </a>
+                            class="fa-solid fa-pen-to-square"></i> Register Now </a>
                 </div>
             </div>
         </div>
@@ -106,8 +106,8 @@
                         </div>
                         <div class="p-4 rounded-xl bg-[#39B54A] w-full max-w-sm mt-3 mb-5">
                             <div class="p-2 border-s border-white border-spacing-7">
-                                <p class="text-white text-xs italic">" {{$welcomeMessage->title}}
-                                    "</p>
+                                <p class="text-white text-xs italic"> {{$welcomeMessage->title}}
+                                    </p>
                                 <h6 class="font-semibold text-white">{{$welcomeMessage->name}}</h6>
                             </div>
                         </div>
