@@ -62,7 +62,7 @@
                             </tbody>
                         </table>
                         <div class="relative mt-2">
-                            <a href="javascript:void(0)"
+                            <a href="https://expo.virconex-id.com/registration/hiferi2026/"
                                 class="btn bg-[#39B54A] text-white hover:bg-[#288b35] btn-lg rounded-xl mb-3 float-end text-sm"><i
                                     class="fa-solid fa-list mx-3"></i>Register Now!</a>
                         </div>
@@ -82,7 +82,7 @@
                                 </div>
                                 {!! str($regLocal->description)->markdown()->sanitizeHtml() !!}
                                 <div class="mt-6">
-                                    <a href="javascript:void(0)"
+                                    <a href="https://expo.virconex-id.com/registration/hiferi2026/"
                                         class="btn bg-[#39B54A] text-white hover:bg-[#39B54A]  rounded-xl mb-3 btn-block"><i
                                             class="fa-solid fa-list mx-3"></i>Register Now!</a>
                                 </div>
@@ -135,7 +135,7 @@
                             </tbody>
                         </table>
                         <div class="relative mt-2">
-                            <a href="javascript:void(0)"
+                            <a href="https://expo.virconex-id.com/registration/hiferi2026/"
                                 class="btn bg-[#39B54A] text-white hover:bg-[#39B54A] btn-lg rounded-xl mb-3 float-end text-sm"><i
                                     class="fa-solid fa-list mx-3"></i>Register Now!</a>
                         </div>
@@ -203,7 +203,7 @@
                             </tbody>
                         </table>
                         <div class="relative mt-2">
-                            <a href="javascript:void(0)"
+                            <a href="https://expo.virconex-id.com/registration/hiferi2026/"
                                 class="btn bg-[#39B54A] text-white hover:bg-[#278032] btn-lg rounded-xl mb-3 float-end text-sm"><i
                                     class="fa-solid fa-list mx-3"></i>Register Now!</a>
                         </div>
@@ -250,7 +250,7 @@
                             </tbody>
                         </table>
                         <div class="relative mt-2">
-                            <a href="javascript:void(0)"
+                            <a href="https://expo.virconex-id.com/registration/hiferi2026/"
                                 class="btn bg-[#39B54A] text-white hover:bg-[#39B54A] btn-lg rounded-xl mb-3 float-end text-sm"><i
                                     class="fa-solid fa-list mx-3"></i>Register Now!</a>
                         </div>
@@ -297,7 +297,7 @@
                             </tbody>
                         </table>
                         <div class="relative mt-2">
-                            <a href="javascript:void(0)"
+                            <a href="https://expo.virconex-id.com/registration/hiferi2026/"
                                 class="btn bg-[#39B54A] text-white hover:bg-[#39B54A] btn-lg rounded-xl mb-3 float-end text-sm"><i
                                     class="fa-solid fa-list mx-3"></i>Register Now!</a>
                         </div>
@@ -346,7 +346,7 @@
                             </tbody>
                         </table>
                         <div class="relative mt-2">
-                            <a href="javascript:void(0)"
+                            <a href="https://expo.virconex-id.com/registration/hiferi2026/"
                                 class="btn bg-[#39B54A] text-white hover:bg-[#39B54A] btn-lg rounded-xl mb-3 float-end text-sm"><i
                                     class="fa-solid fa-list mx-3"></i>Register Now!</a>
                         </div>
