@@ -33,11 +33,11 @@
             Scientific Program <i class="fa-solid fa-angle-down"></i></div>
         <ul tabindex="0" class="dropdown-content menu bg-base-100 rounded-box gap-2 w-60 p-2 shadow-sm">
 
-            <li>
+            {{-- <li>
                 <a href="/topics" wire:navigate
                     class="{{ request()->is('topics') ? 'text-[#39B54A]' : '' }} justify-between hover:text-[#39B54A]">
                     Topics <i class="fa-solid fa-angle-right"></i></a>
-            </li>
+            </li> --}}
             <li>
                 <a href="/program-at-glance" wire:navigate
                     class="{{ request()->is('program-at-glance') ? 'text-[#39B54A]' : '' }} justify-between hover:text-[#39B54A]">Program

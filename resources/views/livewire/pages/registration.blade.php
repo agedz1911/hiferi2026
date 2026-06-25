@@ -24,7 +24,7 @@
                                     </th>
                                     <th scope="col" class="px-6 py-3">
                                         Early Bird Registration <br>
-                                        up to 30 June 2026
+                                        up to 31 July 2026
                                     </th>
                                     <th scope="col" class="px-6 py-3">
                                         Regular Registration <br>
@@ -162,7 +162,7 @@
                                     </th>
                                     <th scope="col" class="px-6 py-3">
                                         Early Bird Registration <br>
-                                        up to 30 June 2026
+                                        up to 31 July 2026
                                     </th>
                                     <th scope="col" class="px-6 py-3">
                                         Regular Registration <br>
