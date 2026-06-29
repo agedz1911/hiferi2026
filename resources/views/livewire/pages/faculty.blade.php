@@ -1,4 +1,4 @@
-<div>
+<div wire:init="loadFaculties">
     <section class="breadcrumbs relative pb-0">
         <div class="absolute inset-0 bg-gradient-to-t from-[#27AAE1]/80 to-[#39B54A]/10"></div>
         <div class="py-16 lg:py-28 text-center relative">
@@ -20,17 +20,31 @@
                 <div class="tabs tabs-border justify-evenly mb-5">
                     <input type="radio" name="my_tabs_2"
                         class="tab uppercase tracking-wider text-lg hover:text-[#262262] text-[#39B54A]"
-                        aria-label="Indonesian Faculties" />
+                        aria-label="Indonesian Faculties" checked="checked" />
                     <div class="tab-content  p-5 rounded-lg">
-                        <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-5">
+                        @if (!$readyToLoad)
+                        <div class="flex w-full flex-col gap-4">
+                            <div class="skeleton h-40 w-full"></div>
+                            <div class="skeleton h-4 w-28"></div>
+                            <div class="skeleton h-4 w-full"></div>
+                        </div>
+                        @else
+                        <div wire:loading.flex wire:target="searchTerm" class="flex w-full flex-col gap-4">
+                            <div class="skeleton h-40 w-full"></div>
+                            <div class="skeleton h-4 w-28"></div>
+                            <div class="skeleton h-4 w-full"></div>
+                        </div>
+                        <div wire:loading.remove wire:target="searchTerm" class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-5">
+
                             @foreach ($indofaculties as $indo)
                             <div
                                 class="card bg-emerald-100/10 shadow-sm p-0 hover:shadow-md hover:scale-105 transition-all duration-200">
+                                
                                 <figure onclick="my_modal_{{$loop->index}}.showModal()"
                                     class="relative hover:cursor-pointer ">
                                     <img src="{{$indo->image ? asset('storage/' . $indo->image) : "
                                         assets/images/speaker.png"}}" alt="{{$indo->name}}"
-                                        class="w-full h-full lg:h-96 object-cover rounded-xl  lg:px-2">
+                                        class="w-full h-full  object-cover rounded-xl  lg:px-2">
                                 </figure>
                                 <div class="card-body text-center">
                                     <h2 onclick="my_modal_{{$loop->index}}.showModal()"
@@ -87,18 +101,31 @@
                             </dialog>
                             @endforeach
                         </div>
-                        <div class="mt-5 border-t border-dashed pt-3">
+                        @endif
+                        {{-- <div class="mt-5 border-t border-dashed pt-3">
                             {{ $indofaculties->links() }}
-                        </div>
+                        </div> --}}
                         <p class="text-xs italic mt-5">*within confirmation</p>
                     </div>
 
                     <input type="radio" name="my_tabs_2"
                         class="tab uppercase tracking-wider  text-lg hover:text-[#262262] text-[#39B54A]"
-                        aria-label="International faculties" checked="checked" />
+                        aria-label="International faculties"  />
                     <div class="tab-content  p-5 rounded-lg">
                         {{-- @dd($indofaculties) --}}
-                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
+                        @if (!$readyToLoad)
+                        <div class="flex w-full flex-col gap-4">
+                            <div class="skeleton h-40 w-full"></div>
+                            <div class="skeleton h-4 w-28"></div>
+                            <div class="skeleton h-4 w-full"></div>
+                        </div>
+                        @else
+                        <div wire:loading.flex wire:target="searchTerm" class="flex w-full flex-col gap-4">
+                            <div class="skeleton h-40 w-full"></div>
+                            <div class="skeleton h-4 w-28"></div>
+                            <div class="skeleton h-4 w-full"></div>
+                        </div>
+                        <div wire:loading.remove wire:target="searchTerm" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
                             @foreach ($foreignfaculties as $foreign)
                             <div
                                 class="card bg-emerald-100/10 shadow-sm p-0 hover:shadow-md hover:scale-105 transition-all duration-200">
@@ -106,7 +133,7 @@
                                     class="relative hover:cursor-pointer ">
                                     <img src="{{$foreign->image ? asset('storage/' . $foreign->image) : "
                                         assets/images/speaker.png"}}" alt="{{$foreign->name}}"
-                                        class="w-full h-full lg:h-96 object-cover rounded-xl  lg:px-2">
+                                        class="w-full h-full  object-cover rounded-xl  lg:px-2">
 
                                 </figure>
                                 <div class="card-body text-center">
@@ -171,9 +198,10 @@
                             </dialog>
                             @endforeach
                         </div>
-                        <div class="mt-5 border-t border-dashed pt-3">
+                        @endif
+                        {{-- <div class="mt-5 border-t border-dashed pt-3">
                             {{ $foreignfaculties->links() }}
-                        </div>
+                        </div> --}}
                         <p class="text-xs italic mt-5">*within confirmation</p>
                     </div>
 

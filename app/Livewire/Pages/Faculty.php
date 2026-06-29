@@ -10,9 +10,23 @@ use Livewire\Component;
 class Faculty extends Component
 {
     public $searchTerm = "";
+    public $readyToLoad = false;
+
+    public function loadFaculties()
+    {
+        $this->readyToLoad = true;
+    }
 
     public function render()
     {
+        if (!$this->readyToLoad) {
+            return view('livewire.pages.faculty', [
+                'indofaculties' => collect(),
+                'foreignfaculties' => collect(),
+                'readyToLoad' => $this->readyToLoad,
+            ]);
+        }
+
         // $indofaculties = ModelsFaculty::where('is_active', true)->where('country', 'indonesia')->with('schedules')->orderBy('name', 'asc')->get();
         // $foreignfaculties = ModelsFaculty::where('is_active', true)->where('country', '!=', 'indonesia')->with('schedules')->orderBy('name', 'asc')->get();
         $queryIndo = ModelsFaculty::where('is_active', true)->orderBy('no_urut', 'asc')->with('schedules')->where('country', 'Indonesia');
@@ -29,12 +43,16 @@ class Faculty extends Component
         }
         $indofaculties = $queryIndo
             ->orderBy('name', 'asc')
-            ->paginate(24);
+            ->get();
 
         $foreignfaculties = $queryForeign
             ->orderBy('name', 'asc')
-            ->paginate(24);
+            ->get();
 
-        return view('livewire.pages.faculty', ['indofaculties' => $indofaculties, 'foreignfaculties' => $foreignfaculties]);
+        return view('livewire.pages.faculty', [
+            'indofaculties' => $indofaculties,
+            'foreignfaculties' => $foreignfaculties,
+            'readyToLoad' => $this->readyToLoad,
+        ]);
     }
 }
