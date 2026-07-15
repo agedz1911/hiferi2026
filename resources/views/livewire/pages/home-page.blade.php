@@ -31,7 +31,7 @@
                     October 8<sup>th</sup> - 11<sup>th</sup>, 2026 <br> Holiday Inn, Pasteur, Bandung
                 </p>
                 <div class="mt-7 w-full gap-1 flex flex-wrap">
-                    <a
+                    <a href="{{asset('assets/download/announcement.pdf')}}" target="_blank"
                         class="text-white hover:cursor-pointer border bg-[#262262] hover:border-[#262262] focus:ring-4 focus:outline-none focus:ring-[#262262] font-medium rounded-lg text-sm px-5 md:px-10 py-3 text-center  dark:border-[#262262] dark:text-[#262262] dark:hover:text-white dark:hover:bg-white dark:focus:ring-white"><i
                             class="fa-solid fa-file-download mr-1 text-xs"></i>Download Announcement </a>
                     <a href="/registration" wire:navigate
