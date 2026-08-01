@@ -10,7 +10,7 @@
     <div class="relative">
         <div class="flex flex-col items-center w-full max-w-4xl m-auto">
 
-            <img src="assets/images/logo/logo-event.png" class="max-w-xs" alt="Icon" class="">
+            <img src="assets/images/logo/new-logo-event.png" class="max-w-xs" alt="Icon" class="">
 
             <div class="border-b border-white m-auto mb-6 mt-4 w-full max-w-2xl">
 
@@ -20,8 +20,8 @@
                 <div class="py-5 mt-3">
                     <ul class="m-0 p-0 flex flex-row gap-5 lg:gap-8 justify-center">
                         <li class="bg-[#39B54A] rounded-md p-2 w-10 hover:bg-[#1e882c] tooltip-bottom tooltip"
-                            data-tip="hiferi2026@pharma-pro.com">
-                            <a href="mailto:hiferi2026@pharma-pro.com" class="">
+                            data-tip="fres2026@pharma-pro.com">
+                            <a href="mailto:fres2026@pharma-pro.com" class="">
                                 <i class="fa-solid fa-envelope-open-text text-xl"></i>
                             </a>
                         </li>

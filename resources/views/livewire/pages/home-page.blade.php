@@ -5,23 +5,21 @@
             class="z-10 relative pt-10 md:pt-14 lg:pt-32 flex flex-col md:flex-row items-start justify-start md:items-end md:justify-end gap-4">
 
             <div class="px-5 order-1 lg:order-2 w-full max-w-4xl flex flex-col items-center md:items-start">
-                <img src="{{asset('assets/images/logo/logo-all.png')}}" class="w-40 rounded-xl" alt="Banner">
-                <div class="flex gap-1 mt-6">
-                    <div>
-                        <img src="{{asset('assets/images/logo/icon.png')}}" class="w-full max-w-40" alt="">
+                {{-- <img src="{{asset('assets/images/logo/new-logo-event.png')}}" class="w-full max-w-72 rounded-xl"
+                    alt="Banner"> --}}
+                <div class="flex mt-6 justify-center items-center gap-1">
+                    <div class="">
+                        <h1 class="font-bold text-7xl lg:text-8xl tracking-widest text-[#39B54A] mt-0">FRES</h1>
                     </div>
-                    <div class="w-full ">
-                        <h1 class="text-xl lg:text-3xl text-[#302b88] font-bold mb-0 ">
-                            KONAS IX
-                        </h1>
-                        <h1 class="font-bold text-6xl lg:text-8xl tracking-widest text-[#39B54A] mt-0">HIFERI</h1>
-                        <div class="flex flex-row w-full">
-                            <p class="text-sm lg:text-base">The 9<sup>th</sup> National Congress of</p>
-                        </div>
-                        <p class="text-sm lg:text-base tracking-tighter">Indonesian Association of Reproductive Endocrinology and
-                            Fertility</p>
+                    <div>
+                        <img src="{{asset('assets/images/logo/new-icon.png')}}" class="w-full max-w-64" alt="">
                     </div>
                 </div>
+                <p class="text-start text-xl tracking-wider font-bold">Fertility and Reproductive Endocrinology Summit
+                    2026</p>
+                <p class="text-start text-lg tracking-wider">Kongres Nasional Fertilitas dan <br>
+                    Endokrinologi Reproduksi Indonesia 2026</p>
+                <div class=" border border-b-4 max-w-2xl w-full mt-3"></div>
                 <div class="w-full max-w-2xl">
                     <p class="italic mt-3 text-[#302b88] font-bold md:text-xl">" Empowering Reproductive Endocrinology
                         and Infertility Clinicians:
@@ -158,23 +156,19 @@
 
     <section class="lg:pb-16 pb-20 mt-10 grid grid-cols-1 lg:grid-cols-2 px-3 lg:px-8 gap-3">
         <div class=" px-3 lg:px-8">
-            <img src="assets/images/logo/logo-all.png" alt="Icon" class="w-60 mb-5" class="">
-            <div class="flex gap-1 mt-6">
-                <div>
-                    <img src="{{asset('assets/images/logo/icon.png')}}" class="w-full max-w-40" alt="">
+            <div class="flex mt-6 justify-center md:justify-start items-center gap-1">
+                <div class="">
+                    <h1 class="font-bold text-7xl lg:text-8xl tracking-widest text-[#39B54A] mt-0">FRES</h1>
                 </div>
-                <div class="w-full ">
-                    <h1 class="text-xl lg:text-2xl text-[#302b88] font-bold mb-0 ">
-                        KONAS IX
-                    </h1>
-                    <h1 class="font-bold text-6xl lg:text-8xl tracking-widest text-[#39B54A] mt-0">HIFERI</h1>
-                    <div class="flex flex-row w-full">
-                        <p class="text-sm">The 9<sup>th</sup> National Congress of</p>
-                    </div>
-                    <p class="text-sm tracking-tighter">Indonesian Association of Reproductive Endocrinology and
-                        Fertility</p>
+                <div>
+                    <img src="{{asset('assets/images/logo/new-icon.png')}}" class="w-full max-w-64" alt="">
                 </div>
             </div>
+            <p class="text-start text-xl tracking-wider font-bold">Fertility and Reproductive Endocrinology Summit 2026
+            </p>
+            <p class="text-start text-lg tracking-wider">Kongres Nasional Fertilitas dan <br>
+                Endokrinologi Reproduksi Indonesia 2026</p>
+            <div class=" border border-b-4 max-w-2xl w-full mt-3"></div>
             <div class="w-full max-w-2xl">
                 <p class="italic mt-3 text-[#302b88] font-bold md:text-xl">" Empowering Reproductive Endocrinology
                     and Infertility Clinicians:

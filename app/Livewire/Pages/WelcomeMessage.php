@@ -3,8 +3,10 @@
 namespace App\Livewire\Pages;
 
 use App\Models\WelcomeMessage as ModelsWelcomeMessage;
+use Livewire\Attributes\Title;
 use Livewire\Component;
 
+#[Title('Welcome Message - FRES 2026')]
 class WelcomeMessage extends Component
 {
     public function render()

@@ -3,7 +3,7 @@
     <div class="mx-auto flex justify-between items-center px-4">
 
         <div>
-            {{-- <a class="btn hover:bg-[#262262] border-none bg-[#27AAE1] text-white btn-sm rounded-full shadow-none w-8" href="mailto:hiferi2026@pharma-pro.com">
+            {{-- <a class="btn hover:bg-[#262262] border-none bg-[#27AAE1] text-white btn-sm rounded-full shadow-none w-8" href="mailto:fres2026@pharma-pro.com">
                 <i class="fa fa-envelope">
                 </i>
             </a> --}}
@@ -24,8 +24,8 @@
             <div class="border-r pr-3">
                 <span class="ml-4 hover:underline hover:text-[#39B54A] text-sm">
                     <i class="fa fa-envelope mr-1"></i>
-                    <a href="mailto:hiferi2026@pharma-pro.com">
-                        hiferi2026@pharma-pro.com
+                    <a href="mailto:fres2026@pharma-pro.com">
+                        fres2026@pharma-pro.com
                     </a>
                 </span>
             </div>
@@ -40,7 +40,7 @@
         <div class="drawer-content flex flex-col">
             <div class="navbar">
                 <div class="navbar-start">
-                    <img src="assets/images/logo/logo-event.png" class="h-full max-h-12" alt="Logo" />
+                    <img src="assets/images/logo/new-logo-event.png" class="h-full max-h-12" alt="Logo" />
                 </div>
                 <div class="navbar-center hidden lg:flex py-2">
                     <x-section.menu />
@@ -63,7 +63,7 @@
             <label for="my-drawer-3" aria-label="close sidebar" class="drawer-overlay"></label>
             <ul class="bg-base-200 min-h-full w-80 p-4">
                 <!-- Sidebar content here -->
-                <img src="assets/images/logo/logo-event.png" class="w-full mb-5 max-w-sm" />
+                <img src="assets/images/logo/new-logo-event.png" class="w-full mb-5 max-w-sm" />
                 <x-section.menu-mobile />
             </ul>
         </div>

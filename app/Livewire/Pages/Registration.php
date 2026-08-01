@@ -8,7 +8,7 @@ use Livewire\Attributes\Title;
 use Livewire\Component;
 
 
-#[Title('KONAS IX HIFERI - Registration')]
+#[Title('Registration - FRES 2026')]
 class Registration extends Component
 {
     public $regInfos;
