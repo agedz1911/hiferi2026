@@ -5,9 +5,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>{{ $title ?? 'HIFERI 2026' }}</title>
-    <meta name="description" content="The National Congress of The Indonesian Association of Reproductive Endocrinology and Fertility" />
-    <meta name="keywords" content="Endocrinology and fertility" />
+    <title>{{ $title ?? 'FRES 2026' }}</title>
+    <meta name="description" content="The Indonesian National Congress on Fertility and Reproductive Endocrinology 2026" />
+    <meta name="keywords" content="Endocrinology and fertility, Kongres Nasional, Fertilitas, Endokrinologi Reproduksi," />
     <meta name="author" content="AV-PRO" />
 
     <!-- Custom CSS -->

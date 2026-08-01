@@ -6,7 +6,7 @@
 
             <div class="px-5 order-1 lg:order-2 w-full max-w-4xl flex flex-col items-center md:items-start">
                 {{-- <img src="{{asset('assets/images/logo/new-logo-event.png')}}" class="w-full max-w-72 rounded-xl"
-                    alt="Banner"> --}}
+                alt="Banner"> --}}
                 <div class="flex mt-6 justify-center items-center gap-1">
                     <div class="">
                         <h1 class="font-bold text-7xl lg:text-8xl tracking-widest text-[#39B54A] mt-0">FRES</h1>
@@ -17,8 +17,8 @@
                 </div>
                 <p class="text-start text-xl tracking-wider font-bold">Fertility and Reproductive Endocrinology Summit
                     2026</p>
-                <p class="text-start text-lg tracking-wider">Kongres Nasional Fertilitas dan <br>
-                    Endokrinologi Reproduksi Indonesia 2026</p>
+                <p class="text-start text-lg tracking-wider">The Indonesian National Congress on <br>
+                    Fertility and Reproductive Endocrinology 2026</p>
                 <div class=" border border-b-4 max-w-2xl w-full mt-3"></div>
                 <div class="w-full max-w-2xl">
                     <p class="italic mt-3 text-[#302b88] font-bold md:text-xl">" Empowering Reproductive Endocrinology
@@ -166,8 +166,9 @@
             </div>
             <p class="text-start text-xl tracking-wider font-bold">Fertility and Reproductive Endocrinology Summit 2026
             </p>
-            <p class="text-start text-lg tracking-wider">Kongres Nasional Fertilitas dan <br>
-                Endokrinologi Reproduksi Indonesia 2026</p>
+            <p class="text-start text-lg tracking-wider">The Indonesian National Congress on <br>
+                Fertility and Reproductive Endocrinology 2026</p>
+
             <div class=" border border-b-4 max-w-2xl w-full mt-3"></div>
             <div class="w-full max-w-2xl">
                 <p class="italic mt-3 text-[#302b88] font-bold md:text-xl">" Empowering Reproductive Endocrinology
