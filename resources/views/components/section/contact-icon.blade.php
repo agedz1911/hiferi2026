@@ -33,7 +33,7 @@
             </div>
             <div class="stat-title font-semibold">Email</div>
             <div class="stat-desc">
-                <a class="hover:underline hover:text-success" href="mailto:hiferi2026@pharma-pro.com">hiferi2026@pharma-pro.com </a> <br>
+                <a class="hover:underline hover:text-success" href="mailto:fres2026@pharma-pro.com">fres2026@pharma-pro.com </a> <br>
                 <a class="hover:underline hover:text-success" href="mailto:silvia@pharma-pro.com">silvia@pharma-pro.com </a>
             </div>
         </div>
