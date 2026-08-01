@@ -2,22 +2,14 @@
 
 namespace App\Livewire\Pages;
 
-use App\Models\atGlance as ModelsAtGlance;
 use App\Models\ScheduleSession;
-use App\Models\Time;
 use Livewire\Attributes\Title;
 use Livewire\Component;
-
 
 #[Title('Program at Glance - FRES 2026')]
 class AtGlance extends Component
 {
-    public $atglances;
-
-    public $delapan;
-    public $sembilan;
-    public $sepuluh;
-    public $sebelas;
+    public array $groupedSessions = [];
 
     public $search = '';
 
@@ -33,7 +25,11 @@ class AtGlance extends Component
 
     public function loadData()
     {
-        $query = ScheduleSession::with('schedules');
+        $query = ScheduleSession::query()
+            ->select(['id', 'category_sesi', 'title_ses', 'date', 'time', 'room', 'moderator', 'no_urut'])
+            ->with(['schedules' => function ($query) {
+                $query->select(['id', 'sesi_id', 'time_speaker', 'topic_title', 'speaker']);
+            }]);
 
         if (!empty($this->search)) {
             $query->where(function ($q) {
@@ -45,12 +41,23 @@ class AtGlance extends Component
             });
         }
 
-        $this->atglances = $query->get();
+        $sessions = $query
+            ->orderBy('date')
+            ->orderBy('no_urut')
+            ->orderBy('room')
+            ->get();
 
-        $this->delapan = $this->atglances->where('date', '2026-10-08')->sortBy('no_urut');
-        $this->sembilan = $this->atglances->where('date', '2026-10-09')->sortBy('no_urut');
-        $this->sepuluh = $this->atglances->where('date', '2026-10-10')->sortBy('no_urut');
-        $this->sebelas = $this->atglances->where('date', '2026-10-11')->sortBy('no_urut');
+        $this->groupedSessions = $sessions
+            ->groupBy('date')
+            ->map(function ($daySessions) {
+                return $daySessions
+                    ->groupBy('room')
+                    ->map(function ($roomSessions) {
+                        return $roomSessions->sortBy('no_urut')->values()->toArray();
+                    })
+                    ->toArray();
+            })
+            ->toArray();
     }
 
     public function render()
