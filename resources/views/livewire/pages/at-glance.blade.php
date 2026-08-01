@@ -15,7 +15,21 @@
 
     <section class="px-5 md:px-10 pt-0 pb-10 md:py-20 bg-competition">
         <div class="flex flex-wrap items-center justify-center">
-            <div x-data="{ openTab: 3, isModalOpen: false, selectedSession: null }" class="lg:w-11/12 w-full mx-auto">
+            <div x-data="{
+                openTab: 3,
+                isModalOpen: false,
+                selectedSession: null,
+                formatDate(value) {
+                    if (!value) return '';
+                    const date = new Date(value);
+                    if (Number.isNaN(date.getTime())) return value;
+                    return new Intl.DateTimeFormat('en', {
+                        day: '2-digit',
+                        month: 'long',
+                        year: 'numeric'
+                    }).format(date);
+                }
+            }" class="lg:w-11/12 w-full mx-auto">
                 <div class="mb-4 flex flex-wrap space-x-4 p-2 bg-white rounded-lg shadow-md">
                     <button x-on:click="openTab = 1" :class="{ 'bg-[#39B54A] text-white': openTab === 1 }" class="flex-1 py-2 px-4 rounded-md focus:outline-none focus:shadow-outline-blue transition-all duration-300">8 October</button>
                     <button x-on:click="openTab = 2" :class="{ 'bg-[#39B54A] text-white': openTab === 2 }" class="flex-1 py-2 px-4 rounded-md focus:outline-none focus:shadow-outline-blue transition-all duration-300">9 October</button>
@@ -71,8 +85,8 @@
                             <div>
                                 <div class="flex items-start justify-between gap-4">
                                     <div>
-                                        <h3 class="text-lg font-semibold">Date: <span x-text="selectedSession.date"></span></h3>
-                                        <p class="text-sm text-gray-600">Time: <span x-text="selectedSession.time"></span></p>
+                                        <h3 class="font-semibold">Date: <span x-text="formatDate(selectedSession?.date)"></span></h3>
+                                        <p class="text-sm text-gray-600">Time: <span x-text="selectedSession?.time"></span></p>
                                     </div>
                                     <button type="button" class="btn btn-sm" @click="isModalOpen = false">Close</button>
                                 </div>
