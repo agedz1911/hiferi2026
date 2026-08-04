@@ -6,11 +6,12 @@
         </div>
     </section>
 
-    <div class="px-5 lg:px-10 mt-10">
-        <label class="input input-lg input-success rounded-lg w-full">
+    <div class="px-5 lg:px-10 mt-10 flex flex-wrap gap-2 justify-end md:justify-between items-center">
+        <label class="input input-lg input-success rounded-lg w-full max-w-6xl">
             <i class="fa fa-search opacity-45 text-sm"></i>
             <input wire:model.live='search' type="text" class="grow" placeholder="Search Topics, And Sessions" />
         </label>
+        <a target="_blank" href="assets/download/schedule-fres2026.pdf" class="btn btn-success rounded-lg"><i class="fa fa-download"></i> Download PDF Schedule</a>
     </div>
 
     <section class="px-5 md:px-10 pt-0 pb-10 md:py-20 bg-competition">
