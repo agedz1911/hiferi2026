@@ -7,18 +7,18 @@
             <div class="px-5 order-1 lg:order-2 w-full max-w-4xl flex flex-col items-center md:items-start">
                 {{-- <img src="{{asset('assets/images/logo/new-logo-event.png')}}" class="w-full max-w-72 rounded-xl"
                 alt="Banner"> --}}
-                <div class="flex mt-6 justify-center items-center gap-1">
+                <p class="text-start mb-3 lg:text-4xl text-2xl font-bold">The Indonesian National Congress on <br>
+                    Fertility and Reproductive Endocrinology 2026</p>
+                <div class="flex gap-1 w-full items-center">
                     <div class="">
-                        <h1 class="font-bold text-7xl lg:text-8xl tracking-widest text-[#39B54A] mt-0">FRES</h1>
+                        <h1 class="font-bold text-2xl lg:text-3xl tracking-widest text-[#39B54A] mt-0">FRES</h1>
                     </div>
                     <div>
-                        <img src="{{asset('assets/images/logo/new-icon.png')}}" class="w-full max-w-64" alt="">
+                        <img src="{{asset('assets/images/logo/new-icon.png')}}" class="lg:w-24 w-20" alt="">
                     </div>
                 </div>
-                <p class="text-start text-xl tracking-wider font-bold">Fertility and Reproductive Endocrinology Summit
+                <p class="text-start text-lg tracking-wider font-bold">Fertility and Reproductive Endocrinology Summit
                     2026</p>
-                <p class="text-start text-lg tracking-wider">The Indonesian National Congress on <br>
-                    Fertility and Reproductive Endocrinology 2026</p>
                 <div class=" border border-b-4 max-w-2xl w-full mt-3"></div>
                 <div class="w-full max-w-2xl">
                     <p class="italic mt-3 text-[#302b88] font-bold md:text-xl">" Empowering Reproductive Endocrinology
@@ -156,19 +156,18 @@
 
     <section class="lg:pb-16 pb-20 mt-10 grid grid-cols-1 lg:grid-cols-2 px-3 lg:px-8 gap-3">
         <div class=" px-3 lg:px-8">
-            <div class="flex mt-6 justify-center md:justify-start items-center gap-1">
+            <p class="text-start mb-3 lg:text-4xl text-2xl font-bold mt-6">The Indonesian National Congress on <br>
+                Fertility and Reproductive Endocrinology 2026</p>
+            <div class="flex gap-1 w-full items-center">
                 <div class="">
-                    <h1 class="font-bold text-7xl lg:text-8xl tracking-widest text-[#39B54A] mt-0">FRES</h1>
+                    <h1 class="font-bold text-2xl lg:text-3xl tracking-widest text-[#39B54A] mt-0">FRES</h1>
                 </div>
                 <div>
-                    <img src="{{asset('assets/images/logo/new-icon.png')}}" class="w-full max-w-64" alt="">
+                    <img src="{{asset('assets/images/logo/new-icon.png')}}" class="lg:w-24 w-20" alt="">
                 </div>
             </div>
             <p class="text-start text-xl tracking-wider font-bold">Fertility and Reproductive Endocrinology Summit 2026
             </p>
-            <p class="text-start text-lg tracking-wider">The Indonesian National Congress on <br>
-                Fertility and Reproductive Endocrinology 2026</p>
-
             <div class=" border border-b-4 max-w-2xl w-full mt-3"></div>
             <div class="w-full max-w-2xl">
                 <p class="italic mt-3 text-[#302b88] font-bold md:text-xl">" Empowering Reproductive Endocrinology

@@ -24,15 +24,15 @@
                                     </th>
                                     <th scope="col" class="px-6 py-3">
                                         Early Bird Registration <br>
-                                        up to 31 July 2026
+                                        up to 29 August 2026
                                     </th>
                                     <th scope="col" class="px-6 py-3">
                                         Regular Registration <br>
-                                        up to 28 August 2026
+                                        up to 20 September 2026
                                     </th>
                                     <th scope="col" class="px-6 py-3">
                                         Late/Onsite Registration <br>
-                                        Start from 29 August 2026
+                                        Start from 21 September 2026
                                     </th>
 
                                 </tr>
@@ -162,15 +162,15 @@
                                     </th>
                                     <th scope="col" class="px-6 py-3">
                                         Early Bird Registration <br>
-                                        up to 31 July 2026
+                                        up to 29 August 2026
                                     </th>
                                     <th scope="col" class="px-6 py-3">
                                         Regular Registration <br>
-                                        up to 28 August 2026
+                                        up to 20 September 2026
                                     </th>
                                     <th scope="col" class="px-6 py-3">
                                         Late/Onsite Registration <br>
-                                        Start from 29 August 2026
+                                        Start from 21 September 2026
                                     </th>
 
                                 </tr>
@@ -223,7 +223,7 @@
                                     </th>
                                     <th scope="col" class="px-6 py-3">
                                         Regular Registration <br>
-                                        up to 28 August 2026
+                                        up to 20 September 2026
                                     </th>
                                 </tr>
                             </thead>
@@ -270,7 +270,7 @@
                                     </th>
                                     <th scope="col" class="px-6 py-3">
                                         Regular Registration <br>
-                                        up to 28 August 2026
+                                        up to 20 September 2026
                                     </th>
                                 </tr>
                             </thead>
