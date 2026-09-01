@@ -309,6 +309,26 @@
             </div>
         </div>
     </section>
+    <dialog id="my_modal_1" class="modal">
+        <div class="modal-box w-11/12 max-w-2xl bg-green-50">
+            <h3 class="text-2xl font-bold text-[#0A3542]">Deadline Notice Extension</h3>
+            <p class="py-4 text-gray-500">Good news! The deadline for Free Paper Abstract Submission is officially extended!</p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+                <div class="bg-gradient-to-r from-[#009341] to-[#7FAE41] text-white p-4 rounded-lg">
+                    <i class="fa fa-calendar text-2xl mb-2 block"></i>
+                    <p class="font-bold">September 10, 2026</p>
+                </div>
+                
+            </div>
+            <div class="modal-action">
+                <form method="dialog">
+                    <!-- if there is a button in form, it will close the modal -->
+                    <button class="btn btn-error btn-outline border-0">Close</button>
+                </form>
+            </div>
+        </div>
+    </dialog>
 </div>
 
 <script>
@@ -367,5 +387,11 @@
                 }
             }, duration);
         });
+        setTimeout(function() {
+            const modal = document.getElementById('my_modal_1');
+            if (modal) {
+                modal.showModal();
+            }
+        }, 1000);
     });
 </script>
