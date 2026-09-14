@@ -309,7 +309,7 @@
             </div>
         </div>
     </section>
-    <dialog id="my_modal_1" class="modal">
+    {{-- <dialog id="my_modal_1" class="modal">
         <div class="modal-box w-11/12 max-w-2xl bg-green-50">
             <h3 class="text-2xl font-bold text-[#0A3542]">Deadline Notice Extension</h3>
             <p class="py-4 text-gray-500">Good news! The deadline for Free Paper Abstract Submission is officially extended!</p>
@@ -328,7 +328,7 @@
                 </form>
             </div>
         </div>
-    </dialog>
+    </dialog> --}}
 </div>
 
 <script>
@@ -387,11 +387,11 @@
                 }
             }, duration);
         });
-        setTimeout(function() {
-            const modal = document.getElementById('my_modal_1');
-            if (modal) {
-                modal.showModal();
-            }
-        }, 1000);
+        // setTimeout(function() {
+        //     const modal = document.getElementById('my_modal_1');
+        //     if (modal) {
+        //         modal.showModal();
+        //     }
+        // }, 1000);
     });
 </script>
