@@ -62,10 +62,8 @@
                 6','ROOM 7','ROOM 8']],
                 ['id' => 2, 'date' => '2026-10-09', 'rooms' => ['ROOM 1','ROOM 2','ROOM 3','ROOM 4','ROOM 5','ROOM
                 6','ROOM 7','ROOM 8']],
-                ['id' => 3, 'date' => '2026-10-10', 'rooms' => ['BALLROOM 1,2,3','BALLROOM 1','BALLROOM 2','BALLROOM
-                3','ROOM 1']],
-                ['id' => 4, 'date' => '2026-10-11', 'rooms' => ['BALLROOM 1,2,3','BALLROOM 1','BALLROOM 2','BALLROOM
-                3','ROOM 1']],
+                ['id' => 3, 'date' => '2026-10-10', 'rooms' => ['BALLROOM 1,2,3','BALLROOM 1','BALLROOM 2','BALLROOM 3','ROOM 1']],
+                ['id' => 4, 'date' => '2026-10-11', 'rooms' => ['BALLROOM 1,2,3','BALLROOM 1','BALLROOM 2','BALLROOM 3','ROOM 1',]],
                 ])
 
                 @foreach ($days as $day)

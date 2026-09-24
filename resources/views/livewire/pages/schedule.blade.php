@@ -19,8 +19,7 @@
                 <input id="my-drawer-4" type="checkbox" class="drawer-toggle" />
                 <div class="drawer-content">
                     <!-- Page content here -->
-                    <label for="my-drawer-4"
-                        class="drawer-button btn rounded-lg px-3"><i
+                    <label for="my-drawer-4" class="drawer-button btn rounded-lg px-3"><i
                             class="fa-solid fa-filter"></i> Filter</label>
                 </div>
                 <div class="drawer-side">
@@ -106,13 +105,15 @@
                 </div>
                 @foreach ($uniqCategories as $item)
                 @if (
-                !($date == '2026-10-08' && ($item == 'Symposium' || $item == 'Master Class' || $item == 'Scientific Competition')) &&
-                !($date == '2026-10-09' && ($item == 'Symposium' || $item == 'Master Class' || $item == 'Scientific Competition')) &&
+                !($date == '2026-10-08' && ($item == 'Symposium' || $item == 'Master Class' || $item == 'Scientific
+                Competition')) &&
+                !($date == '2026-10-09' && ($item == 'Symposium' || $item == 'Master Class' || $item == 'Scientific
+                Competition')) &&
                 !($date == '2026-10-10' && ($item == 'Workshop' || $item == 'Master Class')) &&
                 !($date == '2026-10-11' && ($item == 'Workshop' ))
                 )
-                <p class="font-semibold tracking-wider my-5"><i
-                        class="fa fa-angle-right text-sm font-semibold"></i> {{$item}}</p>
+                <p class="font-semibold tracking-wider my-5"><i class="fa fa-angle-right text-sm font-semibold"></i>
+                    {{$item}}</p>
                 @endif
                 @foreach ($atglances as $atglance)
                 @if ($atglance->category_sesi == $item && $atglance->date == $date)
@@ -128,7 +129,21 @@
                                     <span class="font-semibold">Session:</span> {{$atglance->title_ses}}
                                 </p>
                                 <p class="mb-2"><i class="fa fa-clock text-[#39B54A]"></i> {{$atglance->time}} | <i
-                                        class="fa fa-map-marker text-[#39B54A]"></i> {{$atglance->room}}</p>
+                                        class="fa fa-map-marker text-[#39B54A]"></i>
+                                    @if ($atglance->room == 'BALLROOM 1,2,3')
+                                    Pasteur Convention 1, 2 & 3
+                                    @elseif ($atglance->room == 'BALLROOM 1')
+                                    Pasteur Convention 1
+                                    @elseif ($atglance->room == 'BALLROOM 2')
+                                    Pasteur Convention 2
+                                    @elseif ($atglance->room == 'BALLROOM 3')
+                                    Pasteur Convention 3
+                                    @elseif ($atglance->room == 'ROOM 1')
+                                    Empire 5
+                                    @else
+                                    {{ $atglance->room }}
+                                    @endif
+                                </p>
                             </div>
                             <div>
                                 {{-- {{$atglance->category_sesi}} --}}
@@ -201,71 +216,72 @@
                             @foreach ($uniqDates as $date)
                             <div class="section-title py-2 text-center text-lg-start">
                                 <h4 class="mb-1">{{\Carbon\Carbon::parse($date)->format('l, d F')}}</h4>
-</div>
-@foreach ($uniqCategories as $item)
-@if (
-!($date == '2025-09-25' && ($item == 'Workshop' ))
-)
-<p class="mb-0 mt-5">{{$item}}</p>
+                            </div>
+                            @foreach ($uniqCategories as $item)
+                            @if (
+                            !($date == '2025-09-25' && ($item == 'Workshop' ))
+                            )
+                            <p class="mb-0 mt-5">{{$item}}</p>
 
-<div class="faq-accordion p-4 bg-lightgrey rounded border-2 border-light-subtle ">
-    <div class="accordion accordion-faq " id="accordionFlushExample">
-        @foreach ($atglances as $atglance)
-        @if ($atglance->category_sesi == $item && $atglance->date == $date)
-        <div class="accordion-item border mb-1 rounded">
-            <p class="accordion-header p-4">
-                <button class="accordion-button collapsed fw-semibold p-0" type="button"
-                    data-bs-toggle="collapse" data-bs-target="#{{$loop->index}}"
-                    aria-expanded="false" aria-controls="tes">
-                    {{$atglance->title_ses}} - <small class="fst-italic"> {{$atglance->room}}</small>
+                            <div class="faq-accordion p-4 bg-lightgrey rounded border-2 border-light-subtle ">
+                                <div class="accordion accordion-faq " id="accordionFlushExample">
+                                    @foreach ($atglances as $atglance)
+                                    @if ($atglance->category_sesi == $item && $atglance->date == $date)
+                                    <div class="accordion-item border mb-1 rounded">
+                                        <p class="accordion-header p-4">
+                                            <button class="accordion-button collapsed fw-semibold p-0" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#{{$loop->index}}"
+                                                aria-expanded="false" aria-controls="tes">
+                                                {{$atglance->title_ses}} - <small class="fst-italic">
+                                                    {{$atglance->room}}</small>
 
-                </button>
-            </p>
-            <div id="{{$loop->index}}" class="accordion-collapse collapse"
-                data-bs-parent="#accordionFlushExample">
-                <div class="accordion-body bg-lightgrey">
-                    <div class="px-0">
-                        <h4>{{$atglance->title_ses}}</h4>
-                        <p class="black mb-2">{{$atglance->time}} | {{$atglance->room}}</p>
-                        <p class="black mb-2"></p>
-                        <p class="mb-0">Moderator : <span
-                                class="black fw-semibold">{{$atglance->moderator}}
-                            </span></p>
-                        <p class="">Panelist : <span
-                                class="black fw-semibold">{{$atglance->panelist}}
-                            </span></p>
-                    </div>
-                    <div class="table-responsive">
-                        <table class="table rounded table-hover">
-                            <tbody>
-                                @foreach ($atglance->schedules as $schedule)
-                                <tr>
-                                    <td>{{$schedule->time_speaker}}</td>
-                                    <td><span
-                                            class="black fw-bold">{{$schedule->topic_title}}</span>
-                                        <br><small>Speaker: {{$schedule->speaker}}</small>
-                                    </td>
-                                    <td></td>
-                                </tr>
-                                @endforeach
-                            </tbody>
-                        </table>
+                                            </button>
+                                        </p>
+                                        <div id="{{$loop->index}}" class="accordion-collapse collapse"
+                                            data-bs-parent="#accordionFlushExample">
+                                            <div class="accordion-body bg-lightgrey">
+                                                <div class="px-0">
+                                                    <h4>{{$atglance->title_ses}}</h4>
+                                                    <p class="black mb-2">{{$atglance->time}} | {{$atglance->room}}</p>
+                                                    <p class="black mb-2"></p>
+                                                    <p class="mb-0">Moderator : <span
+                                                            class="black fw-semibold">{{$atglance->moderator}}
+                                                        </span></p>
+                                                    <p class="">Panelist : <span
+                                                            class="black fw-semibold">{{$atglance->panelist}}
+                                                        </span></p>
+                                                </div>
+                                                <div class="table-responsive">
+                                                    <table class="table rounded table-hover">
+                                                        <tbody>
+                                                            @foreach ($atglance->schedules as $schedule)
+                                                            <tr>
+                                                                <td>{{$schedule->time_speaker}}</td>
+                                                                <td><span
+                                                                        class="black fw-bold">{{$schedule->topic_title}}</span>
+                                                                    <br><small>Speaker: {{$schedule->speaker}}</small>
+                                                                </td>
+                                                                <td></td>
+                                                            </tr>
+                                                            @endforeach
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    @endif
+                                    @endforeach
+                                </div>
+                            </div>
+                            @endif
+                            @endforeach
+                            @endforeach
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-
-        @endif
-        @endforeach
-    </div>
-</div>
-@endif
-@endforeach
-@endforeach
-</div>
-</div>
-</div>
-</div>
-</div>
-</section> --}}
+    </section> --}}
 </div>
