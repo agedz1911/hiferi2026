@@ -11,7 +11,8 @@
             <i class="fa fa-search opacity-45 text-sm"></i>
             <input wire:model.live='search' type="text" class="grow" placeholder="Search Topics, And Sessions" />
         </label>
-        <a target="_blank" href="assets/download/schedule-fres2026.pdf" class="btn btn-success rounded-lg"><i class="fa fa-download"></i> Download PDF Schedule</a>
+        <a target="_blank" href="assets/download/schedule-fres2026.pdf" class="btn btn-success rounded-lg"><i
+                class="fa fa-download"></i> Download PDF Schedule</a>
     </div>
 
     <section class="px-5 md:px-10 pt-0 pb-10 md:py-20 bg-competition">
@@ -29,55 +30,95 @@
                         month: 'long',
                         year: 'numeric'
                     }).format(date);
+                },
+                formatRoom(value) {
+                    const rooms = {
+                        'BALLROOM 1,2,3': 'Pasteur Convention 1, 2 & 3',
+                        'BALLROOM 1': 'Pasteur Convention 1',
+                        'BALLROOM 2': 'Pasteur Convention 2',
+                        'BALLROOM 3': 'Pasteur Convention 3',
+                        'ROOM 1': 'Empire 5'
+                    };
+                    return rooms[value] ?? value;
                 }
             }" class="lg:w-11/12 w-full mx-auto">
                 <div class="mb-4 flex flex-wrap space-x-4 p-2 bg-white rounded-lg shadow-md">
-                    <button x-on:click="openTab = 1" :class="{ 'bg-[#39B54A] text-white': openTab === 1 }" class="flex-1 py-2 px-4 rounded-md focus:outline-none focus:shadow-outline-blue transition-all duration-300">8 October</button>
-                    <button x-on:click="openTab = 2" :class="{ 'bg-[#39B54A] text-white': openTab === 2 }" class="flex-1 py-2 px-4 rounded-md focus:outline-none focus:shadow-outline-blue transition-all duration-300">9 October</button>
-                    <button x-on:click="openTab = 3" :class="{ 'bg-[#39B54A] text-white': openTab === 3 }" class="flex-1 py-2 px-4 rounded-md focus:outline-none focus:shadow-outline-blue transition-all duration-300">10 October</button>
-                    <button x-on:click="openTab = 4" :class="{ 'bg-[#39B54A] text-white': openTab === 4 }" class="flex-1 py-2 px-4 rounded-md focus:outline-none focus:shadow-outline-blue transition-all duration-300">11 October</button>
+                    <button x-on:click="openTab = 1" :class="{ 'bg-[#39B54A] text-white': openTab === 1 }"
+                        class="flex-1 py-2 px-4 rounded-md focus:outline-none focus:shadow-outline-blue transition-all duration-300">8
+                        October</button>
+                    <button x-on:click="openTab = 2" :class="{ 'bg-[#39B54A] text-white': openTab === 2 }"
+                        class="flex-1 py-2 px-4 rounded-md focus:outline-none focus:shadow-outline-blue transition-all duration-300">9
+                        October</button>
+                    <button x-on:click="openTab = 3" :class="{ 'bg-[#39B54A] text-white': openTab === 3 }"
+                        class="flex-1 py-2 px-4 rounded-md focus:outline-none focus:shadow-outline-blue transition-all duration-300">10
+                        October</button>
+                    <button x-on:click="openTab = 4" :class="{ 'bg-[#39B54A] text-white': openTab === 4 }"
+                        class="flex-1 py-2 px-4 rounded-md focus:outline-none focus:shadow-outline-blue transition-all duration-300">11
+                        October</button>
                 </div>
 
                 @php($days = [
-                    ['id' => 1, 'date' => '2026-10-08', 'rooms' => ['ROOM 1','ROOM 2','ROOM 3','ROOM 4','ROOM 5','ROOM 6','ROOM 7','ROOM 8']],
-                    ['id' => 2, 'date' => '2026-10-09', 'rooms' => ['ROOM 1','ROOM 2','ROOM 3','ROOM 4','ROOM 5','ROOM 6','ROOM 7','ROOM 8']],
-                    ['id' => 3, 'date' => '2026-10-10', 'rooms' => ['BALLROOM 1,2,3','BALLROOM 1','BALLROOM 2','BALLROOM 3','ROOM 1']],
-                    ['id' => 4, 'date' => '2026-10-11', 'rooms' => ['BALLROOM 1,2,3','BALLROOM 1','BALLROOM 2','BALLROOM 3','ROOM 1']],
+                ['id' => 1, 'date' => '2026-10-08', 'rooms' => ['ROOM 1','ROOM 2','ROOM 3','ROOM 4','ROOM 5','ROOM
+                6','ROOM 7','ROOM 8']],
+                ['id' => 2, 'date' => '2026-10-09', 'rooms' => ['ROOM 1','ROOM 2','ROOM 3','ROOM 4','ROOM 5','ROOM
+                6','ROOM 7','ROOM 8']],
+                ['id' => 3, 'date' => '2026-10-10', 'rooms' => ['BALLROOM 1,2,3','BALLROOM 1','BALLROOM 2','BALLROOM
+                3','ROOM 1']],
+                ['id' => 4, 'date' => '2026-10-11', 'rooms' => ['BALLROOM 1,2,3','BALLROOM 1','BALLROOM 2','BALLROOM
+                3','ROOM 1']],
                 ])
 
                 @foreach ($days as $day)
-                    <div x-show="openTab === {{ $day['id'] }}" class="transition-all duration-300 bg-white p-4 rounded-lg shadow-md border-x-4 border-[#262262]">
-                        <div class="overflow-x-auto">
-                            <table class="table">
-                                <thead>
-                                    <tr>
-                                        @for ($i = 0; $i < count($day['rooms']); $i++)
-                                            <th style="width: {{ 100 / count($day['rooms']) }}%;"></th>
+                <div x-show="openTab === {{ $day['id'] }}"
+                    class="transition-all duration-300 bg-white p-4 rounded-lg shadow-md border-x-4 border-[#262262]">
+                    <div class="overflow-x-auto">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    @for ($i = 0; $i < count($day['rooms']); $i++) <th
+                                        style="width: {{ 100 / count($day['rooms']) }}%;">
+                                        </th>
                                         @endfor
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        @foreach ($day['rooms'] as $roomName)
-                                            <td class="align-top">
-                                                @php($sessionsForRoom = $groupedSessions[$day['date']][$roomName] ?? [])
-                                                @foreach ($sessionsForRoom as $session)
-                                                    <button type="button" class="hover:shadow-md block w-full my-1 text-left" @click="selectedSession = @js($session); isModalOpen = true">
-                                                        <div class="px-0 border border-sky-200 py-4 w-full rounded-md bg-sky-50 text-center">
-                                                            <div class="badge badge-sm badge-info mb-2">{{ $session['category_sesi'] }}</div>
-                                                            <br>
-                                                            {{ $session['time'] }} <br>
-                                                            {{ $session['title_ses'] }}
-                                                        </div>
-                                                    </button>
-                                                @endforeach
-                                            </td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    @foreach ($day['rooms'] as $roomName)
+                                    <td class="align-top">
+                                        @php($sessionsForRoom = $groupedSessions[$day['date']][$roomName] ?? [])
+                                        @foreach ($sessionsForRoom as $session)
+                                        <button type="button" class="hover:shadow-md block w-full my-1 text-left"
+                                            @click="selectedSession = @js($session); isModalOpen = true">
+                                            <div
+                                                class="px-0 border border-sky-200 py-4 w-full rounded-md bg-sky-50 text-center">
+                                                <div class="badge badge-sm badge-info mb-2">{{ $session['category_sesi']
+                                                    }}</div>
+                                                <br>
+                                                {{ $session['time'] }} <br>
+                                                {{ $session['title_ses'] }} <br>
+                                                @if ($session['room'] == 'BALLROOM 1,2,3')
+                                                Pasteur Convention 1, 2 & 3
+                                                @elseif ($session['room'] == 'BALLROOM 1')
+                                                Pasteur Convention 1
+                                                @elseif ($session['room'] == 'BALLROOM 2')
+                                                Pasteur Convention 2
+                                                @elseif ($session['room'] == 'BALLROOM 3')
+                                                Pasteur Convention 3
+                                                @elseif ($session['room'] == 'ROOM 1')
+                                                Empire 5
+                                                @else
+                                                {{ $session['room'] }}
+                                                @endif
+                                            </div>
+                                        </button>
                                         @endforeach
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
+                                    </td>
+                                    @endforeach
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
+                </div>
                 @endforeach
 
                 <div x-show="isModalOpen" class="fixed inset-0 z-50 flex items-center justify-center bg-black/50 px-4">
@@ -86,14 +127,17 @@
                             <div>
                                 <div class="flex items-start justify-between gap-4">
                                     <div>
-                                        <h3 class="font-semibold">Date: <span x-text="formatDate(selectedSession?.date)"></span></h3>
-                                        <p class="text-sm text-gray-600">Time: <span x-text="selectedSession?.time"></span></p>
+                                        <h3 class="font-semibold">Date: <span
+                                                x-text="formatDate(selectedSession?.date)"></span></h3>
+                                        <p class="text-sm text-gray-600">Time: <span
+                                                x-text="selectedSession?.time"></span></p>
                                     </div>
                                     <button type="button" class="btn btn-sm" @click="isModalOpen = false">Close</button>
                                 </div>
-                                <p class="mt-4"><strong>Session:</strong> <span x-text="selectedSession.title_ses"></span></p>
+                                <p class="mt-4"><strong>Session:</strong> <span
+                                        x-text="selectedSession.title_ses"></span></p>
                                 <p><strong>Moderator:</strong> <span x-text="selectedSession.moderator"></span></p>
-                                <p><strong>Room:</strong> <span x-text="selectedSession.room"></span></p>
+                                <p><strong>Room:</strong> <span x-text="formatRoom(selectedSession?.room)"></span></p>
 
                                 <div class="overflow-x-auto mt-5">
                                     <table class="table">
