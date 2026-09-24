@@ -121,7 +121,21 @@
                 <div class="collapse bg-base-100 border border-base-300 my-2">
                     <input type="radio" name="my-accordion-1" />
                     <div class="collapse-title font-semibold">{{$atglance->title_ses}} - <span class="text-xs"><i
-                                class="fa fa-map-marker text-[#39B54A]"></i> {{$atglance->room}} </span></div>
+                                class="fa fa-map-marker text-[#39B54A]"></i>
+                            @if ($atglance->room == 'BALLROOM 1,2,3')
+                            Pasteur Convention 1, 2 & 3
+                            @elseif ($atglance->room == 'BALLROOM 1')
+                            Pasteur Convention 1
+                            @elseif ($atglance->room == 'BALLROOM 2')
+                            Pasteur Convention 2
+                            @elseif ($atglance->room == 'BALLROOM 3')
+                            Pasteur Convention 3
+                            @elseif ($atglance->room == 'ROOM 1')
+                            Empire 5
+                            @else
+                            {{ $atglance->room }}
+                            @endif </span>
+                        </div>
                     <div class="collapse-content text-sm">
                         <div class="flex flex-wrap justify-between gap-4 items-start">
                             <div>
