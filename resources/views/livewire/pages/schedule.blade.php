@@ -122,28 +122,28 @@
                     <input type="radio" name="my-accordion-1" />
                     <div class="collapse-title font-semibold">{{$atglance->title_ses}} - <span class="text-xs"><i
                                 class="fa fa-map-marker text-[#39B54A]"></i>
-                            @if ($session['room'] == 'BALLROOM 1,2,3')
+                            @if ($atglance->room == 'BALLROOM 1,2,3')
                             Pasteur Convention 1, 2 & 3
-                            @elseif ($session['room'] == 'BALLROOM 1')
+                            @elseif ($atglance->room == 'BALLROOM 1')
                             Pasteur Convention 1
-                            @elseif ($session['room'] == 'BALLROOM 2')
+                            @elseif ($atglance->room == 'BALLROOM 2')
                             Pasteur Convention 2
-                            @elseif ($session['room'] == 'BALLROOM 3')
+                            @elseif ($atglance->room == 'BALLROOM 3')
                             Pasteur Convention 3
-                            @elseif ($session['room'] == 'ROOM 5')
+                            @elseif ($atglance->room == 'ROOM 5')
                             Empire 5
-                            @elseif ($session['room'] == 'ROOM 3')
+                            @elseif ($atglance->room == 'ROOM 3')
                             Empire 3
-                            @elseif ($session['room'] == 'ROOM 4')
+                            @elseif ($atglance->room == 'ROOM 4')
                             Empire 4
-                            @elseif ($session['room'] == 'ROOM 2')
+                            @elseif ($atglance->room == 'ROOM 2')
                             Empire 2
-                            @elseif ($session['room'] == 'ROOM 1')
+                            @elseif ($atglance->room == 'ROOM 1')
                             Empire 1
-                            @elseif ($session['room'] == 'ROOM 6')
+                            @elseif ($atglance->room == 'ROOM 6')
                             Hasan Sadikin Hospital
                             @else
-                            {{ $session['room'] }}
+                            {{ $atglance->room }}
                             @endif </span>
                     </div>
                     <div class="collapse-content text-sm">
@@ -154,28 +154,28 @@
                                 </p>
                                 <p class="mb-2"><i class="fa fa-clock text-[#39B54A]"></i> {{$atglance->time}} | <i
                                         class="fa fa-map-marker text-[#39B54A]"></i>
-                                    @if ($session['room'] == 'BALLROOM 1,2,3')
+                                    @if ($atglance->room == 'BALLROOM 1,2,3')
                                     Pasteur Convention 1, 2 & 3
-                                    @elseif ($session['room'] == 'BALLROOM 1')
+                                    @elseif ($atglance->room == 'BALLROOM 1')
                                     Pasteur Convention 1
-                                    @elseif ($session['room'] == 'BALLROOM 2')
+                                    @elseif ($atglance->room == 'BALLROOM 2')
                                     Pasteur Convention 2
-                                    @elseif ($session['room'] == 'BALLROOM 3')
+                                    @elseif ($atglance->room == 'BALLROOM 3')
                                     Pasteur Convention 3
-                                    @elseif ($session['room'] == 'ROOM 5')
+                                    @elseif ($atglance->room == 'ROOM 5')
                                     Empire 5
-                                    @elseif ($session['room'] == 'ROOM 3')
+                                    @elseif ($atglance->room == 'ROOM 3')
                                     Empire 3
-                                    @elseif ($session['room'] == 'ROOM 4')
+                                    @elseif ($atglance->room == 'ROOM 4')
                                     Empire 4
-                                    @elseif ($session['room'] == 'ROOM 2')
+                                    @elseif ($atglance->room == 'ROOM 2')
                                     Empire 2
-                                    @elseif ($session['room'] == 'ROOM 1')
+                                    @elseif ($atglance->room == 'ROOM 1')
                                     Empire 1
-                                    @elseif ($session['room'] == 'ROOM 6')
+                                    @elseif ($atglance->room == 'ROOM 6')
                                     Hasan Sadikin Hospital
                                     @else
-                                    {{ $session['room'] }}
+                                    {{ $atglance->room }}
                                     @endif
                                 </p>
                             </div>
