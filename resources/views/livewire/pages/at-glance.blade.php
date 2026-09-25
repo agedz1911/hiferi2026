@@ -37,7 +37,12 @@
                         'BALLROOM 1': 'Pasteur Convention 1',
                         'BALLROOM 2': 'Pasteur Convention 2',
                         'BALLROOM 3': 'Pasteur Convention 3',
-                        'ROOM 1': 'Empire 5'
+                        'ROOM 1': 'Empire 1',
+                        'ROOM 2': 'Empire 2',
+                        'ROOM 3': 'Empire 3',
+                        'ROOM 4': 'Empire 4',
+                        'ROOM 5': 'Empire 5',
+                        'ROOM 6': 'Hasan Sadikin Hospital',
                     };
                     return rooms[value] ?? value;
                 }
@@ -58,10 +63,8 @@
                 </div>
 
                 @php($days = [
-                ['id' => 1, 'date' => '2026-10-08', 'rooms' => ['ROOM 1','ROOM 2','ROOM 3','ROOM 4','ROOM 5','ROOM
-                6','ROOM 7','ROOM 8']],
-                ['id' => 2, 'date' => '2026-10-09', 'rooms' => ['ROOM 1','ROOM 2','ROOM 3','ROOM 4','ROOM 5','ROOM
-                6','ROOM 7','ROOM 8']],
+                ['id' => 1, 'date' => '2026-10-08', 'rooms' => ['ROOM 1','ROOM 2','ROOM 3']],
+                ['id' => 2, 'date' => '2026-10-09', 'rooms' => ['ROOM 1','ROOM 2','ROOM 3','ROOM 4','ROOM 5','ROOM 6']],
                 ['id' => 3, 'date' => '2026-10-10', 'rooms' => ['BALLROOM 1,2,3','BALLROOM 1','BALLROOM 2','BALLROOM 3','ROOM 1']],
                 ['id' => 4, 'date' => '2026-10-11', 'rooms' => ['BALLROOM 1,2,3','BALLROOM 1','BALLROOM 2','BALLROOM 3','ROOM 1',]],
                 ])
@@ -102,8 +105,18 @@
                                                 Pasteur Convention 2
                                                 @elseif ($session['room'] == 'BALLROOM 3')
                                                 Pasteur Convention 3
-                                                @elseif ($session['room'] == 'ROOM 1')
+                                                @elseif ($session['room'] == 'ROOM 5')
                                                 Empire 5
+                                                @elseif ($session['room'] == 'ROOM 3')
+                                                Empire 3
+                                                @elseif ($session['room'] == 'ROOM 4')
+                                                Empire 4
+                                                @elseif ($session['room'] == 'ROOM 2')
+                                                Empire 2
+                                                @elseif ($session['room'] == 'ROOM 1')
+                                                Empire 1
+                                                @elseif ($session['room'] == 'ROOM 6')
+                                                Hasan Sadikin Hospital
                                                 @else
                                                 {{ $session['room'] }}
                                                 @endif
